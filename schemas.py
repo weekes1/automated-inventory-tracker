@@ -5,7 +5,10 @@ from decimal import Decimal
 from enum import Enum
 from typing import Annotated, Literal
 
-from pydantic import AfterValidator, BaseModel, ConfigDict, Field, StrictStr, model_validator
+from pydantic import (
+    AfterValidator, AwareDatetime, BaseModel, ConfigDict, Field, JsonValue,
+    StrictStr, model_validator,
+)
 
 
 class AcceptanceLevel(str, Enum):
@@ -154,3 +157,73 @@ class ProcessingRow(InventoryRow):
     def to_output_row(self) -> InventoryRow:
         """Remove processing fields without duplicating the business schema."""
         return InventoryRow.model_validate(self.to_output_dict())
+
+
+class RunConfig(BaseModel):
+    """Effective non-secret configuration for one extraction request/attempt.
+
+    Record all explicitly sent model options (including image detail) and all
+    rendering/cropping settings. Do not include credentials or environment dumps.
+    code_version identifies a commit/build when available; None means unknown.
+    """
+
+    model_config = ConfigDict(extra="forbid", frozen=True, allow_inf_nan=False)
+
+    provider: StrictStr = Field(min_length=1)
+    model: StrictStr = Field(min_length=1)
+    prompt_version: StrictStr = Field(min_length=1)
+    rules_version: StrictStr = Field(min_length=1)
+    schema_version: StrictStr = Field(min_length=1)
+    model_settings: dict[str, JsonValue] = Field(default_factory=dict)
+    preprocessing: dict[str, JsonValue] = Field(default_factory=dict)
+    code_version: StrictStr | None = None
+
+
+class RunArtifact(BaseModel):
+    """A saved file, addressed relative to its run directory."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    path: StrictStr
+    sha256: StrictStr = Field(pattern=r"^[0-9a-f]{64}$")
+    original_name: StrictStr | None = None
+
+
+class ExtractionRun(BaseModel):
+    """Application-owned audit record; never requested from the LLM."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    run_id: StrictStr
+    document_id: StrictStr = Field(min_length=1)
+    page_number: int = Field(gt=0, strict=True)
+    started_at: AwareDatetime
+    finished_at: AwareDatetime | None = None
+    status: Literal["running", "succeeded", "failed"] = "running"
+    config: RunConfig
+    inputs: list[RunArtifact] = Field(min_length=1)
+    prompt: RunArtifact
+    rules: RunArtifact
+    response_schema: RunArtifact
+    raw_response: RunArtifact | None = None
+    extracted_page: RunArtifact | None = None
+    returned_model: StrictStr | None = None
+    provider_request_id: StrictStr | None = None
+    usage: dict[str, JsonValue] = Field(default_factory=dict)
+    error: StrictStr | None = None
+
+    @model_validator(mode="after")
+    def check_outcome(self) -> "ExtractionRun":
+        if self.status == "running":
+            if self.finished_at is not None or self.error is not None:
+                raise ValueError("A running extraction cannot have a final outcome")
+        else:
+            if self.finished_at is None or self.finished_at < self.started_at:
+                raise ValueError("Finished runs need a valid completion timestamp")
+            if self.status == "succeeded" and (
+                self.error is not None or self.raw_response is None or self.extracted_page is None
+            ):
+                raise ValueError("Success requires raw and validated results without an error")
+            if self.status == "failed" and not self.error:
+                raise ValueError("Failed runs need an error explanation")
+        return self

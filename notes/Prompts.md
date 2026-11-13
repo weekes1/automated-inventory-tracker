@@ -132,3 +132,26 @@ should we add a source row as well?
 
 For all code that you write, make sure it is as simple as possible while getting the requested task done.
 ```
+
+## P0006
+
+- Observed at: 2026-11-13T13:58:34Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+- Referenced draft: `prompts/extraction.txt`, inspected during this review.
+
+```text
+okay. take a look at the proposed prompt I came up with by querying chatgpt. 
+
+Given the context you know about the project so far and the schema structures, propose and enhancements if any to the prompt. 
+```
+
+## P0007
+
+- Observed at: 2026-11-13T14:03:14Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+okay one thing that I think we have forgotten, we eventually need to track runs to not just the model but other configs such as the prompt version etc. Please implement that as needed.
+```

@@ -37,6 +37,12 @@ def load_run(directory: Path) -> ExtractionRun:
     )
 
 
+def run_directory_name(run_id: str, started_at: datetime) -> str:
+    """UTC timestamp first for chronological name sorting; retain UUID identity."""
+    timestamp = started_at.astimezone(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S.%fZ")
+    return f"{timestamp}_{run_id}"
+
+
 def start_run(
     config: RunConfig,
     *,
@@ -63,11 +69,12 @@ def start_run(
     schema = _json_bytes(response_schema)
     inputs = [(path, path.read_bytes()) for path in input_paths]
     run_id = str(uuid4())
-    directory = runs_dir / run_id
+    started_at = datetime.now(timezone.utc)
+    directory = runs_dir / run_directory_name(run_id, started_at)
     directory.mkdir(parents=True)
     run = ExtractionRun(
         run_id=run_id, document_id=document_id, page_number=page_number,
-        started_at=datetime.now(timezone.utc), config=config,
+        started_at=started_at, config=config,
         inputs=[
             _save_artifact(directory, f"input_{index:03d}{path.suffix}", data, path.name)
             for index, (path, data) in enumerate(inputs, start=1)

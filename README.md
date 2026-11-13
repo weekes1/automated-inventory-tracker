@@ -22,7 +22,7 @@ Source files, raw model responses, corrected values, and review history remain s
 
 ## Extraction run tracking
 
-`runs.start_run()` creates a unique directory under `data/runs/` before an API request. Supply a `RunConfig`, document/page identity, input files (including the actual page image), the effective prompt file, rules file, and actual provider response schema. It saves copies and SHA-256 hashes so editing originals cannot change that run's record.
+`runs.start_run()` creates a unique directory under `data/runs/` before an API request. Folder names use `YYYY-MM-DD_HH-MM-SS.ffffffZ_<run_id>` (UTC), so sorting by name orders runs oldest to newest. The timestamp matches the manifest's `started_at`; the UUID remains the stable run ID. Supply a `RunConfig`, document/page identity, input files (including the actual page image), the effective prompt file, rules file, and actual provider response schema. It saves copies and SHA-256 hashes so editing originals cannot change that run's record.
 
 `RunConfig` records provider, requested model, prompt/rules/schema versions, model settings, preprocessing settings, and an optional code/build version. Record explicitly sent model options and rendering/crop settings; do not include credentials. Use saved inputs/prompt for the eventual request. A prompt template alone is insufficient if additional instructions or examples are sent.
 
@@ -60,7 +60,7 @@ print(result.run_dir / 'page.json')  # already saved; no second write needed
 
 PNG, JPEG, WEBP, and non-animated GIF are supported. PDFs must first be rendered to page images. When extracting a rendered PDF page, pass the original document's ID and its page number via `document_id`/`page_number` (or CLI `--document-id`/`--page-number`). Otherwise the document ID defaults to the image's SHA-256 hash.
 
-Each call makes one explicit attempt and saves results once under `data/runs/<run_id>/`: `raw_response.json`, validated `page.json` and `preview_unreviewed.csv` on success, and the run manifest/input/configuration snapshots. It does not write another copy to `outputs/raw/`. Repeating the function intentionally creates another run; there is no cache or automatic SDK retry. `ExtractionError.run_dir` locates a failed attempt. Model responses are preserved before extraction parsing; HTTP failures record sanitized status/request metadata without copying potentially sensitive SDK exception messages.
+Each call makes one explicit attempt and saves results once under `data/runs/<UTC timestamp>_<run_id>/`: `raw_response.json`, validated `page.json` and `preview_unreviewed.csv` on success, and the run manifest/input/configuration snapshots. It does not write another copy to `outputs/raw/`. Repeating the function intentionally creates another run; there is no cache or automatic SDK retry. `ExtractionError.run_dir` locates a failed attempt. Model responses are preserved before extraction parsing; HTTP failures record sanitized status/request metadata without copying potentially sensitive SDK exception messages.
 
 The CSV preview has exactly the eight business headers and shows raw row text, including cancelled/uncertain candidates and ditto marks. It does not resolve inheritance, propagate page headers, or grant approval. Missing/illegible values appear empty; cancellation/uncertainty details remain in `page.json`. Formula-like text is prefixed with an apostrophe for spreadsheet safety, while original text remains in JSON. UTF-8 with a BOM helps spreadsheet applications read the file; import Job # as text to preserve leading zeros in spreadsheet displays.
 
@@ -82,7 +82,7 @@ python3 -m venv .venv
 .venv/bin/python -m unittest discover -s tests -v
 ```
 
-All twenty-six tests pass, including previews and real OpenAI SDK requests routed to a local mock HTTP transport. No live model calls or real-document uploads were made during verification. Install the extraction dependencies above to run the full suite.
+All twenty-seven tests pass, including chronological run naming, previews, and real OpenAI SDK requests routed to a local mock HTTP transport. No live model calls or real-document uploads were made during verification. Install the extraction dependencies above to run the full suite.
 
 An HTTP 401 indicates an authentication failure. Check the active API key and project/organization access using the official [error guide](https://developers.openai.com/api/docs/guides/error-codes). The extractor reports this directly without displaying key values. An exported shell key overrides `.env`; to explicitly use the project's `.env`, run `env -u OPENAI_API_KEY .venv/bin/python extractor.py 'samples/Inventory Sheet 3.png'`.
 

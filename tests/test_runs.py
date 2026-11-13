@@ -1,14 +1,16 @@
 """Run snapshots, audit lifecycle, and result association."""
 
 from hashlib import sha256
+from datetime import datetime, timedelta, timezone
 import json
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
+from unittest.mock import patch
 
 from pydantic import ValidationError
 
-from runs import add_preview, finish_run, load_run, start_run
+from runs import add_preview, finish_run, load_run, run_directory_name, start_run
 from schemas import ExtractionRun, RunConfig, SourcePage
 
 
@@ -58,6 +60,21 @@ class RunTests(unittest.TestCase):
         self.assertNotEqual(later.prompt.sha256, restored.prompt.sha256)
         self.assertEqual(later.config.prompt_version, restored.config.prompt_version)
 
+    def test_directory_names_sort_by_start_time(self):
+        earlier = datetime(2026, 11, 13, 14, 20, 41, 100, tzinfo=timezone.utc)
+        later = earlier + timedelta(microseconds=1)
+        # Even UUIDs in reverse alphabetical order cannot change time order.
+        with patch("runs.datetime") as clock, patch("runs.uuid4", side_effect=["z", "a"]):
+            clock.now.side_effect = [earlier, later]
+            first = self.start()
+            second = self.start()
+        self.assertEqual(sorted([second.name, first.name]), [first.name, second.name])
+        self.assertEqual(first.name, "2026-11-13_14-20-41.000100Z_z")
+        self.assertEqual(load_run(first).started_at, earlier)
+        self.assertEqual(load_run(first).run_id, "z")
+        local_time = earlier.astimezone(timezone(timedelta(hours=2)))
+        self.assertEqual(run_directory_name("z", local_time), first.name)
+
     def test_success_links_raw_response_page_and_returned_model(self):
         directory = self.start()
         page = SourcePage(document_id="doc-1", page_number=1)
@@ -93,14 +110,15 @@ class RunTests(unittest.TestCase):
         for response, message in (({"text": "not valid extraction JSON"}, "schema validation failed"),
                                   (None, "provider timed out")):
             with self.subTest(message=message):
-                run = finish_run(self.start(), raw_response=response, error=message)
+                directory = self.start()
+                run = finish_run(directory, raw_response=response, error=message)
                 self.assertEqual(run.status, "failed")
                 self.assertEqual(run.error, message)
                 self.assertIsNone(run.extracted_page)
                 self.assertEqual(run.raw_response is None, response is None)
                 self.assertIsNone(run.preview_csv)
                 with self.assertRaises(ValueError):
-                    add_preview(self.root / "runs" / run.run_id)
+                    add_preview(directory)
 
     def test_backfill_preserves_prior_results(self):
         directory = self.start()

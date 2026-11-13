@@ -24,6 +24,8 @@ Keep architectural decisions in `notes/DESIGN.md` and verified setup/deployment 
 
 Use `RunConfig`/`ExtractionRun` and `runs.start_run`/`finish_run` for extraction attempts. Save actual prompt/input/schema/rules snapshots before provider calls, use those snapshots for the request, and record returned model ID, request ID, usage, and failures when available. One run is one page extraction attempt; retries get new run IDs. Never snapshot secrets or dump environment variables into configuration.
 
+Run directories use `YYYY-MM-DD_HH-MM-SS.ffffffZ_<run_id>` based on manifest started_at in UTC, so name sorting is chronological. Use returned run directory paths; do not assume a directory is named only by UUID. Keep UUIDs and source row references unchanged when renaming folders.
+
 The extractor owns calling finish_run once; callers must not save a duplicate raw/page output. `ExtractionResult` returns the SourcePage plus its run directory. Keep SDK automatic retries disabled unless explicit attempt tracking is introduced. Derive the strict wire schema from shared entities and preserve the distinction between null absent slots and SourceField objects representing visible blanks/illegible writing.
 
 Successful run finalization also writes `preview_unreviewed.csv` through the same persistence layer. This raw preview includes all candidate rows with the eight output headers; it is not an approved business export. Preserve ditto marks and do not propagate headers/inheritance into raw previews. Cancellation/uncertainty metadata remains in page.json. `runs.add_preview` backfills older successful runs without re-extraction or overwriting raw/page data.

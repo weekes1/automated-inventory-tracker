@@ -274,3 +274,13 @@ okay in data/runs etc. make an initial csv outpuit file so that we can easily se
 ```text
 given that this is a small project, we do want to have everything in the data folder committed to github.
 ```
+
+## P0013
+
+- Observed at: 2026-11-13T14:36:52Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+under runs, have them in chronological order by date time (add thos eproper markings to whcihever file)
+```

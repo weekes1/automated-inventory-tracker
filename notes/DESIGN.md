@@ -1,12 +1,24 @@
 # Inventory sheet extraction design
 
-Status: proposed initial architecture, 2026-11-13. Recommendations pending implementation and evaluation on actual sheets.
+Status: initial architecture, 2026-11-13. Canonical inventory entities implemented; extraction/review/export services remain scaffolds pending implementation and evaluation.
 
 ## Goal and assumptions
 
 Convert inventory removal/sign-out sheets into CSV and XLSX, one row per line item. A reviewer can flag files or rows, correct values, and approve the exact revision exported.
 
-Start with a single operator, low volume, local persistence, and mandatory review of every row. Exact columns, sheet layouts, quantity/unit rules, date conventions, and item catalogue remain to be established from samples. Inventory balance updates and signature authentication are outside the initial scope.
+Start with a single operator, low volume, local persistence, and mandatory review of every row. Input pictures/PDFs may have different layouts; all map to the fixed canonical fields below. Quantity/unit rules, date conventions, and item catalogue remain to be established from samples. Inventory balance updates and signature authentication are outside the initial scope.
+
+## Canonical entities (implemented)
+
+`schemas.py` defines the fields once in `InventoryRow`. `ProcessingRow` inherits them and adds internal `acceptance_level`. All layout adapters and review services must use these shared entities.
+
+Business output headers, strictly in order: **Quantity · Price · Description · Person name · Job site · Job name · Job # · Date**. `OUTPUT_COLUMNS` derives from the base model. `to_output_dict()` projects exactly those fields, even on a processing row. `ProcessingRow.to_output_row()` produces a base entity. Internal `model_dump()` retains acceptance level for storage and must not be used directly as the business export.
+
+Quantity and Price use finite `Decimal` values without assuming currency, rounding, unit-price versus line-total meaning, positivity, or integer-only quantities. Date is a calendar date; normalize source date conventions before validation. Job # and other text fields remain strings to preserve leading zeros. Python field names and exact output aliases are accepted. Unknown fields are forbidden and entities are immutable.
+
+All eight values are nullable during processing so missing/illegible observations need not be guessed. Nullability is not export permission: later validation and approval policies will decide which missing values block export. Raw transcription, evidence, and review metadata remain separate entities when implemented.
+
+Acceptance has three provisional enum values: `level_1`, `level_2`, `level_3`. Their business names, meanings, and derivation rules are pending; there is no automatic assignment. `None` means unassigned, not a fourth category. Acceptance is separate from human approval and never appears in business output.
 
 ## Architecture
 
@@ -28,9 +40,9 @@ flowchart TD
 
 Persist intermediate stages so reloads, timeouts, and retries do not erase work. LLM calls occur only in extraction; deterministic stages and manual edits can rerun against stored responses.
 
-## Proposed project layout
+## Project layout
 
-Keep the suggested small modules, adding ingestion, persistence, review, export, and orchestration boundaries. This is a planned tree, not implemented files.
+The structure below exists as a scaffold, including module responsibility descriptions, a draft extraction prompt, and draft rules. Application behavior is not implemented yet.
 
 ```text
 app.py                  # review UI; no extraction or approval business rules
@@ -43,8 +55,6 @@ validator.py            # versioned checks and risk reasons
 review.py               # edits, flags, approvals, exclusions
 storage.py              # transactions, revisions, audit events, artifacts
 exporter.py             # approved snapshot to CSV/XLSX
-prompts/
-  extraction_v001.md    # versioned prompt sent to the vision model
 config/
   rules_v001.json       # versioned field and repetition policies
 samples/                # synthetic/anonymized examples only
@@ -56,9 +66,12 @@ outputs/                # ignored export snapshots and manifests
 .env.example            # committed names/placeholders, no secrets
 requirements.txt        # pin tested dependencies when implementation starts
 README.md               # verified setup/run/deployment commands
-Prompts.md              # user development prompt audit log
-DESIGN.md               # decisions and rationale
-AGENTS.md               # collaboration and logging rules
+notes/
+  Prompts.md            # user development prompt audit log
+  DESIGN.md             # decisions and rationale
+  AGENTS.md             # collaboration and logging rules
+  prompts/
+    extraction_v001.md  # versioned prompt sent to the vision model
 ```
 
 A simple Python review UI and SQLite are suitable MVP choices. UI session state is a convenience, never the source of truth. Move to an API, durable worker queue, shared object storage, and PostgreSQL when concurrent jobs, reviewers, or hosting requirements justify them. Retain the service boundaries during that transition.
@@ -146,7 +159,7 @@ Measure row recall/precision, critical-field exact match (especially quantity/it
 
 ## Implementation sequence and checks
 
-1. Establish columns and repetition/date/unit policies from samples; create labeled synthetic/anonymized fixtures and a versioned extraction prompt.
+1. Use the canonical entities above; establish layout mappings and repetition/date/unit policies from samples, and finalize acceptance categories/rules. Create labeled synthetic/anonymized fixtures and a versioned extraction prompt.
 2. Implement schemas, ingestion, stored raw extraction, and replayable deterministic stages. Bound retry/backoff for transient errors; fail permanent errors explicitly. Key artifacts by source/render/prompt/schema/model settings so retries cannot duplicate rows. Replay stored responses for reproducibility; LLM reruns are not guaranteed identical.
 3. Implement persisted review, dependency invalidation, flags, and completeness sign-off, then export snapshots.
 4. Test invariants: unresolved ditto never guesses; upstream edits invalidate dependent approval; stale writes fail; failed/missed pages block export; unapproved rows cannot export; CSV/XLSX represent the same approved revisions and preserve text safely. Use recorded responses for routine tests and opt-in live model evaluations.
@@ -161,3 +174,4 @@ Measure row recall/precision, critical-field exact match (especially quantity/it
 | 2026-11-13 | Ditto dependencies and page completeness review | Error propagation and silent omissions |
 | 2026-11-13 | Revision-specific mandatory human approval | Risk rules cannot certify correctness |
 | 2026-11-13 | Separate development log and runtime prompts | Different audit subjects and versioning |
+| 2026-11-13 | Shared Pydantic business row plus inherited processing row | Variable input layouts map to eight fixed output fields; acceptance stays internal |

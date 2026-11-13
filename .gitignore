@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Inventory runtime artifacts (retain empty directory placeholders)
+/data/*
+!/data/.gitkeep
+/outputs/*
+!/outputs/.gitkeep
+.env.*
+!.env.example

@@ -1,6 +1,6 @@
 # User prompt audit log
 
-Append-only record of user development prompts visible during work in this repository. Model extraction templates will live separately in `prompts/`. See `AGENTS.md` for maintenance rules.
+Append-only record of user development prompts visible during work in this repository. Model extraction templates live separately in `notes/prompts/`. See [AGENTS.md](AGENTS.md) for maintenance rules.
 
 Times use ISO 8601 UTC. Observed time is when the assistant observed/logged the prompt, not an asserted submission time. Git history supports review; this file is not tamper-proof or an automatic archive of other chats.
 
@@ -75,4 +75,44 @@ DESIGN.md (keeps track of architctural decisions)
 
 
 in the prompts.md file, i want you to keep track of every prompt that I submit. include the time of the prompt as well. it needs to be auditable for reviewers. 
+```
+
+## P0002
+
+- Observed at: 2026-11-13T13:20:44Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+okay apply the suggested file/folder structure as suggested.
+```
+
+## P0003
+
+- Observed at: 2026-11-13T13:22:59Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+organize the markdown files except for the README.md into a folder called notes. 
+```
+
+## P0004
+
+- Observed at: 2026-11-13T13:32:01Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+one thing to note moving forward. We will be getting potentially different looking pictures/ pdfs in terms of how the information is structured. But there are common fields that we will need to extract an output. 
+
+The common fields are as follows: 
+
+Quantity · Price · Description · Person name · Job site · Job name · Job # · Date.
+
+The above strictly will be what we output. However we will also have a similar entity such as 
+
+Quantity · Price · Description · Person name · Job site · Job name · Job # · Date · acceptance level (three categories that will be derived on rules yet to come).
+
+Implement these entities using pydantic etc. one time and keep in mind this structure as we continue to build. 
 ```

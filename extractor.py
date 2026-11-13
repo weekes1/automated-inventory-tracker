@@ -45,9 +45,9 @@ class ExtractionResult:
 
 
 class ExtractionError(RuntimeError):
-    def __init__(self, run_dir: Path):
+    def __init__(self, run_dir: Path, reason: str):
         self.run_dir = run_dir
-        super().__init__(f"Extraction failed; inspect {run_dir / 'manifest.json'}")
+        super().__init__(f"Extraction failed: {reason}\nInspect {run_dir / 'manifest.json'}")
 
 
 def extraction_response_schema() -> dict:
@@ -193,12 +193,18 @@ def extract_image(
         if isinstance(exc, APIStatusError):
             request_id = exc.request_id
             raw = {"error_type": type(exc).__name__, "status_code": exc.status_code}
+            error = f"{type(exc).__name__} (HTTP {exc.status_code})"
+            if exc.status_code == 401:
+                error += (
+                    ": authentication failed. Check that OPENAI_API_KEY is valid and active. "
+                    "An existing shell variable overrides the project's .env value."
+                )
     # The only persistence owner: finalization occurs once, outside the try block
     # so a disk error cannot trigger a second attempt to save the result.
     finish_run(directory, raw_response=raw, page=page, error=error,
                returned_model=returned_model, provider_request_id=request_id, usage=usage)
     if caught is not None:
-        raise ExtractionError(directory) from caught
+        raise ExtractionError(directory, error) from caught
     return ExtractionResult(page=page, run_dir=directory)
 
 
@@ -217,6 +223,7 @@ def main() -> None:
     except (ValueError, OSError) as exc:
         parser.exit(1, f"Invalid input or configuration: {exc}\n")
     print(f"Saved {len(result.page.rows)} candidate rows to {result.run_dir / 'page.json'}")
+    print(f"Unreviewed CSV preview: {result.run_dir / 'preview_unreviewed.csv'}")
 
 
 if __name__ == "__main__":

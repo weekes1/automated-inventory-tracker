@@ -1,0 +1,60 @@
+{
+  "run_id": "f7f19eb5-74c9-4b11-8ee1-573f479902cd",
+  "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+  "page_number": 1,
+  "started_at": "2026-11-13T14:22:58.608359Z",
+  "finished_at": "2026-11-13T14:23:00.772188Z",
+  "status": "failed",
+  "config": {
+    "provider": "openai",
+    "model": "gpt-5.4-mini",
+    "prompt_version": "extraction_v002",
+    "rules_version": "v001",
+    "schema_version": "source-page-wire-v001",
+    "model_settings": {
+      "image_detail": "high",
+      "store": false,
+      "timeout_seconds": 120,
+      "max_retries": 0
+    },
+    "preprocessing": {
+      "mime_type": "image/png",
+      "width": 1448,
+      "height": 1086,
+      "transforms": []
+    },
+    "code_version": null
+  },
+  "inputs": [
+    {
+      "path": "input_001.png",
+      "sha256": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+      "original_name": "page.png"
+    }
+  ],
+  "prompt": {
+    "path": "prompt.txt",
+    "sha256": "120cea9fb8b488c7d2e69bc72d0f5dc93352cd6dcddaa0efae4493641aefbdf4",
+    "original_name": "effective_prompt.txt"
+  },
+  "rules": {
+    "path": "rules.json",
+    "sha256": "c537b73d4e1a5c34b0b5422b1a0c41e90170ea75d74499e0286a743f5e62ffb6",
+    "original_name": "rules_v001.json"
+  },
+  "response_schema": {
+    "path": "response_schema.json",
+    "sha256": "2a065e622537a20caeeceab912146aa504016461c490c819d8e62fda60034df4",
+    "original_name": null
+  },
+  "raw_response": {
+    "path": "raw_response.json",
+    "sha256": "e1c9cf4637d0e0447dd2e400628b6310490f126a69e2ac3a32a0eababdc68eb2",
+    "original_name": null
+  },
+  "extracted_page": null,
+  "returned_model": null,
+  "provider_request_id": "req_bcfb217a04894b25820e65b9e41d3b4c",
+  "usage": {},
+  "error": "AuthenticationError (HTTP 401): authentication failed. Check that OPENAI_API_KEY is valid and active. An existing shell variable overrides the project's .env value."
+}

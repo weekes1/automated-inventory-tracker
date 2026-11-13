@@ -125,6 +125,19 @@ class ExtractorTests(unittest.TestCase):
         self.assertEqual(run.provider_request_id, "req-error")
         self.assertEqual(json.loads((raised.exception.run_dir / "raw_response.json").read_text())["status_code"], 429)
 
+    def test_authentication_failure_explains_safe_next_step(self):
+        self.http_status = 401
+        with self.assertRaises(ExtractionError) as raised:
+            self.extract()
+        message = str(raised.exception)
+        self.assertIn("HTTP 401", message)
+        self.assertIn("OPENAI_API_KEY", message)
+        self.assertIn("shell variable", message)
+        self.assertNotIn("test-only", message)
+        self.assertEqual(len(self.requests), 1)
+        run = load_run(raised.exception.run_dir)
+        self.assertIn("authentication failed", run.error)
+
     def test_repeated_calls_are_separate_explicit_runs(self):
         first = self.extract()
         second = self.extract()

@@ -8,6 +8,7 @@ from uuid import uuid4
 
 from pydantic import JsonValue, TypeAdapter
 
+from exporter import raw_preview_csv
 from schemas import ExtractionRun, RunArtifact, RunConfig, SourcePage
 
 
@@ -110,6 +111,7 @@ def finish_run(
     raw = TypeAdapter(JsonValue).validate_python(raw_response)
     raw_bytes = None if raw is None else _json_bytes(raw)
     page_bytes = None if page is None else page.model_dump_json(indent=2).encode("utf-8")
+    preview = raw_preview_csv(page) if page is not None and error is None else None
     result = ExtractionRun.model_validate({
         **run.model_dump(),
         "status": "failed" if error is not None else "succeeded",
@@ -122,10 +124,47 @@ def finish_run(
             path="raw_response.json", sha256=sha256(raw_bytes).hexdigest()),
         "extracted_page": None if page_bytes is None else RunArtifact(
             path="page.json", sha256=sha256(page_bytes).hexdigest()),
+        "preview_csv": None if preview is None else RunArtifact(
+            path="preview_unreviewed.csv", sha256=sha256(preview).hexdigest()),
     })
     if raw_bytes is not None:
         _save_artifact(directory, "raw_response.json", raw_bytes)
     if page_bytes is not None:
         _save_artifact(directory, "page.json", page_bytes)
+    if preview is not None:
+        _save_artifact(directory, "preview_unreviewed.csv", preview)
     _save_manifest(directory, result)
     return result
+
+
+def add_preview(directory: Path) -> Path:
+    """Add a preview to an older successful run without another model call.
+
+    Preserve existing previews and raw/page files. Register the derived file
+    and its hash in the manifest; repeated calls do not rewrite it.
+    """
+    run = load_run(directory)
+    if run.status != "succeeded" or run.extracted_page is None:
+        raise ValueError("Only successful runs with a validated page have previews")
+    if run.preview_csv is not None:
+        path = directory / run.preview_csv.path
+        if sha256(path.read_bytes()).hexdigest() != run.preview_csv.sha256:
+            raise ValueError("Existing preview differs from its recorded hash")
+        return path
+    data = (directory / run.extracted_page.path).read_bytes()
+    if sha256(data).hexdigest() != run.extracted_page.sha256:
+        raise ValueError("Saved page differs from its recorded hash")
+    page = SourcePage.model_validate_json(data)
+    preview = raw_preview_csv(page)
+    path = directory / "preview_unreviewed.csv"
+    if path.exists():
+        if path.read_bytes() != preview:
+            raise ValueError("Refusing to overwrite an existing different preview")
+    else:
+        path.write_bytes(preview)
+    updated = ExtractionRun.model_validate({
+        **run.model_dump(),
+        "preview_csv": RunArtifact(path=path.name, sha256=sha256(preview).hexdigest()),
+    })
+    _save_manifest(directory, updated)
+    return path

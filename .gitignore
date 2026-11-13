@@ -219,10 +219,13 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Inventory runtime artifacts (retain empty directory placeholders)
-/data/*
-!/data/.gitkeep
+# Approved exports remain local (retain the directory placeholder)
 /outputs/*
 !/outputs/.gitkeep
 .env.*
 !.env.example
+
+# Keep all project data and run artifacts in version control, including files
+# that otherwise match generic database, log, or cache patterns above.
+!/data/
+!/data/**

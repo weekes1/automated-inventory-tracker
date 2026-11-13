@@ -60,7 +60,11 @@ print(result.run_dir / 'page.json')  # already saved; no second write needed
 
 PNG, JPEG, WEBP, and non-animated GIF are supported. PDFs must first be rendered to page images. When extracting a rendered PDF page, pass the original document's ID and its page number via `document_id`/`page_number` (or CLI `--document-id`/`--page-number`). Otherwise the document ID defaults to the image's SHA-256 hash.
 
-Each call makes one explicit attempt and saves results once under `data/runs/<run_id>/`: `raw_response.json`, validated `page.json` on success, and the run manifest/input/configuration snapshots. It does not write another copy to `outputs/raw/`. Repeating the function intentionally creates another run; there is no cache or automatic SDK retry. `ExtractionError.run_dir` locates a failed attempt. Model responses are preserved before extraction parsing; HTTP failures record sanitized status/request metadata without copying potentially sensitive SDK exception messages.
+Each call makes one explicit attempt and saves results once under `data/runs/<run_id>/`: `raw_response.json`, validated `page.json` and `preview_unreviewed.csv` on success, and the run manifest/input/configuration snapshots. It does not write another copy to `outputs/raw/`. Repeating the function intentionally creates another run; there is no cache or automatic SDK retry. `ExtractionError.run_dir` locates a failed attempt. Model responses are preserved before extraction parsing; HTTP failures record sanitized status/request metadata without copying potentially sensitive SDK exception messages.
+
+The CSV preview has exactly the eight business headers and shows raw row text, including cancelled/uncertain candidates and ditto marks. It does not resolve inheritance, propagate page headers, or grant approval. Missing/illegible values appear empty; cancellation/uncertainty details remain in `page.json`. Formula-like text is prefixed with an apostrophe for spreadsheet safety, while original text remains in JSON. UTF-8 with a BOM helps spreadsheet applications read the file; import Job # as text to preserve leading zeros in spreadsheet displays.
+
+Older successful runs can receive a preview via `runs.add_preview(run_directory)` without another model call. It records the CSV hash in the manifest and preserves existing raw/page artifacts. Repeated calls reuse the existing preview; they do not overwrite it.
 
 The default prompt is `prompts/extraction_v002.txt`. Pass `prompt_path` and optionally `prompt_version` to compare alternatives. A short appended contract reconciles field names and absent values with the strict API schema; the full effective prompt and exact schema are saved in the run. This follows the official [Structured Outputs](https://developers.openai.com/api/docs/guides/structured-outputs) interface.
 
@@ -68,7 +72,7 @@ The default prompt is `prompts/extraction_v002.txt`. Pass `prompt_path` and opti
 
 The file/folder structure is documented in `notes/DESIGN.md`. Prompt quality and business rules still need evaluation on labeled sheets. `requirements.txt` includes planned application dependencies as well as the pinned, tested extraction dependencies above.
 
-Copy `.env.example` to `.env` for local configuration. The extractor loads this file without overriding already-set environment variables. Local data and exports are ignored by Git; only their empty directory placeholders are tracked.
+Copy `.env.example` to `.env` for local configuration. The extractor loads this file without overriding already-set environment variables. Everything under `data/` is included in version control: inputs, prompts/configuration snapshots, responses, manifests, CSV previews, and future databases. The `outputs/` directory remains ignored apart from its placeholder.
 
 Verified schema-only setup and tests (Python 3.14.6, Pydantic 2.14.3):
 
@@ -78,10 +82,12 @@ python3 -m venv .venv
 .venv/bin/python -m unittest discover -s tests -v
 ```
 
-All twenty-two tests pass, including real OpenAI SDK requests routed to a local mock HTTP transport. No live model calls or real-document uploads were made during verification. Install the extraction dependencies above to run the full suite.
+All twenty-six tests pass, including previews and real OpenAI SDK requests routed to a local mock HTTP transport. No live model calls or real-document uploads were made during verification. Install the extraction dependencies above to run the full suite.
+
+An HTTP 401 indicates an authentication failure. Check the active API key and project/organization access using the official [error guide](https://developers.openai.com/api/docs/guides/error-codes). The extractor reports this directly without displaying key values. An exported shell key overrides `.env`; to explicitly use the project's `.env`, run `env -u OPENAI_API_KEY .venv/bin/python extractor.py 'samples/Inventory Sheet 3.png'`.
 
 Hosting/deployment commands will be added when a deployment target is chosen.
 
 Before deployment, record the tested Python version, dependency installation, environment variables, local start command, test command, database migration/backup procedure, and hosting/release/rollback commands here. Hosting has not been selected.
 
-Never commit `.env`, real uploaded sheets, application databases, or generated exports containing real data. Commit only synthetic or suitably anonymized evaluation samples.
+Keep `.env` and API credentials out of Git and out of run snapshots. Per the project policy, commit all `data/` artifacts so reviewers can inspect extraction runs in GitHub. The run writer saves data locally; normal Git commits/pushes publish it.

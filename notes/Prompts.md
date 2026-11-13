@@ -230,3 +230,47 @@ Path("outputs/raw/sheet3.json").write_text(
     result.model_dump_json(indent=2)
 )
 ```
+
+## P0009
+
+- Observed/logged at: 2026-11-13T14:21:21Z.
+- Timestamp provenance: recorded retrospectively during the next repository task; original submission and observation timestamps unavailable.
+- Author: user.
+
+```text
+okay give me a quick terminal command to be able to test this. 
+```
+
+## P0010
+
+- Observed at: 2026-11-13T14:21:21Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+got this error code: 
+
+(base) luisweekes@Mac automated-inventory-tracker % .venv/bin/python extractor.py 'samples/Inventory Sheet 3.png'
+Extraction failed; inspect /Users/luisweekes/Code/Inventory-tracker/automated-inventory-tracker/data/runs/3ac36bf9-0437-4868-8c8e-545501baadf1/manifest.json
+(base) luisweekes@Mac automated-inventory-tracker % 
+```
+
+## P0011
+
+- Observed at: 2026-11-13T14:28:48Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+okay in data/runs etc. make an initial csv outpuit file so that we can easily see initial results. 
+```
+
+## P0012
+
+- Observed at: 2026-11-13T14:33:24Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+given that this is a small project, we do want to have everything in the data folder committed to github.
+```

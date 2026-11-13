@@ -207,6 +207,7 @@ class ExtractionRun(BaseModel):
     response_schema: RunArtifact
     raw_response: RunArtifact | None = None
     extracted_page: RunArtifact | None = None
+    preview_csv: RunArtifact | None = None
     returned_model: StrictStr | None = None
     provider_request_id: StrictStr | None = None
     usage: dict[str, JsonValue] = Field(default_factory=dict)

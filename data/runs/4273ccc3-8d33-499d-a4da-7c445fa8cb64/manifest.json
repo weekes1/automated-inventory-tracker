@@ -1,0 +1,81 @@
+{
+  "run_id": "4273ccc3-8d33-499d-a4da-7c445fa8cb64",
+  "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+  "page_number": 1,
+  "started_at": "2026-11-13T14:24:30.460949Z",
+  "finished_at": "2026-11-13T14:24:58.632233Z",
+  "status": "succeeded",
+  "config": {
+    "provider": "openai",
+    "model": "gpt-5.4-mini",
+    "prompt_version": "extraction_v002",
+    "rules_version": "v001",
+    "schema_version": "source-page-wire-v001",
+    "model_settings": {
+      "image_detail": "high",
+      "store": false,
+      "timeout_seconds": 120,
+      "max_retries": 0
+    },
+    "preprocessing": {
+      "mime_type": "image/png",
+      "width": 1448,
+      "height": 1086,
+      "transforms": []
+    },
+    "code_version": null
+  },
+  "inputs": [
+    {
+      "path": "input_001.png",
+      "sha256": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+      "original_name": "page.png"
+    }
+  ],
+  "prompt": {
+    "path": "prompt.txt",
+    "sha256": "120cea9fb8b488c7d2e69bc72d0f5dc93352cd6dcddaa0efae4493641aefbdf4",
+    "original_name": "effective_prompt.txt"
+  },
+  "rules": {
+    "path": "rules.json",
+    "sha256": "c537b73d4e1a5c34b0b5422b1a0c41e90170ea75d74499e0286a743f5e62ffb6",
+    "original_name": "rules_v001.json"
+  },
+  "response_schema": {
+    "path": "response_schema.json",
+    "sha256": "2a065e622537a20caeeceab912146aa504016461c490c819d8e62fda60034df4",
+    "original_name": null
+  },
+  "raw_response": {
+    "path": "raw_response.json",
+    "sha256": "39d03949fb93f62f96c0824ba9bd02955da74b357781c99271cd629b22fec793",
+    "original_name": null
+  },
+  "extracted_page": {
+    "path": "page.json",
+    "sha256": "f69b4e23c1f91ecf57dd11e2b8c9adabd3f8358b9bbf9265791f123f2b55328a",
+    "original_name": null
+  },
+  "preview_csv": {
+    "path": "preview_unreviewed.csv",
+    "sha256": "29a6c3a01fd07d70e8cc907134a1f57d9fed7b979fb42960509d6fbdc6fc4f4f",
+    "original_name": null
+  },
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "provider_request_id": "req_96fc1e123b6f4bd283d38a37f3de7266",
+  "usage": {
+    "input_tokens": 4087,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": null
+    },
+    "output_tokens": 5119,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 9206
+  },
+  "error": null
+}

@@ -35,6 +35,8 @@ Keep implementation simple: use these nested Pydantic models and existing busine
 
 ## Run tracking (implemented)
 
+Successful runs also save a hashed `preview_unreviewed.csv`, derived by `exporter.raw_preview_csv` from literal SourceRow observations. It uses exactly the eight output headers, retains all cancelled/uncertain candidates, and performs no inheritance or header propagation. Missing/illegible values render empty; details remain in page.json. Standard CSV quoting preserves commas/newlines, UTF-8 BOM supports common spreadsheet imports, and formula-like text is apostrophe-prefixed without changing source JSON. This inspection artifact is separate from the future approved export. `runs.add_preview` can append it to older successful manifests without rerunning the model or changing raw/page artifacts; an existing preview is reused rather than rewritten.
+
 `RunConfig` records the provider/requested model, prompt/rules/schema versions, explicitly sent model settings, preprocessing configuration, and optional code/build version. `ExtractionRun` records a UUID, document/page identity, timezone-aware timestamps, outcome, returned model ID, request ID, usage, and errors. `RunArtifact` records each saved relative path, original filename where relevant, and SHA-256 hash. No run metadata belongs in business exports or LLM-generated source content.
 
 `runs.start_run()` saves prompt, rules, actual provider response schema, and input snapshots under `data/runs/<run_id>/`, then atomically writes a running manifest. Pass the original and rendered input images as needed to capture both provenance and the exact pixels used. Use saved artifacts for the request; capture the full effective prompt, including additional instructions/examples. Rules version must match the rules JSON. Filenames/version labels alone do not establish configuration identity; hashes distinguish edits under the same version label.
@@ -96,7 +98,7 @@ config/
 samples/                # synthetic/anonymized examples only
 tests/
   fixtures/             # labeled truth and recorded provider responses
-data/                   # ignored originals, renders, responses, SQLite
+data/                   # version-controlled inputs, run artifacts, previews, SQLite
 outputs/                # ignored export snapshots and manifests
 .env                    # local secrets; ignored
 .env.example            # committed names/placeholders, no secrets
@@ -174,7 +176,7 @@ Use stable configurable column order, UTF-8 CSV, and standard quoting. Write XLS
 
 A separate manifest records source/run IDs, row revisions, exclusions, reviewers/times, export schema, and file hashes. Keep business tables clean. Preserve raw responses, derivations, and review events so each exported cell is traceable.
 
-SQLite history and Git-reviewed Markdown are useful MVP records, but editable by someone with filesystem access. They are not tamper-proof. Stronger assurance needs restricted append-only storage and externally anchored hashes/backups. Define retention/access policies for originals and responses, which may contain names/signatures; keep real sheets out of Git.
+SQLite history and Git-reviewed Markdown are useful MVP records, but editable by someone with filesystem access. They are not tamper-proof. Stronger assurance needs restricted append-only storage and externally anchored hashes/backups. Per the user's explicit project policy, everything under data/ is version-controlled for GitHub review, including source sheets, responses, previews, and future databases. Credentials remain outside data/ and Git. outputs/ remains ignored.
 
 ## Model evaluation
 
@@ -212,3 +214,4 @@ Measure row recall/precision, critical-field exact match (especially quantity/it
 | 2026-11-13 | Simple page/row/field source models plus explicit inheritance references | Preserve cancellations, uncertainty, and evidence separately from resolved values |
 | 2026-11-13 | File-based run manifests with versioned, hashed snapshots | Compare extraction attempts before introducing a database |
 | 2026-11-13 | Single-image Responses API adapter with one persistence owner | Preserve raw failures and avoid duplicate result writes |
+| 2026-11-13 | Include all data/ artifacts in GitHub version control | User preference for reviewing this small project's inputs and extraction results together |

@@ -8,7 +8,7 @@ import unittest
 
 from pydantic import ValidationError
 
-from runs import finish_run, load_run, start_run
+from runs import add_preview, finish_run, load_run, start_run
 from schemas import ExtractionRun, RunConfig, SourcePage
 
 
@@ -79,6 +79,12 @@ class RunTests(unittest.TestCase):
         self.assertEqual(SourcePage.model_validate_json((directory / run.extracted_page.path).read_text()), page)
         for artifact in (run.raw_response, run.extracted_page):
             self.assertEqual(sha256((directory / artifact.path).read_bytes()).hexdigest(), artifact.sha256)
+        self.assertIsNotNone(run.preview_csv)
+        preview_path = directory / run.preview_csv.path
+        self.assertEqual(sha256(preview_path.read_bytes()).hexdigest(), run.preview_csv.sha256)
+        before = preview_path.stat().st_mtime_ns
+        self.assertEqual(add_preview(directory), preview_path)
+        self.assertEqual(preview_path.stat().st_mtime_ns, before)
         with self.assertRaises(ValueError):
             finish_run(directory, error="must not overwrite")
         self.assertEqual(load_run(directory), run)
@@ -92,6 +98,25 @@ class RunTests(unittest.TestCase):
                 self.assertEqual(run.error, message)
                 self.assertIsNone(run.extracted_page)
                 self.assertEqual(run.raw_response is None, response is None)
+                self.assertIsNone(run.preview_csv)
+                with self.assertRaises(ValueError):
+                    add_preview(self.root / "runs" / run.run_id)
+
+    def test_backfill_preserves_prior_results(self):
+        directory = self.start()
+        run = finish_run(directory, raw_response={}, page=SourcePage(document_id="doc-1", page_number=1))
+        # Emulate an older manifest created before previews were supported.
+        old = run.model_dump(mode="json")
+        old.pop("preview_csv")
+        (directory / "manifest.json").write_text(json.dumps(old), encoding="utf-8")
+        (directory / "preview_unreviewed.csv").unlink()
+        page_before = (directory / "page.json").read_bytes()
+        raw_before = (directory / "raw_response.json").read_bytes()
+        path = add_preview(directory)
+        self.assertTrue(path.exists())
+        self.assertIsNotNone(load_run(directory).preview_csv)
+        self.assertEqual((directory / "page.json").read_bytes(), page_before)
+        self.assertEqual((directory / "raw_response.json").read_bytes(), raw_before)
 
     def test_reject_wrong_page_or_false_success_without_finalizing(self):
         directory = self.start()

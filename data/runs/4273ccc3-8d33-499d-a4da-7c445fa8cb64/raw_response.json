@@ -1,0 +1,429 @@
+{
+  "id": "resp_0a72e4ed181c1afa016af71da275a487d2ac8e4902bb2d5585",
+  "access_programs": null,
+  "created_at": 1794579874.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "gpt-5.4-mini-2026-03-17",
+  "object": "response",
+  "output": [
+    {
+      "id": "msg_0a72e4ed181c1afa016af71da46edc87d2b9bc3cc64a5629e9",
+      "content": [
+        {
+          "annotations": [],
+          "text": "{\"header_fields\":{\"quantity\":null,\"price\":null,\"description\":null,\"person_name\":null,\"job_site\":null,\"job_name\":null,\"job_number\":null,\"date\":null},\"rows\":[{\"row_number\":1,\"fields\":{\"quantity\":{\"raw_text\":\"10\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"24.80\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"3/4\\\" EMT Conduit 10'\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Evan\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Plant Alpha\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Power Upgrade\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"240412A\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-14-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":2,\"fields\":{\"quantity\":{\"raw_text\":\"6\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"18.36\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"2\\\" PVC 10' Sch 40\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Evan\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Plant Alpha\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Power Upgrade\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"240412A\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-14-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":3,\"fields\":{\"quantity\":{\"raw_text\":\"1 roll\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"11.45\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Green TW Cable 12/2\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Evan\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Plant Alpha\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Power Upgrade\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"240412A\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-14-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":4,\"fields\":{\"quantity\":{\"raw_text\":\"1 bx\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"6.25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Wire Nuts Assort.\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Evan\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Plant Alpha\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Power Upgrade\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"240412A\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-14-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":5,\"fields\":{\"quantity\":{\"raw_text\":\"5\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"3.20\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"elect T.L tape - blk\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Evan\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Plant Alpha\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Power Upgrade\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"240412A\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-14-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":6,\"fields\":{\"quantity\":{\"raw_text\":\"8\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"32.64\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"1/2\\\" Rigid Conduit -10'\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Maya\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Big Bravo\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Lighting Retrofit\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"260512B\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-14-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":7,\"fields\":{\"quantity\":{\"raw_text\":\"4\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"14.76\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Strut Channel 10'\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Maya\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Big Bravo\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Lighting Retrofit\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"260512B\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-14-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":8,\"fields\":{\"quantity\":{\"raw_text\":\"12\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"7.80\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Beam Clamp 1/2\\\"\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Maya\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Big Bravo\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Lighting Retrofit\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"260512B\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-14-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":9,\"fields\":{\"quantity\":{\"raw_text\":\"20\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"4.10\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Locknut 1/2\\\"\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Maya\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Big Bravo\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Lighting Retrofit\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"260512B\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-14-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":10,\"fields\":{\"quantity\":{\"raw_text\":\"20\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"2.60\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Flat Washers 1/2\\\"\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Maya\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Big Bravo\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Lighting Retrofit\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"260512B\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-14-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":11,\"fields\":{\"quantity\":{\"raw_text\":\"12\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"15.72\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"3/8\\\" All-thread Rod 6'\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Liam\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Site Charlie\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Mech Support\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"260613C\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-15-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":12,\"fields\":{\"quantity\":{\"raw_text\":\"12\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"6.24\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Coupling Nut 3/8\\\"\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Liam\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Site Charlie\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Mech Support\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"260613C\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-15-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":13,\"fields\":{\"quantity\":{\"raw_text\":\"8\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"9.10\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"threaded Rod hanger\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Liam\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Site Charlie\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Mech Support\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"260613C\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-15-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":14,\"fields\":{\"quantity\":{\"raw_text\":\"24\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"3.12\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"hex Nut 3/8\\\"\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Liam\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Site Charlie\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Mech Support\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"260613C\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-15-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":15,\"fields\":{\"quantity\":{\"raw_text\":\"24\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"1.80\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Lock Washer 3/8\\\"\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Liam\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Site Charlie\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Mech Support\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"260613C\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-15-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":16,\"fields\":{\"quantity\":{\"raw_text\":\"6\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"20.94\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Galv Pipe 1\\\" x 10'\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Noah\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Facility Delta\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Water Line Ext.\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"260714D\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-16-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":17,\"fields\":{\"quantity\":{\"raw_text\":\"4\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"5.96\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"90° Elbow 1\\\" galv\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Noah\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Facility Delta\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Water Line Ext.\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"260714D\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-16-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":18,\"fields\":{\"quantity\":{\"raw_text\":\"2\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"3.12\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Tee 1\\\" galv\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Noah\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Facility Delta\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Water Line Ext.\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"260714D\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-16-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":19,\"fields\":{\"quantity\":{\"raw_text\":\"8\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"6.40\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Pipe hanger 1\\\"\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Noah\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Facility Delta\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Water Line Ext.\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"260714D\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-16-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]},{\"row_number\":20,\"fields\":{\"quantity\":{\"raw_text\":\"1 roll\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"1.75\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Teflon tape\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Noah\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Facility Delta\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Water Line Ext.\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"260714D\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"4-16-25\",\"kind\":\"text\",\"uncertain\":false,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"uncertain\":false,\"notes\":[]}],\"layout_notes\":[\"Single table with columns DATE, PERSON NAME, DESCRIPTION, QTY, JOB #, JOB NAME, JOB SITE, PRICE.\",\"Blue handwritten note at top reads 'To Inventory Team'.\",\"Several job/name/site fields are written in blue ink and appear to apply to grouped rows under each date/person entry.\"],\"notes\":[]}",
+          "type": "output_text",
+          "logprobs": []
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message",
+      "phase": "final_answer"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 0.98,
+  "background": false,
+  "completed_at": 1794579898.0,
+  "conversation": null,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "input_transformations": [],
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "moderation": null,
+  "previous_response_id": null,
+  "prompt": null,
+  "prompt_cache_diagnostics": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "current_turn",
+    "effort": "none",
+    "generate_summary": null,
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "name": "page_extraction",
+      "schema_": {
+        "$defs": {
+          "SourceField": {
+            "additionalProperties": false,
+            "description": "Literal LLM observation, with uncertainty and optional inheritance hint.\n\nraw_text preserves visible marks; use None for unreadable text. An\ninherited_from reference is a model suggestion until verified by rules.\nnotes hold short evidence-based explanations, not internal reasoning.",
+            "properties": {
+              "raw_text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Raw Text"
+              },
+              "kind": {
+                "enum": [
+                  "text",
+                  "blank",
+                  "ditto",
+                  "illegible"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "uncertain": {
+                "title": "Uncertain",
+                "type": "boolean"
+              },
+              "inherited_from": {
+                "type": "null"
+              },
+              "notes": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Notes",
+                "type": "array"
+              }
+            },
+            "required": [
+              "raw_text",
+              "kind",
+              "uncertain",
+              "inherited_from",
+              "notes"
+            ],
+            "title": "SourceField",
+            "type": "object"
+          },
+          "SourceRow": {
+            "additionalProperties": false,
+            "description": "One candidate row on a source page, including cancelled/uncertain rows.\n\nrow_id is assigned by the application. row_number is one-based visual\norder across the page, including rows retained for cancellation review.\nMissing dictionary keys mean fields not observed, never inherited values.",
+            "properties": {
+              "row_number": {
+                "exclusiveMinimum": 0,
+                "title": "Row Number",
+                "type": "integer"
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "quantity": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "price": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "description": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "person_name": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "job_site": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "job_name": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "job_number": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "date": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "additionalProperties": false,
+                "required": [
+                  "quantity",
+                  "price",
+                  "description",
+                  "person_name",
+                  "job_site",
+                  "job_name",
+                  "job_number",
+                  "date"
+                ]
+              },
+              "cancellation": {
+                "enum": [
+                  "active",
+                  "cancelled",
+                  "uncertain"
+                ],
+                "title": "Cancellation",
+                "type": "string"
+              },
+              "uncertain": {
+                "title": "Uncertain",
+                "type": "boolean"
+              },
+              "notes": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Notes",
+                "type": "array"
+              }
+            },
+            "required": [
+              "row_number",
+              "fields",
+              "cancellation",
+              "uncertain",
+              "notes"
+            ],
+            "title": "SourceRow",
+            "type": "object"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Page evidence and extracted candidates; does not certify completeness.\n\nrows keep visual order. Header values can supply context for multiple\nrows without pretending those values were written in each row.",
+        "properties": {
+          "header_fields": {
+            "type": "object",
+            "properties": {
+              "quantity": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "price": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "description": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "person_name": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "job_site": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "job_name": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "job_number": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "date": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "quantity",
+              "price",
+              "description",
+              "person_name",
+              "job_site",
+              "job_name",
+              "job_number",
+              "date"
+            ]
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/$defs/SourceRow"
+            },
+            "title": "Rows",
+            "type": "array"
+          },
+          "layout_notes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Layout Notes",
+            "type": "array"
+          },
+          "notes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Notes",
+            "type": "array"
+          }
+        },
+        "required": [
+          "header_fields",
+          "rows",
+          "layout_notes",
+          "notes"
+        ],
+        "title": "SourcePage",
+        "type": "object"
+      },
+      "type": "json_schema",
+      "description": null,
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "cached_tokens": null,
+      "cached_tokens_details": null,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      }
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 4087,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": null
+    },
+    "output_tokens": 5119,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 9206
+  },
+  "user": null,
+  "billing": {
+    "payer": "developer"
+  },
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "store": false
+}

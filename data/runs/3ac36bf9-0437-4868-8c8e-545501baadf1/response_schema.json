@@ -1,0 +1,319 @@
+{
+  "$defs": {
+    "SourceField": {
+      "additionalProperties": false,
+      "description": "Literal LLM observation, with uncertainty and optional inheritance hint.\n\nraw_text preserves visible marks; use None for unreadable text. An\ninherited_from reference is a model suggestion until verified by rules.\nnotes hold short evidence-based explanations, not internal reasoning.",
+      "properties": {
+        "raw_text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Raw Text"
+        },
+        "kind": {
+          "enum": [
+            "text",
+            "blank",
+            "ditto",
+            "illegible"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "uncertain": {
+          "title": "Uncertain",
+          "type": "boolean"
+        },
+        "inherited_from": {
+          "type": "null"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "raw_text",
+        "kind",
+        "uncertain",
+        "inherited_from",
+        "notes"
+      ],
+      "title": "SourceField",
+      "type": "object"
+    },
+    "SourceRow": {
+      "additionalProperties": false,
+      "description": "One candidate row on a source page, including cancelled/uncertain rows.\n\nrow_id is assigned by the application. row_number is one-based visual\norder across the page, including rows retained for cancellation review.\nMissing dictionary keys mean fields not observed, never inherited values.",
+      "properties": {
+        "row_number": {
+          "exclusiveMinimum": 0,
+          "title": "Row Number",
+          "type": "integer"
+        },
+        "fields": {
+          "type": "object",
+          "properties": {
+            "quantity": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/SourceField"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "price": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/SourceField"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "description": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/SourceField"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "person_name": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/SourceField"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "job_site": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/SourceField"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "job_name": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/SourceField"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "job_number": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/SourceField"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "date": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/SourceField"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "quantity",
+            "price",
+            "description",
+            "person_name",
+            "job_site",
+            "job_name",
+            "job_number",
+            "date"
+          ]
+        },
+        "cancellation": {
+          "enum": [
+            "active",
+            "cancelled",
+            "uncertain"
+          ],
+          "title": "Cancellation",
+          "type": "string"
+        },
+        "uncertain": {
+          "title": "Uncertain",
+          "type": "boolean"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "row_number",
+        "fields",
+        "cancellation",
+        "uncertain",
+        "notes"
+      ],
+      "title": "SourceRow",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Page evidence and extracted candidates; does not certify completeness.\n\nrows keep visual order. Header values can supply context for multiple\nrows without pretending those values were written in each row.",
+  "properties": {
+    "header_fields": {
+      "type": "object",
+      "properties": {
+        "quantity": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceField"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "price": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceField"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "description": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceField"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "person_name": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceField"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "job_site": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceField"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "job_name": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceField"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "job_number": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceField"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "date": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceField"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "quantity",
+        "price",
+        "description",
+        "person_name",
+        "job_site",
+        "job_name",
+        "job_number",
+        "date"
+      ]
+    },
+    "rows": {
+      "items": {
+        "$ref": "#/$defs/SourceRow"
+      },
+      "title": "Rows",
+      "type": "array"
+    },
+    "layout_notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Layout Notes",
+      "type": "array"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "header_fields",
+    "rows",
+    "layout_notes",
+    "notes"
+  ],
+  "title": "SourcePage",
+  "type": "object"
+}

@@ -1,8 +1,8 @@
-openai
+openai==3.50.0
 streamlit
 pydantic>=2.0,<3.0
 pandas
-pillow
+pillow==13.0.0
 pymupdf
-python-dotenv
+python-dotenv==1.2.4
 pytest

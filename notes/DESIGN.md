@@ -1,6 +1,6 @@
 # Inventory sheet extraction design
 
-Status: initial architecture, 2026-11-13. Canonical business/source entities and local run tracking implemented; provider extraction/review/export services remain scaffolds pending implementation and evaluation.
+Status: initial architecture, 2026-11-13. Canonical entities, local run tracking, and single-image OpenAI extraction implemented. PDF rendering, review, resolution, and export remain scaffolds; transcription quality still needs evaluation.
 
 ## Goal and assumptions
 
@@ -44,6 +44,16 @@ Keep implementation simple: use these nested Pydantic models and existing busine
 `runs.load_run()` validates the manifest. Artifact hashes support later comparison; loading does not rehash all artifacts, and local files are not tamper-proof. Preserving inputs/configuration supports replay/comparison, not guaranteed identical future LLM output. Provider defaults, alias changes, or unavailable returned metadata remain limitations; record explicit settings and returned model snapshots when available. This file-based layer is implemented independently of provider calls and SQLite, and assumes a single local writer per run.
 
 ## Architecture
+
+### Implemented extraction adapter
+
+`extractor.extract_image(bytes, ...)` calls OpenAI's Responses API with high-detail image input and strict JSON Schema output. It returns `ExtractionResult(page, run_dir)`; `page` is the existing SourcePage entity, not a second PageExtraction model. PNG/JPEG/WEBP/non-animated GIF are supported; PDFs need a separate rendering step. The default model is `gpt-5.4-mini`, configurable by argument or VISION_MODEL/EXTRACTION_MODEL. Environment loading and client creation happen on invocation, not import.
+
+`extraction_response_schema()` derives a wire schema from SourcePage/SourceRow/SourceField and InventoryRow's canonical keys. Application-owned IDs are omitted. Open field dictionaries become fixed-key objects whose slots are nullable for absent fields; observed blanks and illegible text remain SourceField objects. Defaults are removed, all properties are required, and extra keys are forbidden for the strict API interface. Inheritance references are null in this initial extraction phase. After the response, null field slots are removed and run-scoped row IDs/document/page identities are attached before SourcePage validation. The provider schema version is `source-page-wire-v001` and its exact contents are saved per run.
+
+The default revised prompt receives a short appended transport contract to reconcile nullable slots and current property names. The complete effective prompt is snapshotted before the request. The model call reads saved prompt/image/schema artifacts, and finish_run is invoked exactly once outside the call/parse error handler. Only runs.py writes result artifacts: full raw JSON response plus page.json on success, or a failed manifest with available raw output on refusal, truncation, or validation failure. HTTP errors retain sanitized status/request metadata. No duplicate outputs/raw copy is created.
+
+SDK retries are disabled; another invocation creates another explicit run, rather than silently retrying or caching. A 120-second SDK timeout and store=false are recorded. The local client is closed when owned by the extractor. Provider request/model/usage metadata is captured when available. Tests use the actual SDK with a mock HTTP transport; no live model accuracy or account access has been verified.
 
 Use a modular Python application, initially one deployable process. A thin review UI calls application services; those services own persistence and state transitions. Microservices and an agent framework add little value to the initial sequential workflow.
 
@@ -201,3 +211,4 @@ Measure row recall/precision, critical-field exact match (especially quantity/it
 | 2026-11-13 | Shared Pydantic business row plus inherited processing row | Variable input layouts map to eight fixed output fields; acceptance stays internal |
 | 2026-11-13 | Simple page/row/field source models plus explicit inheritance references | Preserve cancellations, uncertainty, and evidence separately from resolved values |
 | 2026-11-13 | File-based run manifests with versioned, hashed snapshots | Compare extraction attempts before introducing a database |
+| 2026-11-13 | Single-image Responses API adapter with one persistence owner | Preserve raw failures and avoid duplicate result writes |

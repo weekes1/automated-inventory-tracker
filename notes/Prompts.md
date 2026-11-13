@@ -155,3 +155,78 @@ Given the context you know about the project so far and the schema structures, p
 ```text
 okay one thing that I think we have forgotten, we eventually need to track runs to not just the model but other configs such as the prompt version etc. Please implement that as needed.
 ```
+
+## P0008
+
+- Observed at: 2026-11-13T14:11:58Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+In extractor.py fill out the necessary code to be able to actually call a model etc. Make sure that the results are saved one time. 
+
+Some example code: 
+
+import os
+import base64
+from pathlib import Path
+
+from dotenv import load_dotenv
+from openai import OpenAI
+
+from schemas import PageExtraction
+
+load_dotenv()
+
+client = OpenAI()
+
+PROMPT = Path(
+    "prompts/extraction.txt"
+).read_text()
+
+
+def extract_image(image_bytes: bytes) -> PageExtraction:
+    encoded = base64.b64encode(
+        image_bytes
+    ).decode("utf-8")
+
+    response = client.responses.parse(
+        model=os.getenv("VISION_MODEL", "gpt-5.4-mini"),
+        input=[
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "input_text",
+                        "text": PROMPT,
+                    },
+                    {
+                        "type": "input_image",
+                        "image_url": (
+                            "data:image/png;base64,"
+                            + encoded
+                        ),
+                        "detail": "high",
+                    },
+                ],
+            }
+        ],
+        text_format=PageExtraction,
+    )
+
+    if response.output_parsed is None:
+        raise RuntimeError(
+            "Model returned no valid extraction"
+        )
+
+    return response.output_parsed
+
+import json
+from pathlib import Path
+
+result = extract_image(image.read_bytes())
+
+Path("outputs/raw/sheet3.json").write_text(
+    result.model_dump_json(indent=2)
+)
+```

@@ -1,6 +1,6 @@
 # Raw extraction prompt review
 
-Reviewed `prompts/extraction.txt` against `schemas.py` on 2026-11-13. Original preserved. Proposed alternative: `prompts/extraction_v002.txt`; not wired to an API or tested against images yet.
+Reviewed `prompts/extraction.txt` against `schemas.py` on 2026-11-13. Original preserved. Alternative: `prompts/extraction_v002.txt`. It is now the extractor's default, with an appended API transport contract; it has not been evaluated against live model transcriptions yet.
 
 The original covers varying column order, multiline descriptions, independent contextual fields, and the limits of highlight colour well.
 
@@ -18,7 +18,7 @@ Recommended changes:
 
 ## Integration boundary
 
-SourcePage requires document_id/page_number and SourceRow requires row_id; these are application-owned identities. The draft in v001 asks for SourcePage while telling the model not to create its required IDs. The proposed v002 instead describes an identity-free response payload: the application supplies those IDs before validating the assembled SourcePage. The matching provider response schema/adapter still needs implementation before this prompt can be used with schema-constrained API output. Do not pass SourcePage's current schema unchanged while also asking the model to omit required IDs.
+SourcePage requires document_id/page_number and SourceRow requires row_id; these are application-owned identities. The draft in v001 asks for SourcePage while telling the model not to create its required IDs. The v002 prompt instead describes an identity-free response payload: the application supplies IDs before validating the assembled SourcePage. `extractor.py` now implements this adapter. It derives a strict provider schema, represents absent field slots as null on the wire, and removes those placeholders before validating SourcePage. An appended contract reconciles that transport detail with the original prompt's instruction to omit absent fields. Do not pass SourcePage's current schema unchanged while asking the model to omit required IDs.
 
 The canonical Python field names remain authoritative in schemas.py. Any future response-schema builder should derive allowed field names there rather than maintaining an independent production field list in code. Prompt wording is not a substitute for schema validation or deterministic checks of observation consistency.
 

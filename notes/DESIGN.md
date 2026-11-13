@@ -1,6 +1,6 @@
 # Inventory sheet extraction design
 
-Status: initial architecture, 2026-11-13. Canonical entities, local run tracking, and single-image OpenAI extraction implemented. PDF rendering, review, resolution, and export remain scaffolds; transcription quality still needs evaluation.
+Status: initial architecture, 2026-11-13. Canonical entities, run tracking, bounded ingestion, PDF rendering, and extraction implemented. Review, resolution, and approved export remain scaffolds; transcription quality still needs evaluation.
 
 ## Goal and assumptions
 
@@ -49,7 +49,7 @@ Successful runs also save a hashed `preview_unreviewed.csv`, derived by `exporte
 
 ### Implemented extraction adapter
 
-`extractor.extract_image(bytes, ...)` calls OpenAI's Responses API with high-detail image input and strict JSON Schema output. It returns `ExtractionResult(page, run_dir)`; `page` is the existing SourcePage entity, not a second PageExtraction model. PNG/JPEG/WEBP/non-animated GIF are supported; PDFs need a separate rendering step. The default model is `gpt-5.4-mini`, configurable by argument or VISION_MODEL/EXTRACTION_MODEL. Environment loading and client creation happen on invocation, not import.
+`extractor.extract_image(bytes, ...)` calls OpenAI's Responses API with high-detail image input and strict JSON Schema output. It returns `ExtractionResult(page, run_dir)`; `page` is the existing SourcePage entity, not a second PageExtraction model. PNG/JPEG/WEBP/non-animated GIF are supported; PDFs are prepared by ingestion.py and passed page-by-page through pipeline.extract_file. The default model is `gpt-5.4-mini`, configurable by argument or VISION_MODEL/EXTRACTION_MODEL. Environment loading and client creation happen on invocation, not import.
 
 `extraction_response_schema()` derives a wire schema from SourcePage/SourceRow/SourceField and InventoryRow's canonical keys. Application-owned IDs are omitted. Open field dictionaries become fixed-key objects whose slots are nullable for absent fields; observed blanks and illegible text remain SourceField objects. Defaults are removed, all properties are required, and extra keys are forbidden for the strict API interface. Inheritance references are null in this initial extraction phase. After the response, null field slots are removed and run-scoped row IDs/document/page identities are attached before SourcePage validation. The provider schema version is `source-page-wire-v002` and its exact contents are saved per run.
 
@@ -77,7 +77,7 @@ Persist intermediate stages so reloads, timeouts, and retries do not erase work.
 
 ## Project layout
 
-The structure below exists as a scaffold, including module responsibility descriptions, a draft extraction prompt, and draft rules. Application behavior is not implemented yet.
+The structure below includes implemented schemas, ingestion, run tracking, extraction orchestration, and raw previews. Review, resolution, validation policy, and approved exports remain scaffolds.
 
 ```text
 app.py                  # review UI; no extraction or approval business rules
@@ -226,3 +226,16 @@ SourceRow.highlighted and crossed_out record visible markings independently of c
 SourceField.inference optionally records blank_as_ditto. This hypothesis requires kind=blank, raw_text="", uncertain=true, and a non-empty evidence note. The literal cell stays blank; no quote, arrow, or copied text is invented. A visible repetition mark instead remains kind=ditto with its literal text. References remain null in the initial API extraction; later deterministic rules/review may resolve inheritance. Inference and visual marks provide structured review inputs without assigning acceptance or approval. CSV previews still contain only the eight literal business columns; review metadata remains in page.json.
 
 The current default prompt is prompts/extraction_v003.txt, paired with source-page-wire-v002. Both are snapshotted in new runs. Previous prompts and historical run responses/pages are preserved rather than relabeled after the fact. A fresh extraction is required to assess highlighting, strike-throughs, and continuation hypotheses on an older image.
+
+
+## Bounded ingestion and PDF support (implemented)
+
+The CLI now accepts PDFs and images through pipeline.extract_file. ingestion.ingest_bytes provides a future backend upload boundary; ingest_file bounds local reads and rejects non-files and file symlinks. Check nonempty bytes, filename/path-control characters, extension-versus-content, full image decoding, dimensions, animation, PDF encryption/repair, object/page counts, and detected active features. Reject attachments and scripting/launch/additional-action dictionaries. Only generated content-hash/page paths are used for stored artifacts.
+
+InputLimits defaults are 20 MiB input, 20 PDF pages, 10,000 pixels per side, 20 MP per page, 100 MP aggregate, 100 MiB prepared PNGs, and 20,000 PDF objects. Byte limits apply before decoding. PDF dimensions/aggregate pixels are checked before get_pixmap; rendered PNG size is also bounded. This is a local validation policy, not an antivirus guarantee or native-parser sandbox; isolated CPU/time/memory-bounded workers remain a requirement for untrusted public hosting.
+
+Images are re-encoded after EXIF orientation onto white RGB PNGs, dropping original metadata/trailing data from the model input. PDFs render at 200 DPI by default (72–300 configurable), in RGB with annotations enabled and transparency disabled, respecting page rotation. The entire document must finish preparation before any API call. --prepare-only saves PNGs without credentials/model requests.
+
+Preserve original bytes once under data/documents/<source_sha256>/original.<type>. Versioned renderer/profile folders contain numbered PNGs and an ingestion.json with page count, file hashes, dimensions, and renderer settings/version. Existing identical artifacts are reused; differing contents at an immutable path fail rather than overwrite. Whole originals are not copied into every page run. Each run snapshots its own PNG and references the original/prepared paths relative to data/, with original hash, page count, DPI/rotation/transform information, and validation limits. All data/ remains Git-tracked under the user's policy.
+
+All PDF pages share the original source hash as document ID by default. Source page numbers retain PDF order. Extraction is sequential and stops on the first API failure, raising DocumentExtractionError with the failed page/total count and prior completed results. Saved earlier runs remain valid page results but never imply document-level completeness. There is no database, automatic retry, or approved document export added here.

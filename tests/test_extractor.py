@@ -15,6 +15,7 @@ from PIL import Image
 from extractor import ExtractionError, extract_image, extraction_response_schema
 from runs import finish_run, load_run
 from schemas import InventoryRow, SourcePage
+from pipeline import DocumentExtractionError, extract_file
 
 
 class ExtractorTests(unittest.TestCase):
@@ -26,6 +27,7 @@ class ExtractorTests(unittest.TestCase):
         self.http_status = 200
         self.response_status = "completed"
         self.refusal = False
+        self.fail_on_request = None
         self.output_text = json.dumps({
             "header_fields": dict.fromkeys(InventoryRow.model_fields),
             "rows": [{
@@ -47,8 +49,9 @@ class ExtractorTests(unittest.TestCase):
 
     def handle_request(self, request):
         self.requests.append(json.loads(request.content))
-        if self.http_status != 200:
-            return httpx2.Response(self.http_status, json={"error": {"message": "test request failure"}},
+        status = 429 if len(self.requests) == self.fail_on_request else self.http_status
+        if status != 200:
+            return httpx2.Response(status, json={"error": {"message": "test request failure"}},
                                    headers={"x-request-id": "req-error"})
         content = ({"type": "refusal", "refusal": "test refusal"} if self.refusal else
                    {"type": "output_text", "text": self.output_text, "annotations": []})
@@ -165,10 +168,50 @@ class ExtractorTests(unittest.TestCase):
         self.assertNotEqual(first.run_dir, second.run_dir)
         self.assertEqual(len(self.requests), 2)
 
+    def test_pdf_pipeline_uses_shared_identity_and_saves_render_provenance(self):
+        from test_ingestion import sample_pdf
+        path = self.root / "sheet.pdf"
+        original = sample_pdf()
+        path.write_bytes(original)
+        results = extract_file(path, data_dir=self.root / "data", client=self.client, dpi=72)
+        self.assertEqual([result.page.page_number for result in results], [1, 2])
+        self.assertEqual(results[0].page.document_id, results[1].page.document_id)
+        self.assertEqual(len(self.requests), 2)
+        for result, request in zip(results, self.requests):
+            encoded = request["input"][0]["content"][1]["image_url"]
+            self.assertTrue(encoded.startswith("data:image/png;base64,"))
+            self.assertTrue(base64.b64decode(encoded.split(",", 1)[1]).startswith(b"\x89PNG\r\n\x1a\n"))
+            source = load_run(result.run_dir).config.preprocessing["source"]
+            self.assertEqual(source["dpi"], 72)
+            self.assertEqual(source["page_count"], 2)
+            self.assertEqual((self.root / "data" / source["original_path"]).read_bytes(), original)
+        self.assertEqual(len(list((self.root / "data").rglob("original.pdf"))), 1)
+
+    def test_pdf_failure_reports_partial_document_and_stops(self):
+        from test_ingestion import sample_pdf
+        path = self.root / "sheet.pdf"
+        path.write_bytes(sample_pdf(pages=3))
+        self.fail_on_request = 2
+        with self.assertRaises(DocumentExtractionError) as raised:
+            extract_file(path, data_dir=self.root / "data", client=self.client, dpi=72)
+        self.assertEqual(len(raised.exception.completed), 1)
+        self.assertEqual(raised.exception.failed_page, 2)
+        self.assertEqual(raised.exception.total_pages, 3)
+        self.assertEqual(len(self.requests), 2)
+        self.assertEqual(load_run(raised.exception.run_dir).status, "failed")
+
+    def test_invalid_document_never_calls_the_model(self):
+        path = self.root / "sheet.pdf"
+        path.write_bytes(b"%PDF-invalid")
+        with self.assertRaises(ValueError):
+            extract_file(path, data_dir=self.root / "data", client=self.client)
+        self.assertEqual(self.requests, [])
+        self.assertFalse((self.root / "data").exists())
+
     def test_invalid_input_is_rejected_before_call_or_run(self):
         with self.assertRaises(ValueError):
             self.extract(page_number=0)
-        with self.assertRaises(OSError):
+        with self.assertRaises(ValueError):
             self.extract(image_bytes=b"not an image")
         self.assertEqual(self.requests, [])
         self.assertFalse((self.root / "runs").exists())

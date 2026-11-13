@@ -3,9 +3,8 @@
 import argparse
 import base64
 from contextlib import ExitStack
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from hashlib import sha256
-from io import BytesIO
 import json
 import os
 from pathlib import Path
@@ -13,8 +12,8 @@ from tempfile import TemporaryDirectory
 
 from dotenv import load_dotenv
 from openai import APIStatusError, OpenAI
-from PIL import Image
 
+from ingestion import DEFAULT_LIMITS, inspect_image
 from runs import finish_run, load_run, start_run
 from schemas import InventoryRow, RunConfig, SourcePage
 
@@ -128,6 +127,7 @@ def extract_image(
     prompt_version: str | None = None,
     runs_dir: Path | None = None,
     client: OpenAI | None = None,
+    source_metadata: dict | None = None,
 ) -> ExtractionResult:
     """Call once and save one raw response plus one validated page per run.
 
@@ -136,12 +136,7 @@ def extract_image(
     rendered to images. A supplied client is useful for offline tests.
     """
     load_dotenv(ROOT / ".env", override=False)
-    with Image.open(BytesIO(image_bytes)) as image:
-        mime = {"PNG": "image/png", "JPEG": "image/jpeg", "WEBP": "image/webp", "GIF": "image/gif"}.get(image.format)
-        if mime is None or getattr(image, "n_frames", 1) != 1:
-            raise ValueError("Provide a PNG, JPEG, WEBP, or non-animated GIF image")
-        width, height = image.size
-        image.verify()
+    mime, width, height = inspect_image(image_bytes)
     model = model or os.getenv("VISION_MODEL") or os.getenv("EXTRACTION_MODEL") or "gpt-5.4-mini"
     document_id = document_id or sha256(image_bytes).hexdigest()
     if not isinstance(document_id, str) or not document_id.strip() or isinstance(page_number, bool) or not isinstance(page_number, int) or page_number < 1:
@@ -153,7 +148,8 @@ def extract_image(
         provider="openai", model=model, prompt_version=prompt_version or prompt_path.stem,
         rules_version=json.loads(rules_path.read_text(encoding="utf-8"))["version"],
         schema_version=SCHEMA_VERSION, model_settings=settings,
-        preprocessing={"mime_type": mime, "width": width, "height": height, "transforms": []},
+        preprocessing={"mime_type": mime, "width": width, "height": height, "transforms": [],
+                       "validation_limits": asdict(DEFAULT_LIMITS), "source": source_metadata or {}},
     )
     schema = extraction_response_schema()
     # Temporary files adapt the byte-based API to the existing snapshot writer.
@@ -218,21 +214,33 @@ def extract_image(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Extract one inventory image and save its run.")
-    parser.add_argument("image", type=Path)
+    from pipeline import DocumentExtractionError, extract_file
+
+    parser = argparse.ArgumentParser(description="Validate a PDF/image, convert to PNG, and extract each page.")
+    parser.add_argument("file", type=Path)
     parser.add_argument("--model")
     parser.add_argument("--document-id")
     parser.add_argument("--page-number", type=int, default=1)
+    parser.add_argument("--dpi", type=int, default=200, help="PDF rendering DPI (72-300; default 200)")
+    parser.add_argument("--prepare-only", action="store_true", help="Validate/save PNG pages without calling a model")
     args = parser.parse_args()
     try:
-        result = extract_image(args.image.read_bytes(), model=args.model,
-                               document_id=args.document_id, page_number=args.page_number)
-    except ExtractionError as exc:
+        if args.prepare_only:
+            from ingestion import ingest_file
+            load_dotenv(ROOT / ".env", override=False)
+            document = ingest_file(args.file, data_dir=Path(os.getenv("DATA_DIR") or ROOT / "data"), dpi=args.dpi)
+            for page in document.pages:
+                print(f"Prepared page {page.page_number}: {page.path}")
+            return
+        results = extract_file(args.file, model=args.model, document_id=args.document_id,
+                               page_number=args.page_number, dpi=args.dpi)
+    except DocumentExtractionError as exc:
         parser.exit(1, f"{exc}\n")
     except (ValueError, OSError) as exc:
         parser.exit(1, f"Invalid input or configuration: {exc}\n")
-    print(f"Saved {len(result.page.rows)} candidate rows to {result.run_dir / 'page.json'}")
-    print(f"Unreviewed CSV preview: {result.run_dir / 'preview_unreviewed.csv'}")
+    for result in results:
+        print(f"Page {result.page.page_number}: saved {len(result.page.rows)} candidate rows to {result.run_dir / 'page.json'}")
+        print(f"Unreviewed CSV preview: {result.run_dir / 'preview_unreviewed.csv'}")
 
 
 if __name__ == "__main__":

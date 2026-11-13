@@ -294,3 +294,28 @@ under runs, have them in chronological order by date time (add thos eproper mark
 ```text
 okay some patterns that I am seeing right now. we need to make sure that we note when a row is highlighted or crossed out (change the prompt?). Also, it appears that for sheet 3, the model correctly pics up that an empty space means a ditto. We need to mark these inferences--make sure that they are noted in the relevant area so that we can flag these issues down the line. 
 ```
+
+## P0015
+
+- Observed at: 2026-11-13T15:22:44Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+okay the next step here is to make sure that pdfs get converted to pngs so that the pipeline supports that. 
+
+At this stage, we can add some request validation things that will mirror input sanitation in backend software engineering etc. as in making sure we only accept files and reject any potentially harmful inputs.
+
+For any code you add, make it as simple as possible while making sure that the end functionalities work.
+```
+
+## P0016 — retrospective entry
+
+- Observed/logged at: 2026-11-13T15:34:19Z.
+- Timestamp provenance: recorded retrospectively while checking prompt-log completeness; original submission timestamp unavailable.
+- Author: user.
+- Sequence note: this message preceded P0015; IDs reflect append order, not submission order.
+
+```text
+okay, at this point is it worth it to implement sqlite to record things? or do we have an auditable enough trail in the runs folder? 
+```

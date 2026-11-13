@@ -4,7 +4,7 @@ Planned tool for converting PDF and image inventory removal/sign-out sheets into
 
 ## Project status
 
-Shared Pydantic entities, local run tracking (`runs.py`), and OpenAI image extraction (`extractor.py`) are implemented. Review UI, PDF rendering, resolution, and file export remain scaffolds. There is no deployed application.
+Shared Pydantic entities, run tracking, input validation, PDF/image-to-PNG preparation, and OpenAI extraction are implemented. Review UI, resolution, and approved file export remain scaffolds. There is no deployed application.
 
 Input layouts may vary. Output is fixed to **Quantity · Price · Description · Person name · Job site · Job name · Job # · Date**. `InventoryRow` defines these fields once; `ProcessingRow` adds internal acceptance (`high`, `med`, `low`) and source/inheritance references. Assignment rules remain pending. Output projections exclude all internal metadata.
 
@@ -32,13 +32,13 @@ Source files, raw model responses, corrected values, and review history remain s
 
 The extractor uses this file-based persistence directly. Hashes identify saved artifacts; files remain editable by someone with filesystem access. No run metadata is added to business output columns.
 
-## Run image extraction
+## Run PDF or image extraction
 
 Install the implemented components (verified with Python 3.14.6):
 
 ```sh
 python3 -m venv .venv
-.venv/bin/python -m pip install 'openai==3.50.0' 'pydantic>=2.0,<3.0' 'python-dotenv==1.2.4' 'pillow==13.0.0'
+.venv/bin/python -m pip install 'openai==3.50.0' 'pydantic>=2.0,<3.0' 'python-dotenv==1.2.4' 'pillow==13.0.0' 'pymupdf==2.1'
 ```
 
 Set `OPENAI_API_KEY` in your local `.env`. `VISION_MODEL` selects the model, falling back to `EXTRACTION_MODEL` for existing configurations, then `gpt-5.4-mini`. A `--model` argument overrides both. No client or network call is created at import time.
@@ -53,14 +53,33 @@ Or call from Python:
 
 ```python
 from pathlib import Path
-from extractor import extract_image
+from pipeline import extract_file
 
-result = extract_image(Path('samples/Inventory Sheet 3.png').read_bytes())
-page = result.page  # schemas.SourcePage
-print(result.run_dir / 'page.json')  # already saved; no second write needed
+results = extract_file(Path('samples/Inventory Sheet 3.png'))
+for result in results:
+    print(result.run_dir / 'preview_unreviewed.csv')  # already saved
 ```
 
-PNG, JPEG, WEBP, and non-animated GIF are supported. PDFs must first be rendered to page images. When extracting a rendered PDF page, pass the original document's ID and its page number via `document_id`/`page_number` (or CLI `--document-id`/`--page-number`). Otherwise the document ID defaults to the image's SHA-256 hash.
+PDF, PNG, JPEG, WEBP, and non-animated GIF are supported. The same CLI accepts a PDF and extracts each page sequentially. To validate/render without an API call or API key:
+
+```sh
+.venv/bin/python extractor.py '/path/to/inventory.pdf' --prepare-only
+```
+
+Remove `--prepare-only` to extract all pages. PDF rendering defaults to 200 DPI; `--dpi` accepts 72–300. All pages share the original file's SHA-256 document ID and retain their one-based PDF page numbers. `--page-number` is only for a single image's supplied context; it cannot relabel PDF pages.
+
+Originals are saved once under `data/documents/<document_hash>/original.<type>`. A versioned renderer/profile folder contains `page_001.png`, subsequent pages, and `ingestion.json` with hashes, dimensions, renderer version, DPI/rotation, and page count. Repeating preparation with the same profile reuses identical artifacts instead of rewriting them. Each extraction run snapshots its actual PNG and records relative original/prepared paths plus the original hash and renderer settings.
+
+`ingestion.ingest_bytes(content, filename)` is the reusable boundary for future uploads; `ingest_file(path)` reads a bounded regular local file. `pipeline.extract_file(path)` prepares the entire document before calling a model. On a later page's API failure it raises `DocumentExtractionError`, reports partial progress, and retains previous results; it never reports the incomplete document as complete. `extractor.extract_image(bytes)` remains the lower-level validated single-image API.
+
+## Input validation
+
+- Allowed filename extensions must match the decoded file type. Empty files, malformed/truncated files, directories, symlink inputs, animated images, unsupported formats, and upload names containing path separators/control characters are rejected.
+- Defaults: 20 MiB per input file, 20 PDF pages, 10,000 pixels per side, 20 million pixels per page, 100 million pixels per document, 100 MiB of prepared PNG data, and 20,000 PDF objects. Oversized PDF page dimensions and aggregate pixels are checked before rendering. Limits are centralized in `ingestion.InputLimits` and recorded in run configuration.
+- Encrypted PDFs, PDFs requiring repair, attachments, and detected scripting/launch/additional-action features are rejected. Native parsers are used without executing PDF actions or fetching document links. Rendering includes visible annotations to preserve highlights and strike-throughs. See [PyMuPDF rendering documentation](https://pymupdf.readthedocs.io/en/latest/page.html).
+- Images are fully decoded, EXIF-oriented, composited onto white, and re-encoded as RGB PNGs without their original metadata or trailing payload. Originals remain untrusted audit artifacts; generated output paths use hashes and page numbers rather than upload filenames.
+
+These checks constrain the supported input surface; they are not antivirus scanning or an OS sandbox. A future public upload backend should run native parsing/rendering in an isolated worker with CPU/time/memory limits. The current local implementation enforces byte/page/pixel/object limits but has no separate parser timeout.
 
 Each call makes one explicit attempt and saves results once under `data/runs/<UTC timestamp>_<run_id>/`: `raw_response.json`, validated `page.json` and `preview_unreviewed.csv` on success, and the run manifest/input/configuration snapshots. It does not write another copy to `outputs/raw/`. Repeating the function intentionally creates another run; there is no cache or automatic SDK retry. `ExtractionError.run_dir` locates a failed attempt. Model responses are preserved before extraction parsing; HTTP failures record sanitized status/request metadata without copying potentially sensitive SDK exception messages.
 
@@ -76,15 +95,13 @@ The file/folder structure is documented in `notes/DESIGN.md`. Prompt quality and
 
 Copy `.env.example` to `.env` for local configuration. The extractor loads this file without overriding already-set environment variables. Everything under `data/` is included in version control: inputs, prompts/configuration snapshots, responses, manifests, CSV previews, and future databases. The `outputs/` directory remains ignored apart from its placeholder.
 
-Verified schema-only setup and tests (Python 3.14.6, Pydantic 2.14.3):
+Verified tests (Python 3.14.6, Pydantic 2.14.3), after installing the dependencies above:
 
 ```sh
-python3 -m venv .venv
-.venv/bin/python -m pip install --no-cache-dir 'pydantic>=2.0,<3.0'
 .venv/bin/python -m unittest discover -s tests -v
 ```
 
-All thirty tests pass, including visual marks, blank-continuation inference, chronological run naming, previews, and real OpenAI SDK requests routed to a local mock HTTP transport. No live model calls or real-document uploads were made during verification. Install the extraction dependencies above to run the full suite.
+The test suite covers real PDF rendering, preserved annotations/rotation, EXIF handling, malformed/mismatched/oversized/active inputs, prepare-only CLI usage, multi-page extraction, partial failures, and existing schema/run/preview contracts. API calls use the real SDK with a local mock HTTP transport; no live model requests were made during verification. Install the extraction dependencies above to run the full suite.
 
 An HTTP 401 indicates an authentication failure. Check the active API key and project/organization access using the official [error guide](https://developers.openai.com/api/docs/guides/error-codes). The extractor reports this directly without displaying key values. An exported shell key overrides `.env`; to explicitly use the project's `.env`, run `env -u OPENAI_API_KEY .venv/bin/python extractor.py 'samples/Inventory Sheet 3.png'`.
 

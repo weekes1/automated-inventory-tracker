@@ -1,0 +1,1715 @@
+{
+  "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+  "page_number": 1,
+  "header_fields": {
+    "job_name": {
+      "raw_text": "To Inventory Team",
+      "kind": "text",
+      "uncertain": false,
+      "inference": null,
+      "inherited_from": null,
+      "notes": [
+        "Handwritten note at top of page, separate from table."
+      ]
+    }
+  },
+  "rows": [
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:1",
+      "row_number": 1,
+      "fields": {
+        "quantity": {
+          "raw_text": "10",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "24.80",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "3/4\" EMT Conduit 10'",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "Evan",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Plant Alpha",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Power Upgrade",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "240412A",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "4-14-25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:2",
+      "row_number": 2,
+      "fields": {
+        "quantity": {
+          "raw_text": "6",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "18.36",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "2\" PVC 10' sch 40",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Evan entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Evan block; only description, quantity, and price are written on this line."
+      ]
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:3",
+      "row_number": 3,
+      "fields": {
+        "quantity": {
+          "raw_text": "1 roll",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "11.45",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Green TW Cable 12/2",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Evan entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Evan block."
+      ]
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:4",
+      "row_number": 4,
+      "fields": {
+        "quantity": {
+          "raw_text": "1 bx",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "6.25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Wire Nuts Assort.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Evan entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Evan block."
+      ]
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:5",
+      "row_number": 5,
+      "fields": {
+        "quantity": {
+          "raw_text": "5",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "3.20",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "elect T.L tape - blk",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Evan entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Evan block."
+      ]
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:6",
+      "row_number": 6,
+      "fields": {
+        "quantity": {
+          "raw_text": "8",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "32.64",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "1/2\" Rigid Conduit - 10'",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "Maya",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Bids Bravo",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Lighting Retrofit",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "260512B",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "4-14-25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:7",
+      "row_number": 7,
+      "fields": {
+        "quantity": {
+          "raw_text": "4",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "14.76",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Strut Channel 10'",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Maya entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Maya block."
+      ]
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:8",
+      "row_number": 8,
+      "fields": {
+        "quantity": {
+          "raw_text": "12",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "7.80",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Beam Clamp 1/2\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Maya entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Maya block."
+      ]
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:9",
+      "row_number": 9,
+      "fields": {
+        "quantity": {
+          "raw_text": "20",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "4.10",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Locknut 1/2\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Maya entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Maya block."
+      ]
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:10",
+      "row_number": 10,
+      "fields": {
+        "quantity": {
+          "raw_text": "20",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "2.60",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Flat Washers 1/2\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Maya entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Maya block."
+      ]
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:11",
+      "row_number": 11,
+      "fields": {
+        "quantity": {
+          "raw_text": "12",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "15.72",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "3/8\" All-thread Rod 6'",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "Liam",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Site Charlie",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Mech Support",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "260613C",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "4-15-25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:12",
+      "row_number": 12,
+      "fields": {
+        "quantity": {
+          "raw_text": "12",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "6.24",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Coupling Nut 3/8\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Liam entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Liam block."
+      ]
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:13",
+      "row_number": 13,
+      "fields": {
+        "quantity": {
+          "raw_text": "8",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "9.10",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "threaded Rod hanger",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Liam entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Liam block."
+      ]
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:14",
+      "row_number": 14,
+      "fields": {
+        "quantity": {
+          "raw_text": "24",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "3.12",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "hex Nut 3/8\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Liam entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Liam block."
+      ]
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:15",
+      "row_number": 15,
+      "fields": {
+        "quantity": {
+          "raw_text": "24",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "1.80",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Lock Washer 3/8\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Liam entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Liam block."
+      ]
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:16",
+      "row_number": 16,
+      "fields": {
+        "quantity": {
+          "raw_text": "6",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "20.94",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Galv Pipe 1\" x 10'",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "Noah",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Facility Delta",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Water Line Ext.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "260714D",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "4-16-25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:17",
+      "row_number": 17,
+      "fields": {
+        "quantity": {
+          "raw_text": "4",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "5.96",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "90° Elbow 1\" galv",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Noah entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Noah block."
+      ]
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:18",
+      "row_number": 18,
+      "fields": {
+        "quantity": {
+          "raw_text": "2",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "3.12",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Tee 1\" galv",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Noah entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Noah block."
+      ]
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:19",
+      "row_number": 19,
+      "fields": {
+        "quantity": {
+          "raw_text": "8",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "6.40",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Pipe hanger 1\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Noah entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Noah block."
+      ]
+    },
+    {
+      "row_id": "2782165a-0cb0-479a-838d-409296cba460:20",
+      "row_number": 20,
+      "fields": {
+        "quantity": {
+          "raw_text": "1 roll",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "1.75",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Teflon tape",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank person cell beneath Noah entry within the same grouped block."
+          ]
+        },
+        "job_site": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job site cell beneath populated job site in the same grouped block."
+          ]
+        },
+        "job_name": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job name cell beneath populated job name in the same grouped block."
+          ]
+        },
+        "job_number": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank job number cell beneath populated job number in the same grouped block."
+          ]
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath populated date in the same grouped block."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row within Noah block."
+      ]
+    }
+  ],
+  "layout_notes": [
+    "Single table with columns: DATE, PERSON NAME, DESCRIPTION, QTY, JOB #, JOB NAME, JOB SITE, PRICE. Handwritten note above table reads 'To Inventory Team'.",
+    "Rows are grouped by repeated date/person/job fields at the start of each block, with subsequent lines in the block leaving those cells blank."
+  ],
+  "notes": []
+}

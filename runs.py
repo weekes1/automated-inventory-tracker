@@ -108,6 +108,8 @@ def finish_run(
     # Validate before writing. Invalid extraction text can still be stored as a
     # JSON string inside the full response, rather than being parsed/rewritten.
     raw = TypeAdapter(JsonValue).validate_python(raw_response)
+    raw_bytes = None if raw is None else _json_bytes(raw)
+    page_bytes = None if page is None else page.model_dump_json(indent=2).encode("utf-8")
     result = ExtractionRun.model_validate({
         **run.model_dump(),
         "status": "failed" if error is not None else "succeeded",
@@ -116,14 +118,14 @@ def finish_run(
         "provider_request_id": provider_request_id,
         "usage": usage or {},
         "error": error,
-        "raw_response": None if raw is None else RunArtifact(
-            path="raw_response.json", sha256=sha256(_json_bytes(raw)).hexdigest()),
-        "extracted_page": None if page is None else RunArtifact(
-            path="page.json", sha256=sha256(page.model_dump_json(indent=2).encode("utf-8")).hexdigest()),
+        "raw_response": None if raw_bytes is None else RunArtifact(
+            path="raw_response.json", sha256=sha256(raw_bytes).hexdigest()),
+        "extracted_page": None if page_bytes is None else RunArtifact(
+            path="page.json", sha256=sha256(page_bytes).hexdigest()),
     })
-    if raw is not None:
-        _save_artifact(directory, "raw_response.json", _json_bytes(raw))
-    if page is not None:
-        _save_artifact(directory, "page.json", page.model_dump_json(indent=2).encode("utf-8"))
+    if raw_bytes is not None:
+        _save_artifact(directory, "raw_response.json", raw_bytes)
+    if page_bytes is not None:
+        _save_artifact(directory, "page.json", page_bytes)
     _save_manifest(directory, result)
     return result

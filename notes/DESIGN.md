@@ -1,6 +1,6 @@
 # Inventory sheet extraction design
 
-Status: initial architecture, 2026-11-13. Canonical business and source entities implemented; extraction/review/export services remain scaffolds pending implementation and evaluation.
+Status: initial architecture, 2026-11-13. Canonical business/source entities and local run tracking implemented; provider extraction/review/export services remain scaffolds pending implementation and evaluation.
 
 ## Goal and assumptions
 
@@ -29,9 +29,19 @@ Acceptance uses `high`, `med`, `low`, reflecting the current user-edited enum. A
 
 Source field inheritance is an LLM suggestion, not a verified copy instruction. The future resolver must validate target existence, document/section boundaries, earlier-row order, and cycles before copying values. It records verified inheritance in `ProcessingRow.inherited_fields` and links the normalized row with `source_row_id`. Schema validation alone does not establish reference correctness. No resolution or automatic cancellation exclusion is implemented yet.
 
-Keep stated evidence/uncertainty notes, raw responses, and the original page for audit. Notes describe model claims; they are not a record of private internal reasoning or proof that a transcription is correct. Extraction-run metadata (model, prompt/version, request/time) and human review events remain planned persistence concerns below. Preserve source observations when later human edits occur.
+Keep stated evidence/uncertainty notes, raw responses, and the original page for audit. Notes describe model claims; they are not a record of private internal reasoning or proof that a transcription is correct. Extraction-run metadata is implemented below; persisted human review events remain planned. Preserve source observations when later human edits occur.
 
-Keep implementation simple: use these nested Pydantic models and existing business fields rather than introducing a generic provenance framework. The current source entities do not implement rendering coordinates, storage, approval, or provider calls.
+Keep implementation simple: use these nested Pydantic models and existing business fields rather than introducing a generic provenance framework. The source entities do not implement rendering coordinates, approval, or provider calls. Source pages can be saved as artifacts through run tracking.
+
+## Run tracking (implemented)
+
+`RunConfig` records the provider/requested model, prompt/rules/schema versions, explicitly sent model settings, preprocessing configuration, and optional code/build version. `ExtractionRun` records a UUID, document/page identity, timezone-aware timestamps, outcome, returned model ID, request ID, usage, and errors. `RunArtifact` records each saved relative path, original filename where relevant, and SHA-256 hash. No run metadata belongs in business exports or LLM-generated source content.
+
+`runs.start_run()` saves prompt, rules, actual provider response schema, and input snapshots under `data/runs/<run_id>/`, then atomically writes a running manifest. Pass the original and rendered input images as needed to capture both provenance and the exact pixels used. Use saved artifacts for the request; capture the full effective prompt, including additional instructions/examples. Rules version must match the rules JSON. Filenames/version labels alone do not establish configuration identity; hashes distinguish edits under the same version label.
+
+`runs.finish_run()` records success with a validated matching SourcePage and full raw JSON response, or failure with an error and any available response. It saves result hashes and updates the manifest atomically. Finalized runs cannot be finalized again through this API; retry with a new run ID. An interrupted attempt remains running until explicitly failed. One run currently represents one page extraction attempt; batching/parent run relationships are not implemented.
+
+`runs.load_run()` validates the manifest. Artifact hashes support later comparison; loading does not rehash all artifacts, and local files are not tamper-proof. Preserving inputs/configuration supports replay/comparison, not guaranteed identical future LLM output. Provider defaults, alias changes, or unavailable returned metadata remain limitations; record explicit settings and returned model snapshots when available. This file-based layer is implemented independently of provider calls and SQLite, and assumes a single local writer per run.
 
 ## Architecture
 
@@ -60,6 +70,7 @@ The structure below exists as a scaffold, including module responsibility descri
 ```text
 app.py                  # review UI; no extraction or approval business rules
 pipeline.py             # stage orchestration, run identity, retries
+runs.py                 # implemented local run manifests and artifact snapshots
 ingestion.py            # validation, hashing, PDF rendering, orientation
 extractor.py            # provider adapter, structured response parsing
 schemas.py              # typed observations, revisions, flags
@@ -189,3 +200,4 @@ Measure row recall/precision, critical-field exact match (especially quantity/it
 | 2026-11-13 | Separate development log and runtime prompts | Different audit subjects and versioning |
 | 2026-11-13 | Shared Pydantic business row plus inherited processing row | Variable input layouts map to eight fixed output fields; acceptance stays internal |
 | 2026-11-13 | Simple page/row/field source models plus explicit inheritance references | Preserve cancellations, uncertainty, and evidence separately from resolved values |
+| 2026-11-13 | File-based run manifests with versioned, hashed snapshots | Compare extraction attempts before introducing a database |

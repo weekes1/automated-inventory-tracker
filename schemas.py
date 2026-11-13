@@ -8,11 +8,10 @@ from pydantic import BaseModel, ConfigDict, Field, StrictStr
 
 
 class AcceptanceLevel(str, Enum):
-    """Provisional categories; business names and assignment rules are pending."""
 
-    LEVEL_1 = "level_1"
-    LEVEL_2 = "level_2"
-    LEVEL_3 = "level_3"
+    HIGH = "high"
+    MED = "med"
+    LOW = "low"
 
 
 class InventoryRow(BaseModel):

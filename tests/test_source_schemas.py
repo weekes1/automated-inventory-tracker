@@ -8,6 +8,32 @@ from schemas import ProcessingRow, SourceField, SourcePage, SourceReference, Sou
 
 
 class SourceSchemaTests(unittest.TestCase):
+    def test_visual_marks_are_separate_from_cancellation(self):
+        row = SourceRow(row_id="a", row_number=1, highlighted=True,
+                        crossed_out=True, cancellation="active",
+                        notes=["Yellow highlight; only the price is struck through."])
+        restored = SourceRow.model_validate_json(row.model_dump_json())
+        self.assertTrue(restored.highlighted)
+        self.assertTrue(restored.crossed_out)
+        self.assertEqual(restored.cancellation, "active")
+        legacy = SourceRow(row_id="old", row_number=1)
+        self.assertIsNone(legacy.highlighted)
+        self.assertIsNone(legacy.crossed_out)
+
+    def test_blank_continuation_is_an_uncertain_inference_not_a_mark(self):
+        field = SourceField(raw_text="", kind="blank", inference="blank_as_ditto",
+                            uncertain=True, notes=["Blank below a populated person within the same visible group."])
+        self.assertEqual(field.raw_text, "")
+        self.assertEqual(field.kind, "blank")
+        self.assertIsNone(field.inherited_from)
+        self.assertEqual(SourceField.model_validate_json(field.model_dump_json()), field)
+        for changes in ({"raw_text": '"'}, {"kind": "ditto"},
+                        {"uncertain": False}, {"notes": []}, {"notes": [" "]}):
+            with self.subTest(changes=changes), self.assertRaises(ValidationError):
+                SourceField.model_validate({**field.model_dump(), **changes})
+        mark = SourceField(raw_text='"', kind="ditto")
+        self.assertIsNone(mark.inference)
+
     def reference(self, **changes):
         return SourceReference.model_validate({
             "document_id": "sheet-1", "page_number": 1,

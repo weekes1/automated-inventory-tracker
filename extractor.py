@@ -20,7 +20,7 @@ from schemas import InventoryRow, RunConfig, SourcePage
 
 
 ROOT = Path(__file__).resolve().parent
-SCHEMA_VERSION = "source-page-wire-v001"
+SCHEMA_VERSION = "source-page-wire-v002"
 PROMPT_CONTRACT = """
 API response contract (takes precedence over conflicting output instructions):
 Return the supplied JSON schema, with no document_id, page_number, or row_id.
@@ -33,6 +33,15 @@ A visible blank is a field object with kind='blank' and raw_text=''. A readable
 repetition mark keeps its raw_text and kind='ditto'. Illegible writing uses a
 field object with kind='illegible', raw_text=null, and uncertain=true.
 Do not expand repetitions or copy previous values. inherited_from must be null.
+If a visibly blank cell might mean continuation, keep kind='blank', raw_text='',
+set inference='blank_as_ditto', uncertain=true, and explain the visible context
+in that field's notes. Otherwise inference is null. Do not invent a ditto mark.
+Record highlighted and crossed_out for every row independently of cancellation:
+true means visible, false means clearly absent, null means unclear/unassessed.
+Describe colour/extent and any partial-cell strike-through in row notes. Colour
+alone never establishes cancellation or job identity. A field correction does
+not by itself cancel the whole row. Set row uncertain=true for uncertain marks,
+cancellation, or any uncertain/inferred field. Preserve all candidate rows.
 Keep raw strings, uncertain/cancelled rows, and evidence notes. No acceptance
 levels, normalized business rows, approval decisions, or private reasoning.
 """
@@ -115,7 +124,7 @@ def extract_image(
     document_id: str | None = None,
     page_number: int = 1,
     model: str | None = None,
-    prompt_path: Path = ROOT / "prompts/extraction_v002.txt",
+    prompt_path: Path = ROOT / "prompts/extraction_v003.txt",
     prompt_version: str | None = None,
     runs_dir: Path | None = None,
     client: OpenAI | None = None,

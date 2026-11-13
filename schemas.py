@@ -80,12 +80,20 @@ class SourceReference(BaseModel):
     field_name: InventoryFieldName
 
 
+class FieldInference(str, Enum):
+    """Interpretations of visible evidence that require later review."""
+
+    BLANK_AS_DITTO = "blank_as_ditto"
+
+
 class SourceField(BaseModel):
     """Literal LLM observation, with uncertainty and optional inheritance hint.
 
     raw_text preserves visible marks; use None for unreadable text. An
     inherited_from reference is a model suggestion until verified by rules.
     notes hold short evidence-based explanations, not internal reasoning.
+    A blank_as_ditto inference preserves the blank observation and requires
+    uncertainty plus an evidence note; it never supplies a copied value.
     """
 
     model_config = ConfigDict(extra="forbid", frozen=True)
@@ -93,8 +101,18 @@ class SourceField(BaseModel):
     raw_text: StrictStr | None
     kind: Literal["text", "blank", "ditto", "illegible"]
     uncertain: bool = False
+    inference: FieldInference | None = None
     inherited_from: SourceReference | None = None
     notes: list[StrictStr] = Field(default_factory=list)
+
+    @model_validator(mode="after")
+    def check_inference(self) -> "SourceField":
+        if self.inference == FieldInference.BLANK_AS_DITTO:
+            if self.kind != "blank" or self.raw_text != "":
+                raise ValueError("blank_as_ditto must preserve a visibly blank cell")
+            if not self.uncertain or not any(note.strip() for note in self.notes):
+                raise ValueError("blank_as_ditto requires uncertainty and an evidence note")
+        return self
 
 
 class SourceRow(BaseModel):
@@ -103,6 +121,8 @@ class SourceRow(BaseModel):
     row_id is assigned by the application. row_number is one-based visual
     order across the page, including rows retained for cancellation review.
     Missing dictionary keys mean fields not observed, never inherited values.
+    highlighted/crossed_out describe visible marks, not approval/cancellation.
+    None means unclear or not assessed, including older extraction records.
     """
 
     model_config = ConfigDict(extra="forbid", frozen=True)
@@ -111,6 +131,8 @@ class SourceRow(BaseModel):
     row_number: int = Field(gt=0, strict=True)
     fields: dict[InventoryFieldName, SourceField] = Field(default_factory=dict)
     cancellation: Literal["active", "cancelled", "uncertain"] = "active"
+    highlighted: bool | None = None
+    crossed_out: bool | None = None
     uncertain: bool = False
     notes: list[StrictStr] = Field(default_factory=list)
 

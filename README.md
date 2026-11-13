@@ -8,7 +8,9 @@ Shared Pydantic entities, local run tracking (`runs.py`), and OpenAI image extra
 
 Input layouts may vary. Output is fixed to **Quantity · Price · Description · Person name · Job site · Job name · Job # · Date**. `InventoryRow` defines these fields once; `ProcessingRow` adds internal acceptance (`high`, `med`, `low`) and source/inheritance references. Assignment rules remain pending. Output projections exclude all internal metadata.
 
-`SourcePage` contains header observations, source rows, layout notes, and general notes. Each `SourceRow` retains cancellation status and uncertainty; its `SourceField` values preserve literal text, ditto/blank/illegible markers, notes, and unverified inheritance hints. Stated reasons support review; they do not expose the model's internal reasoning.
+`SourcePage` contains header observations, source rows, layout notes, and general notes. Each `SourceRow` retains cancellation, highlighting, strike-through observations, and uncertainty; its `SourceField` values preserve literal text, ditto/blank/illegible markers, notes, and unverified inheritance hints. Stated reasons support review; they do not expose the model's internal reasoning.
+
+`highlighted` and `crossed_out` are true/false when assessed, or null when unclear/unassessed. They are separate from cancellation: a highlighted row can remain active, and a corrected cell does not necessarily cancel a whole row. Row notes describe colour, extent, and affected cells. A blank suspected of meaning continuation stays `kind="blank"`, `raw_text=""`, with `inference="blank_as_ditto"`, `uncertain=true`, and a required explanatory field note. This is a review candidate, not permission to copy values. A visible quote/arrow remains a literal ditto mark rather than a blank inference.
 
 - [DESIGN.md](notes/DESIGN.md): architecture, module responsibilities, review rules, model evaluation, and implementation sequence.
 - [Prompts.md](notes/Prompts.md): append-only user project prompt record, with timestamps and their provenance.
@@ -66,7 +68,7 @@ The CSV preview has exactly the eight business headers and shows raw row text, i
 
 Older successful runs can receive a preview via `runs.add_preview(run_directory)` without another model call. It records the CSV hash in the manifest and preserves existing raw/page artifacts. Repeated calls reuse the existing preview; they do not overwrite it.
 
-The default prompt is `prompts/extraction_v002.txt`. Pass `prompt_path` and optionally `prompt_version` to compare alternatives. A short appended contract reconciles field names and absent values with the strict API schema; the full effective prompt and exact schema are saved in the run. This follows the official [Structured Outputs](https://developers.openai.com/api/docs/guides/structured-outputs) interface.
+The default prompt is `prompts/extraction_v003.txt`, with highlighting, strike-throughs, and blank-continuation inferences requested explicitly. The wire schema is `source-page-wire-v002`. Pass `prompt_path` and optionally `prompt_version` to compare alternatives. A short appended contract reconciles field names and absent values with the strict API schema; the full effective prompt and exact schema are saved in the run. This follows the official [Structured Outputs](https://developers.openai.com/api/docs/guides/structured-outputs) interface. Existing run snapshots are unchanged; make a new extraction to obtain the new observations.
 
 ## Setup and deployment commands
 
@@ -82,7 +84,7 @@ python3 -m venv .venv
 .venv/bin/python -m unittest discover -s tests -v
 ```
 
-All twenty-seven tests pass, including chronological run naming, previews, and real OpenAI SDK requests routed to a local mock HTTP transport. No live model calls or real-document uploads were made during verification. Install the extraction dependencies above to run the full suite.
+All thirty tests pass, including visual marks, blank-continuation inference, chronological run naming, previews, and real OpenAI SDK requests routed to a local mock HTTP transport. No live model calls or real-document uploads were made during verification. Install the extraction dependencies above to run the full suite.
 
 An HTTP 401 indicates an authentication failure. Check the active API key and project/organization access using the official [error guide](https://developers.openai.com/api/docs/guides/error-codes). The extractor reports this directly without displaying key values. An exported shell key overrides `.env`; to explicitly use the project's `.env`, run `env -u OPENAI_API_KEY .venv/bin/python extractor.py 'samples/Inventory Sheet 3.png'`.
 

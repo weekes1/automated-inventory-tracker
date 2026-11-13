@@ -284,3 +284,13 @@ given that this is a small project, we do want to have everything in the data fo
 ```text
 under runs, have them in chronological order by date time (add thos eproper markings to whcihever file)
 ```
+
+## P0014
+
+- Observed at: 2026-11-13T14:45:08Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+okay some patterns that I am seeing right now. we need to make sure that we note when a row is highlighted or crossed out (change the prompt?). Also, it appears that for sheet 3, the model correctly pics up that an empty space means a ditto. We need to mark these inferences--make sure that they are noted in the relevant area so that we can flag these issues down the line. 
+```

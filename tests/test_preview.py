@@ -22,6 +22,8 @@ class PreviewTests(unittest.TestCase):
                 SourceRow(row_id="b", row_number=2, cancellation="cancelled", fields={
                     "description": SourceField(raw_text='"', kind="ditto"),
                     "price": SourceField(raw_text=None, kind="illegible", uncertain=True),
+                    "job_number": SourceField(raw_text="", kind="blank", inference="blank_as_ditto",
+                                              uncertain=True, notes=["Blank inside the preceding job group."]),
                 }),
                 SourceRow(row_id="c", row_number=3, uncertain=True),
             ],

@@ -30,10 +30,11 @@ class ExtractorTests(unittest.TestCase):
             "header_fields": dict.fromkeys(InventoryRow.model_fields),
             "rows": [{
                 "row_number": 1, "cancellation": "uncertain", "uncertain": True,
+                "highlighted": True, "crossed_out": True,
                 "notes": ["Strike-through is ambiguous."],
                 "fields": {**dict.fromkeys(InventoryRow.model_fields),
                            "quantity": {"raw_text": "1 box", "kind": "text", "uncertain": False,
-                                        "inherited_from": None, "notes": []}},
+                                        "inference": None, "inherited_from": None, "notes": []}},
             }], "layout_notes": ["Columns differ from previous sheet."], "notes": [],
         })
         transport = httpx2.MockTransport(self.handle_request)
@@ -114,6 +115,26 @@ class ExtractorTests(unittest.TestCase):
                 self.assertIsNone(run.extracted_page)
                 self.assertEqual(run.provider_request_id, "req-test")
                 self.assertFalse((raised.exception.run_dir / "page.json").exists())
+
+    def test_visual_marks_and_blank_inference_survive_extraction(self):
+        payload = json.loads(self.output_text)
+        payload["rows"][0]["fields"]["person_name"] = {
+            "raw_text": "", "kind": "blank", "inference": "blank_as_ditto",
+            "uncertain": True, "inherited_from": None,
+            "notes": ["Blank below a populated person with no visible group boundary."],
+        }
+        self.output_text = json.dumps(payload)
+        result = self.extract()
+        row = result.page.rows[0]
+        self.assertTrue(row.highlighted)
+        self.assertTrue(row.crossed_out)
+        self.assertEqual(row.fields["person_name"].inference, "blank_as_ditto")
+        self.assertEqual(row.fields["person_name"].raw_text, "")
+        saved = SourcePage.model_validate_json((result.run_dir / "page.json").read_text())
+        self.assertEqual(saved, result.page)
+        run = load_run(result.run_dir)
+        self.assertEqual(run.config.schema_version, "source-page-wire-v002")
+        self.assertEqual(run.config.prompt_version, "extraction_v003")
 
     def test_http_failure_is_not_automatically_retried(self):
         self.http_status = 429

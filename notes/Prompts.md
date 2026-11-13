@@ -116,3 +116,19 @@ Quantity · Price · Description · Person name · Job site · Job name · Job #
 
 Implement these entities using pydantic etc. one time and keep in mind this structure as we continue to build. 
 ```
+
+## P0005
+
+- Observed at: 2026-11-13T13:45:12Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+okay, actually we probably need to beef up how we track extracted fields from the LLM and cautious inputs in general. We should probably track inherited fields, cancelled rows, uncertain fields and general notes. We need to be able to audit what the LLM was thinking correct? 
+
+might as well add a model to keep track of the page itself and its rows and lay out notes. 
+
+should we add a source row as well?  
+
+For all code that you write, make sure it is as simple as possible while getting the requested task done.
+```

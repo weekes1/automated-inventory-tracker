@@ -26,7 +26,7 @@ class InventorySchemaTests(unittest.TestCase):
         self.assertEqual(InventoryRow.model_validate_json(row.model_dump_json()), row)
 
     def test_processing_metadata_never_leaks_into_output_projection(self):
-        row = ProcessingRow(**self.values, acceptance_level="level_2")
+        row = ProcessingRow(**self.values, acceptance_level="med")
         expected = (
             "Quantity", "Price", "Description", "Person name",
             "Job site", "Job name", "Job #", "Date",
@@ -55,7 +55,7 @@ class InventorySchemaTests(unittest.TestCase):
         self.assertEqual(len(row.to_output_dict()), 8)
 
     def test_unknown_fields_and_invalid_values_are_rejected(self):
-        for extra in ({"currency": "GBP"}, {"acceptance_level": "level_1"}):
+        for extra in ({"currency": "GBP"}, {"acceptance_level": "high"}):
             with self.subTest(extra=extra), self.assertRaises(ValidationError):
                 InventoryRow(**self.values, **extra)
         for field, value in (

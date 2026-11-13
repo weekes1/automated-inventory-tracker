@@ -10,10 +10,14 @@ Record an ISO 8601 UTC timestamp and its provenance: use actual submitted time o
 
 Redact credentials or secrets with an explicit redaction note rather than committing them. Keep ordinary project prompt content intact.
 
-This manual log aids review but does not guarantee automatic capture outside this repository or tamper resistance. Runtime extraction templates belong in `notes/prompts/`; versions/hashes belong in extraction run records.
+This manual log aids review but does not guarantee automatic capture outside this repository or tamper resistance. Runtime extraction templates currently live in `prompts/`; versions/hashes belong in extraction run records.
 
 ## Design and status
 
-Use `schemas.InventoryRow` as the single definition of the eight output fields, in order: Quantity, Price, Description, Person name, Job site, Job name, Job #, Date. Different input layouts must map to that contract. `schemas.ProcessingRow` inherits these fields and adds internal `acceptance_level`; never add it or audit metadata to business exports. Use `OUTPUT_COLUMNS` and the output projection methods rather than redefining field lists. Acceptance category names are provisional; do not invent assignment rules.
+Keep all code as simple as possible while fulfilling the requested task. Avoid speculative abstractions or business rules.
+
+Use `schemas.InventoryRow` as the single definition of the eight output fields, in order: Quantity, Price, Description, Person name, Job site, Job name, Job #, Date. Different input layouts must map to that contract. `schemas.ProcessingRow` inherits these fields and adds internal acceptance/provenance metadata; never add that metadata to business exports. Use `OUTPUT_COLUMNS` and output projections rather than redefining field lists. Acceptance categories are `high`, `med`, `low`; assignment rules remain pending.
+
+Keep literal LLM observations in `SourceField`, `SourceRow`, and `SourcePage`. Preserve uncertain and cancelled rows. Inheritance hints in source fields are unverified; only the deterministic resolver may confirm inheritance in `ProcessingRow.inherited_fields`. Validate references against the source data when resolution is implemented. Notes record stated evidence and uncertainty, not access to private model reasoning. Record actual human changes separately from LLM observations when review is implemented.
 
 Keep architectural decisions in `notes/DESIGN.md` and verified setup/deployment commands in `README.md`. Distinguish planned components from runnable implementation. Never commit secrets, real uploaded sheets, runtime databases, or generated exports containing real data.

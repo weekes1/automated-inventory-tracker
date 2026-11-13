@@ -4,9 +4,11 @@ Planned tool for converting PDF and image inventory removal/sign-out sheets into
 
 ## Project status
 
-Project scaffold created. Shared Pydantic entities and contract tests are implemented in `schemas.py` and `tests/test_schemas.py`; extraction, review, and file export remain scaffolds. There is no runnable application or deployment.
+Project scaffold created. Shared Pydantic business/source entities and contract tests are implemented in `schemas.py` and `tests/`; extraction, review, and file export remain scaffolds. There is no runnable application or deployment.
 
-Input layouts may vary. Output is fixed to **Quantity · Price · Description · Person name · Job site · Job name · Job # · Date**. `InventoryRow` defines these fields once; `ProcessingRow` adds internal acceptance level with three provisional categories pending business rules. Output projections exclude acceptance level.
+Input layouts may vary. Output is fixed to **Quantity · Price · Description · Person name · Job site · Job name · Job # · Date**. `InventoryRow` defines these fields once; `ProcessingRow` adds internal acceptance (`high`, `med`, `low`) and source/inheritance references. Assignment rules remain pending. Output projections exclude all internal metadata.
+
+`SourcePage` contains header observations, source rows, layout notes, and general notes. Each `SourceRow` retains cancellation status and uncertainty; its `SourceField` values preserve literal text, ditto/blank/illegible markers, notes, and unverified inheritance hints. Stated reasons support review; they do not expose the model's internal reasoning.
 
 - [DESIGN.md](notes/DESIGN.md): architecture, module responsibilities, review rules, model evaluation, and implementation sequence.
 - [Prompts.md](notes/Prompts.md): append-only user project prompt record, with timestamps and their provenance.
@@ -20,7 +22,7 @@ Source files, raw model responses, corrected values, and review history remain s
 
 ## Setup and deployment commands
 
-The file/folder structure in `notes/DESIGN.md` exists. The extraction prompt and rules file remain drafts; raw observation schemas and business policies still need definition. `requirements.txt` lists planned application dependencies; the implemented entities require Pydantic 2.
+The file/folder structure is documented in `notes/DESIGN.md`. The extraction prompt and rules file remain drafts; business policies and provider integration still need implementation. `requirements.txt` lists planned application dependencies; the implemented entities require Pydantic 2.
 
 Copy `.env.example` to `.env` for local configuration. These variables are placeholders until configuration loading is implemented. Local data and exports are ignored by Git; only their empty directory placeholders are tracked.
 
@@ -32,7 +34,7 @@ python3 -m venv .venv
 .venv/bin/python -m unittest discover -s tests -v
 ```
 
-All six schema contract tests pass. Other planned application dependencies are not needed for this check.
+All ten schema contract tests pass. Other planned application dependencies are not needed for this check.
 
 Start and deployment commands will be added as components become runnable and are verified.
 

@@ -1,6 +1,6 @@
 # Inventory sheet extraction design
 
-Status: initial architecture, 2026-11-13. Canonical inventory entities implemented; extraction/review/export services remain scaffolds pending implementation and evaluation.
+Status: initial architecture, 2026-11-13. Canonical business and source entities implemented; extraction/review/export services remain scaffolds pending implementation and evaluation.
 
 ## Goal and assumptions
 
@@ -10,15 +10,28 @@ Start with a single operator, low volume, local persistence, and mandatory revie
 
 ## Canonical entities (implemented)
 
-`schemas.py` defines the fields once in `InventoryRow`. `ProcessingRow` inherits them and adds internal `acceptance_level`. All layout adapters and review services must use these shared entities.
+`schemas.py` defines the fields once in `InventoryRow`. `ProcessingRow` inherits them and adds internal `acceptance_level`, `source_row_id`, and `inherited_fields`. All layout adapters and review services must use these shared entities.
 
 Business output headers, strictly in order: **Quantity · Price · Description · Person name · Job site · Job name · Job # · Date**. `OUTPUT_COLUMNS` derives from the base model. `to_output_dict()` projects exactly those fields, even on a processing row. `ProcessingRow.to_output_row()` produces a base entity. Internal `model_dump()` retains acceptance level for storage and must not be used directly as the business export.
 
 Quantity and Price use finite `Decimal` values without assuming currency, rounding, unit-price versus line-total meaning, positivity, or integer-only quantities. Date is a calendar date; normalize source date conventions before validation. Job # and other text fields remain strings to preserve leading zeros. Python field names and exact output aliases are accepted. Unknown fields are forbidden and entities are immutable.
 
-All eight values are nullable during processing so missing/illegible observations need not be guessed. Nullability is not export permission: later validation and approval policies will decide which missing values block export. Raw transcription, evidence, and review metadata remain separate entities when implemented.
+All eight values are nullable during processing so missing/illegible observations need not be guessed. Nullability is not export permission: later validation and approval policies will decide which missing values block export. Raw source entities are separate; persisted review events remain to be implemented.
 
-Acceptance has three provisional enum values: `level_1`, `level_2`, `level_3`. Their business names, meanings, and derivation rules are pending; there is no automatic assignment. `None` means unassigned, not a fourth category. Acceptance is separate from human approval and never appears in business output.
+Acceptance uses `high`, `med`, `low`, reflecting the current user-edited enum. Assignment rules remain pending; there is no automatic assignment. `None` means unassigned, not a fourth category. Acceptance is separate from human approval and never appears in business output.
+
+## Source evidence entities (implemented)
+
+- `SourceField`: literal `raw_text`, `kind` (`text`, `blank`, `ditto`, `illegible`), `uncertain`, an optional suggested `inherited_from` reference, and short evidence notes. Do not replace ditto marks with expanded text in this record.
+- `SourceRow`: application-assigned `row_id`, one-based `row_number`, a dictionary of observed fields, `cancellation` (`active`, `cancelled`, `uncertain`), row uncertainty, and general notes. Retain cancelled rows for review rather than dropping them.
+- `SourcePage`: document ID, one-based page number, header fields, ordered rows, layout notes, and general notes. Row IDs and row numbers must be unique within a page. An empty row list does not certify a blank or fully extracted page.
+- `SourceReference`: document/page/row/field pointer. A null row number refers to a page header. Field keys and reference names must use existing Python field names from `InventoryRow`, such as `job_number`; validation reuses that model instead of repeating the eight field definitions.
+
+Source field inheritance is an LLM suggestion, not a verified copy instruction. The future resolver must validate target existence, document/section boundaries, earlier-row order, and cycles before copying values. It records verified inheritance in `ProcessingRow.inherited_fields` and links the normalized row with `source_row_id`. Schema validation alone does not establish reference correctness. No resolution or automatic cancellation exclusion is implemented yet.
+
+Keep stated evidence/uncertainty notes, raw responses, and the original page for audit. Notes describe model claims; they are not a record of private internal reasoning or proof that a transcription is correct. Extraction-run metadata (model, prompt/version, request/time) and human review events remain planned persistence concerns below. Preserve source observations when later human edits occur.
+
+Keep implementation simple: use these nested Pydantic models and existing business fields rather than introducing a generic provenance framework. The current source entities do not implement rendering coordinates, storage, approval, or provider calls.
 
 ## Architecture
 
@@ -55,6 +68,8 @@ validator.py            # versioned checks and risk reasons
 review.py               # edits, flags, approvals, exclusions
 storage.py              # transactions, revisions, audit events, artifacts
 exporter.py             # approved snapshot to CSV/XLSX
+prompts/
+  extraction_v001.md    # versioned prompt sent to the vision model
 config/
   rules_v001.json       # versioned field and repetition policies
 samples/                # synthetic/anonymized examples only
@@ -70,8 +85,6 @@ notes/
   Prompts.md            # user development prompt audit log
   DESIGN.md             # decisions and rationale
   AGENTS.md             # collaboration and logging rules
-  prompts/
-    extraction_v001.md  # versioned prompt sent to the vision model
 ```
 
 A simple Python review UI and SQLite are suitable MVP choices. UI session state is a convenience, never the source of truth. Move to an API, durable worker queue, shared object storage, and PostgreSQL when concurrent jobs, reviewers, or hosting requirements justify them. Retain the service boundaries during that transition.
@@ -175,3 +188,4 @@ Measure row recall/precision, critical-field exact match (especially quantity/it
 | 2026-11-13 | Revision-specific mandatory human approval | Risk rules cannot certify correctness |
 | 2026-11-13 | Separate development log and runtime prompts | Different audit subjects and versioning |
 | 2026-11-13 | Shared Pydantic business row plus inherited processing row | Variable input layouts map to eight fixed output fields; acceptance stays internal |
+| 2026-11-13 | Simple page/row/field source models plus explicit inheritance references | Preserve cancellations, uncertainty, and evidence separately from resolved values |

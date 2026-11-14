@@ -2,6 +2,33 @@
 
 Planned tool for converting PDF and image inventory removal/sign-out sheets into reviewed CSV and XLSX files, with one row per line item and traceability back to the source sheet.
 
+## Quick set up and summary
+
+Create your own .env file. Use the key provided in the email--it will be deactivated once your review is done.
+
+OPENAI_API_KEY= see email
+
+History of prompts can be seen in notes/Prompts.md and my write up.
+
+Structured outputs can be found in: data/approved_outputs and other run history can be found in data/runs
+
+Approximate time working: 4-4.5 hours
+
+follow the below commands to get the system running:
+
+cd '/Users/luisweekes/Code/Inventory-tracker/automated-inventory-tracker'
+
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+
+to run the front end: 
+
+.venv/bin/python -m streamlit run app.py
+
+to run the pipeline in terminal:
+
+.venv/bin/python extractor.py 'samples/Inventory Sheet 3.png'
+
 ## Project status
 
 Shared Pydantic entities, run tracking, input validation, PDF/image-to-PNG preparation, OpenAI extraction, downward inheritance resolution, and deterministic risk validation are implemented. The Streamlit review UI and explicitly approved CSV export are implemented. Typed-value normalization, acceptance rules, and XLSX export remain future work. There is no hosted deployment.

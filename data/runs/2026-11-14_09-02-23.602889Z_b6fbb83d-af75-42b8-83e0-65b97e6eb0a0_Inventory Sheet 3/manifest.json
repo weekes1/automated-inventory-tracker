@@ -1,0 +1,149 @@
+{
+  "run_id": "b6fbb83d-af75-42b8-83e0-65b97e6eb0a0",
+  "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+  "page_number": 1,
+  "started_at": "2026-11-14T09:02:23.602889Z",
+  "finished_at": "2026-11-14T09:02:53.515843Z",
+  "status": "succeeded",
+  "config": {
+    "provider": "openai",
+    "model": "gpt-5.4-mini",
+    "prompt_version": "extraction_v004",
+    "rules_version": "v001",
+    "schema_version": "source-page-wire-v003",
+    "model_settings": {
+      "image_detail": "high",
+      "store": false,
+      "timeout_seconds": 120,
+      "max_retries": 0
+    },
+    "preprocessing": {
+      "mime_type": "image/png",
+      "width": 1448,
+      "height": 1086,
+      "transforms": [],
+      "validation_limits": {
+        "max_bytes": 20971520,
+        "max_pages": 20,
+        "max_dimension": 10000,
+        "max_page_pixels": 20000000,
+        "max_total_pixels": 100000000,
+        "max_total_png_bytes": 104857600,
+        "max_pdf_objects": 20000
+      },
+      "source": {
+        "original_name": "Inventory Sheet 3.png",
+        "original_path": "documents/df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89/original.png",
+        "original_sha256": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+        "prepared_path": "documents/df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89/image_v001_pillow-13.0.0/page_001.png",
+        "page_number": 1,
+        "page_count": 1,
+        "renderer": "pillow",
+        "renderer_version": "13.0.0",
+        "transforms": [
+          "exif_transpose",
+          "white_background",
+          "rgb_png"
+        ],
+        "width": 1448,
+        "height": 1086
+      }
+    },
+    "code_version": null
+  },
+  "inputs": [
+    {
+      "path": "input_001.png",
+      "sha256": "02a913b4901e51b75b125c2cffd8123183aaceba7500cfbbb2e156ba29f52378",
+      "original_name": "page.png"
+    }
+  ],
+  "prompt": {
+    "path": "prompt.txt",
+    "sha256": "532d711eaa63b3396673f7f865279f3297406d3f37e7f75f9dd1ef54e5d1800f",
+    "original_name": "effective_prompt.txt"
+  },
+  "rules": {
+    "path": "rules.json",
+    "sha256": "c537b73d4e1a5c34b0b5422b1a0c41e90170ea75d74499e0286a743f5e62ffb6",
+    "original_name": "rules_v001.json"
+  },
+  "response_schema": {
+    "path": "response_schema.json",
+    "sha256": "dde57b02300b5e44942654b2dfc0ff9ba6ecf7b261991152d05bc92dc901efb1",
+    "original_name": null
+  },
+  "raw_response": {
+    "path": "raw_response.json",
+    "sha256": "3ac77dced1e78fe4d41d5997e50e644ffcb98073935fe29b2d7e8c021feedcb8",
+    "original_name": null
+  },
+  "extracted_page": {
+    "path": "page.json",
+    "sha256": "413cb4eabff1fe78475453a91020c2881fe88aea26f16ea560dd0a8f310847c6",
+    "original_name": null
+  },
+  "preview_csv": {
+    "path": "preview_unreviewed.csv",
+    "sha256": "333a1c8584ff71216b2f7a09131e6d7ad582c5d202a603e8c22f3fcfc9408d33",
+    "original_name": null
+  },
+  "resolution": {
+    "resolved_at": "2026-11-14T09:02:53.522099Z",
+    "source_page_sha256": "413cb4eabff1fe78475453a91020c2881fe88aea26f16ea560dd0a8f310847c6",
+    "rules": {
+      "path": "resolver_rules.json",
+      "sha256": "3f11b8ec11939d5ebedab4eaff1b5efcbb80981cb62422489f101e5c83da4721",
+      "original_name": null
+    },
+    "rows": {
+      "path": "resolved_inherited.json",
+      "sha256": "8d5901ae8de515239d9186ae8dad8d63a3dec2a15e196f21fa580f6ee2e9d9d1",
+      "original_name": null
+    },
+    "csv": {
+      "path": "resolved_inherited.csv",
+      "sha256": "e837fcc3f18af3dc3ac9dd4477f8c81747284bc9f161dd5e6020b72daaab209a",
+      "original_name": null
+    }
+  },
+  "validation": {
+    "validated_at": "2026-11-14T09:02:53.524651Z",
+    "source_page_sha256": "413cb4eabff1fe78475453a91020c2881fe88aea26f16ea560dd0a8f310847c6",
+    "resolution_rows_sha256": "8d5901ae8de515239d9186ae8dad8d63a3dec2a15e196f21fa580f6ee2e9d9d1",
+    "rules": {
+      "path": "validation_rules.json",
+      "sha256": "5ff97150cf8d545d826dffe6bd6ec0c1744547344a2547e35c1f3b96b57fa27f",
+      "original_name": null
+    },
+    "rows": {
+      "path": "validated_risk.json",
+      "sha256": "32c4f58be523d44a21a2ebf86d90b9650da97ce41b6ae2156f8c5c4a323b7863",
+      "original_name": null
+    },
+    "csv": {
+      "path": "validated_risk.csv",
+      "sha256": "32f21c03adaa225e2c65356713179157f4de0c71a15869f830f4cc3abd4afee0",
+      "original_name": null
+    }
+  },
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "provider_request_id": "req_a4652de2a5df4ce2bb59434e9f49e0ef",
+  "usage": {
+    "input_tokens": 4717,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 4224,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 3932,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 8649
+  },
+  "error": null
+}

@@ -1,3 +1,17 @@
 pip install -r requirements.txt
 
 env -u OPENAI_API_KEY .venv/bin/python extractor.py 'samples/Inventory Sheet 3.png'
+
+cd '/Users/luisweekes/Code/Inventory-tracker/automated-inventory-tracker'
+
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+
+
+to run the front end: 
+
+.venv/bin/python -m streamlit run app.py
+
+to run the pipeline in terminal:
+
+.venv/bin/python extractor.py 'samples/Inventory Sheet 3.png'

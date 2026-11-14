@@ -408,3 +408,34 @@ rename the reviews folder to approved outputs.
 
 Wherever possible, make sure that the original image file name is in the name of a file or folder such as in runs, intermediary files and especially the final approved outputs csvs etc.
 ```
+
+## P0021
+
+- Observed at: 2026-11-14T08:56:20Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+- Status: Not used, per P0022.
+
+```text
+Keep the .env file in the repo -- i will delete that api key once the reviewer is done reviewing.
+```
+
+## P0022
+
+- Observed at: 2026-11-14T08:58:13Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+mark that that prompt was not used.
+```
+
+## P0023
+
+- Observed at: 2026-11-14T08:59:11Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+okay now give me the exact commands that I or my reviewer will need to run to both run the front end and or run the pipeline in the terminal.
+```

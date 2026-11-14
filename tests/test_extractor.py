@@ -33,6 +33,7 @@ class ExtractorTests(unittest.TestCase):
             "rows": [{
                 "row_number": 1, "cancellation": "uncertain", "uncertain": True,
                 "highlighted": True, "crossed_out": True,
+                "marked": False,
                 "notes": ["Strike-through is ambiguous."],
                 "fields": {**dict.fromkeys(InventoryRow.model_fields),
                            "quantity": {"raw_text": "1 box", "kind": "text", "uncertain": False,
@@ -86,6 +87,9 @@ class ExtractorTests(unittest.TestCase):
         self.assertEqual(base64.b64decode(image["image_url"].split(",", 1)[1]), self.image)
         run = load_run(result.run_dir)
         self.assertEqual(run.status, "succeeded")
+        self.assertIsNotNone(run.resolution)
+        self.assertIsNotNone(run.validation)
+        self.assertTrue((result.run_dir / "resolved_inherited.csv").exists())
         self.assertEqual(run.returned_model, "returned-snapshot")
         self.assertEqual(run.provider_request_id, "req-test")
         self.assertEqual(run.usage["total_tokens"], 30)
@@ -116,6 +120,7 @@ class ExtractorTests(unittest.TestCase):
                 self.assertEqual(run.status, "failed")
                 self.assertIsNotNone(run.raw_response)
                 self.assertIsNone(run.extracted_page)
+                self.assertIsNone(run.resolution)
                 self.assertEqual(run.provider_request_id, "req-test")
                 self.assertFalse((raised.exception.run_dir / "page.json").exists())
 
@@ -136,8 +141,8 @@ class ExtractorTests(unittest.TestCase):
         saved = SourcePage.model_validate_json((result.run_dir / "page.json").read_text())
         self.assertEqual(saved, result.page)
         run = load_run(result.run_dir)
-        self.assertEqual(run.config.schema_version, "source-page-wire-v002")
-        self.assertEqual(run.config.prompt_version, "extraction_v003")
+        self.assertEqual(run.config.schema_version, "source-page-wire-v003")
+        self.assertEqual(run.config.prompt_version, "extraction_v004")
 
     def test_http_failure_is_not_automatically_retried(self):
         self.http_status = 429

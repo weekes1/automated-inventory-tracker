@@ -14,12 +14,12 @@ from dotenv import load_dotenv
 from openai import APIStatusError, OpenAI
 
 from ingestion import DEFAULT_LIMITS, inspect_image
-from runs import finish_run, load_run, start_run
+from runs import add_resolution, add_validation, finish_run, load_run, start_run
 from schemas import InventoryRow, RunConfig, SourcePage
 
 
 ROOT = Path(__file__).resolve().parent
-SCHEMA_VERSION = "source-page-wire-v002"
+SCHEMA_VERSION = "source-page-wire-v003"
 PROMPT_CONTRACT = """
 API response contract (takes precedence over conflicting output instructions):
 Return the supplied JSON schema, with no document_id, page_number, or row_id.
@@ -35,8 +35,10 @@ Do not expand repetitions or copy previous values. inherited_from must be null.
 If a visibly blank cell might mean continuation, keep kind='blank', raw_text='',
 set inference='blank_as_ditto', uncertain=true, and explain the visible context
 in that field's notes. Otherwise inference is null. Do not invent a ditto mark.
-Record highlighted and crossed_out for every row independently of cancellation:
+Record marked, highlighted and crossed_out for every row independently of cancellation:
 true means visible, false means clearly absent, null means unclear/unassessed.
+marked means other non-text review/correction marks, such as circles, ticks,
+scribbles, or stamps. Normal field handwriting and printed grids are not marks.
 Describe colour/extent and any partial-cell strike-through in row notes. Colour
 alone never establishes cancellation or job identity. A field correction does
 not by itself cancel the whole row. Set row uncertain=true for uncertain marks,
@@ -123,7 +125,7 @@ def extract_image(
     document_id: str | None = None,
     page_number: int = 1,
     model: str | None = None,
-    prompt_path: Path = ROOT / "prompts/extraction_v003.txt",
+    prompt_path: Path = ROOT / "prompts/extraction_v004.txt",
     prompt_version: str | None = None,
     runs_dir: Path | None = None,
     client: OpenAI | None = None,
@@ -210,6 +212,8 @@ def extract_image(
                returned_model=returned_model, provider_request_id=request_id, usage=usage)
     if caught is not None:
         raise ExtractionError(directory, error) from caught
+    add_resolution(directory)
+    add_validation(directory)
     return ExtractionResult(page=page, run_dir=directory)
 
 
@@ -241,6 +245,8 @@ def main() -> None:
     for result in results:
         print(f"Page {result.page.page_number}: saved {len(result.page.rows)} candidate rows to {result.run_dir / 'page.json'}")
         print(f"Unreviewed CSV preview: {result.run_dir / 'preview_unreviewed.csv'}")
+        print(f"Resolved inheritance CSV: {result.run_dir / 'resolved_inherited.csv'}")
+        print(f"Risk CSV: {result.run_dir / 'validated_risk.csv'}")
 
 
 if __name__ == "__main__":

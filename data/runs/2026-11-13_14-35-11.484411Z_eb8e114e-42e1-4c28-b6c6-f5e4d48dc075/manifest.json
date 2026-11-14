@@ -62,6 +62,25 @@
     "sha256": "31fd7814f35982ee811e638043b1f66a8f13cb024f0250beece631083027f836",
     "original_name": null
   },
+  "resolution": {
+    "resolved_at": "2026-11-14T07:57:25.772031Z",
+    "source_page_sha256": "aba11a14ebd38e415f3b1e96762157b2fe79dca9b29e26fe5475c802d4021479",
+    "rules": {
+      "path": "resolver_rules.json",
+      "sha256": "3f11b8ec11939d5ebedab4eaff1b5efcbb80981cb62422489f101e5c83da4721",
+      "original_name": null
+    },
+    "rows": {
+      "path": "resolved_inherited.json",
+      "sha256": "569d99f7f7cdf9fc589db01af277fde8ae14c4224e78ca010e86ec62e58dc9cb",
+      "original_name": null
+    },
+    "csv": {
+      "path": "resolved_inherited.csv",
+      "sha256": "c35b5223d0637c19f87e271e5c6f99756ac5f1d3bda8dbe1c1549a8d81d06c88",
+      "original_name": null
+    }
+  },
   "returned_model": "gpt-5.4-mini-2026-03-17",
   "provider_request_id": "req_e486d47603e04123a93241bf927afe2b",
   "usage": {

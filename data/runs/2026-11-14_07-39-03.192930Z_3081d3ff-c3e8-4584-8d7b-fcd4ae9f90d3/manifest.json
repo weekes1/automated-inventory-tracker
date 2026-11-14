@@ -1,0 +1,128 @@
+{
+  "run_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3",
+  "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+  "page_number": 1,
+  "started_at": "2026-11-14T07:39:03.192930Z",
+  "finished_at": "2026-11-14T07:39:31.203884Z",
+  "status": "succeeded",
+  "config": {
+    "provider": "openai",
+    "model": "gpt-5.4-mini",
+    "prompt_version": "extraction_v003",
+    "rules_version": "v001",
+    "schema_version": "source-page-wire-v002",
+    "model_settings": {
+      "image_detail": "high",
+      "store": false,
+      "timeout_seconds": 120,
+      "max_retries": 0
+    },
+    "preprocessing": {
+      "mime_type": "image/png",
+      "width": 1448,
+      "height": 1086,
+      "transforms": [],
+      "validation_limits": {
+        "max_bytes": 20971520,
+        "max_pages": 20,
+        "max_dimension": 10000,
+        "max_page_pixels": 20000000,
+        "max_total_pixels": 100000000,
+        "max_total_png_bytes": 104857600,
+        "max_pdf_objects": 20000
+      },
+      "source": {
+        "original_path": "documents/2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a/original.png",
+        "original_sha256": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+        "prepared_path": "documents/2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a/image_v001_pillow-13.0.0/page_001.png",
+        "page_number": 1,
+        "page_count": 1,
+        "renderer": "pillow",
+        "renderer_version": "13.0.0",
+        "transforms": [
+          "exif_transpose",
+          "white_background",
+          "rgb_png"
+        ],
+        "width": 1448,
+        "height": 1086
+      }
+    },
+    "code_version": null
+  },
+  "inputs": [
+    {
+      "path": "input_001.png",
+      "sha256": "6bbd7d0ca8b783e72c79b14242861a1a2f1f2cf8843594601fd09a6862cbf9a1",
+      "original_name": "page.png"
+    }
+  ],
+  "prompt": {
+    "path": "prompt.txt",
+    "sha256": "d0772e479898e336166f31eb91b16e9647b7573e2663195c78c496bb8d3c1e70",
+    "original_name": "effective_prompt.txt"
+  },
+  "rules": {
+    "path": "rules.json",
+    "sha256": "c537b73d4e1a5c34b0b5422b1a0c41e90170ea75d74499e0286a743f5e62ffb6",
+    "original_name": "rules_v001.json"
+  },
+  "response_schema": {
+    "path": "response_schema.json",
+    "sha256": "723e2ec000057ec2bde0d98b770a0936d0282de68e427e9b29d9ff25336db51e",
+    "original_name": null
+  },
+  "raw_response": {
+    "path": "raw_response.json",
+    "sha256": "38ae574fac17defa31759f40d47c8578c69b642d4d620052ee2279802bc456d5",
+    "original_name": null
+  },
+  "extracted_page": {
+    "path": "page.json",
+    "sha256": "8a50aeecd6cb94afd1817fb102bf03ddb7638a0e52d17174948e87c360685a43",
+    "original_name": null
+  },
+  "preview_csv": {
+    "path": "preview_unreviewed.csv",
+    "sha256": "5b014204815a23b655cae486a33cdaef8cd4fb147f87452c9a2f4b2ca520dd1e",
+    "original_name": null
+  },
+  "resolution": {
+    "resolved_at": "2026-11-14T07:57:25.778351Z",
+    "source_page_sha256": "8a50aeecd6cb94afd1817fb102bf03ddb7638a0e52d17174948e87c360685a43",
+    "rules": {
+      "path": "resolver_rules.json",
+      "sha256": "3f11b8ec11939d5ebedab4eaff1b5efcbb80981cb62422489f101e5c83da4721",
+      "original_name": null
+    },
+    "rows": {
+      "path": "resolved_inherited.json",
+      "sha256": "e78eccde233be8dbdc5f5d80e780206c9f2b5ff420adb57bf2151239451d96ec",
+      "original_name": null
+    },
+    "csv": {
+      "path": "resolved_inherited.csv",
+      "sha256": "fb4db54c5c3900cd90da05a4e93b828d864ceb0d152b3abb45869bc323bbb572",
+      "original_name": null
+    }
+  },
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "provider_request_id": "req_3b65d44fab80428a848104a39e7ea685",
+  "usage": {
+    "input_tokens": 4615,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 7184,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11799
+  },
+  "error": null
+}

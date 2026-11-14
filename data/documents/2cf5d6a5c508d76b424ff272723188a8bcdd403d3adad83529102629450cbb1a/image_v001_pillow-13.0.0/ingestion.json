@@ -1,0 +1,21 @@
+{
+  "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+  "original": "original.png",
+  "page_count": 1,
+  "pages": [
+    {
+      "page_number": 1,
+      "path": "page_001.png",
+      "sha256": "6bbd7d0ca8b783e72c79b14242861a1a2f1f2cf8843594601fd09a6862cbf9a1",
+      "renderer": "pillow",
+      "renderer_version": "13.0.0",
+      "transforms": [
+        "exif_transpose",
+        "white_background",
+        "rgb_png"
+      ],
+      "width": 1448,
+      "height": 1086
+    }
+  ]
+}

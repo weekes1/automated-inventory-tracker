@@ -1,0 +1,919 @@
+{
+  "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+  "page_number": 1,
+  "resolver_version": "resolver-v001",
+  "rows": [
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:1",
+      "row_number": 1,
+      "values": {
+        "quantity": "1",
+        "price": "16.54",
+        "description": "3\" flappr wheel Disc",
+        "person_name": "Mason",
+        "job_site": "Zone 4 fab",
+        "job_name": "Fan Housing Mod",
+        "job_number": "357892",
+        "date": "5-2-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:2",
+      "row_number": 2,
+      "values": {
+        "quantity": "1",
+        "price": "2.98",
+        "description": "1/4 Grinding wheels",
+        "person_name": "Mason",
+        "job_site": "Zone 4 fab",
+        "job_name": "Fan Housing Mod",
+        "job_number": "357892",
+        "date": "5-2-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3",
+      "row_number": 3,
+      "values": {
+        "quantity": "1",
+        "price": "3.72",
+        "description": "10\" Cup wire Brush",
+        "person_name": "Mason",
+        "job_site": "Zone 4 fab",
+        "job_name": "Fan Housing Mod",
+        "job_number": "357892",
+        "date": "5-2-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "blank",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:4",
+      "row_number": 4,
+      "values": {
+        "quantity": "1",
+        "price": ".22",
+        "description": "Solid Cor flux-cored wire",
+        "person_name": "Mason",
+        "job_site": "Zone 4 fab",
+        "job_name": "Fan Housing Mod",
+        "job_number": "357892",
+        "date": "5-2-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "blank",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:5",
+      "row_number": 5,
+      "values": {
+        "quantity": "1",
+        "price": ".65",
+        "description": "Spatter Shield spray",
+        "person_name": "Mason",
+        "job_site": "Zone 4 fab",
+        "job_name": "Fan Housing Mod",
+        "job_number": "357892",
+        "date": "5-2-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "blank",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:6",
+      "row_number": 6,
+      "values": {
+        "quantity": "1",
+        "price": "16.54",
+        "description": "Tiger Paw Flapper Disc",
+        "person_name": "Riley",
+        "job_site": "Maintenance Shop",
+        "job_name": "Conveyor Rebuild",
+        "job_number": "462173",
+        "date": "5-2-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:7",
+      "row_number": 7,
+      "values": {
+        "quantity": "1",
+        "price": "10.14",
+        "description": "3/32 4/16 wire Tig",
+        "person_name": "Riley",
+        "job_site": "Maintenance Shop",
+        "job_name": "Conveyor Rebuild",
+        "job_number": "462173",
+        "date": "5-2-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:8",
+      "row_number": 8,
+      "values": {
+        "quantity": "2",
+        "price": "7.28",
+        "description": "3/32 Tungsten",
+        "person_name": "Riley",
+        "job_site": "Maintenance Shop",
+        "job_name": "Conveyor Rebuild",
+        "job_number": "462173",
+        "date": "5-2-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:9",
+      "row_number": 9,
+      "values": {
+        "quantity": "3",
+        "price": "4.85",
+        "description": "White Electrical Tape",
+        "person_name": "Eli",
+        "job_site": "Plant C-Line 2",
+        "job_name": "Light fixture repair",
+        "job_number": "573281",
+        "date": "5-3-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:10",
+      "row_number": 10,
+      "values": {
+        "quantity": "8",
+        "price": "1.74",
+        "description": "1/2\" Conduit Straps",
+        "person_name": "Eli",
+        "job_site": "Plant C-Line 2",
+        "job_name": "Light fixture repair",
+        "job_number": "573281",
+        "date": "5-3-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:11",
+      "row_number": 11,
+      "values": {
+        "quantity": "4",
+        "price": "17.36",
+        "description": "1/8 Safety Glasses",
+        "person_name": "Eli",
+        "job_site": "Plant C-Line 2",
+        "job_name": "Light fixture repair",
+        "job_number": "573281",
+        "date": "5-3-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:12",
+      "row_number": 12,
+      "values": {
+        "quantity": "1",
+        "price": "4.00",
+        "description": "Blue Safety Glasses",
+        "person_name": "Jay",
+        "job_site": "Paint Booth",
+        "job_name": "Spray Prep",
+        "job_number": "618902",
+        "date": "5-3-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:13",
+      "row_number": 13,
+      "values": {
+        "quantity": "1",
+        "price": "14.93",
+        "description": "Lint-free wipes",
+        "person_name": "Jay",
+        "job_site": "Paint Booth",
+        "job_name": "Spray Prep",
+        "job_number": "618902",
+        "date": "5-3-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 12,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 12,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 12,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 12,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 12,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:14",
+      "row_number": 14,
+      "values": {
+        "quantity": "50",
+        "price": "0.12",
+        "description": "1/4\" x 1\" Hex Bolts",
+        "person_name": "Devin",
+        "job_site": "Warehouse Yard",
+        "job_name": "Racking Repair",
+        "job_number": "689120",
+        "date": "5-5-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:15",
+      "row_number": 15,
+      "values": {
+        "quantity": "scribbled out",
+        "price": "0.12",
+        "description": "scribbled out",
+        "person_name": "Devin",
+        "job_site": "Warehouse Yard",
+        "job_name": "Racking Repair",
+        "job_number": "689120",
+        "date": "5-5-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 14,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 14,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 14,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 14,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 14,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:16",
+      "row_number": 16,
+      "values": {
+        "quantity": "1",
+        "price": "16.54",
+        "description": "Tiger Paw Flapper Disc",
+        "person_name": "Leo",
+        "job_site": "Shop Bay 7",
+        "job_name": "Grinder Upgrade",
+        "job_number": "741256",
+        "date": "5-5-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:17",
+      "row_number": 17,
+      "values": {
+        "quantity": "2",
+        "price": "6.12",
+        "description": "Cut-off Wheels 4-1/2\"",
+        "person_name": "Leo",
+        "job_site": "Shop Bay 7",
+        "job_name": "Grinder Upgrade",
+        "job_number": "741256",
+        "date": "5-5-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:18",
+      "row_number": 18,
+      "values": {
+        "quantity": "1",
+        "price": "3.72",
+        "description": "Grinding Stone",
+        "person_name": "Leo",
+        "job_site": "Shop Bay 7",
+        "job_name": "Grinder Upgrade",
+        "job_number": "741256",
+        "date": "5-5-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "blank",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:19",
+      "row_number": 19,
+      "values": {
+        "quantity": "1",
+        "price": "4.85",
+        "description": "Spatter Shield",
+        "person_name": "Leo",
+        "job_site": "Shop Bay 7",
+        "job_name": "Grinder Upgrade",
+        "job_number": "741256",
+        "date": "5-5-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "blank",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:20",
+      "row_number": 20,
+      "values": {
+        "quantity": "1",
+        "price": "14.93",
+        "description": "Small Leather Gloves",
+        "person_name": "Leo",
+        "job_site": "Shop Bay 7",
+        "job_name": "Grinder Upgrade",
+        "job_number": "741256",
+        "date": "5-5-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "blank",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:21",
+      "row_number": 21,
+      "values": {
+        "quantity": "1",
+        "price": "18.17",
+        "description": "3\" Flap wheels",
+        "person_name": "Leo",
+        "job_site": "Shop Bay 7",
+        "job_name": "Grinder Upgrade",
+        "job_number": "741256",
+        "date": "5-5-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "blank",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    }
+  ]
+}

@@ -131,6 +131,7 @@ class SourceRow(BaseModel):
     row_number: int = Field(gt=0, strict=True)
     fields: dict[InventoryFieldName, SourceField] = Field(default_factory=dict)
     cancellation: Literal["active", "cancelled", "uncertain"] = "active"
+    marked: bool | None = None
     highlighted: bool | None = None
     crossed_out: bool | None = None
     uncertain: bool = False
@@ -181,6 +182,46 @@ class ProcessingRow(InventoryRow):
         return InventoryRow.model_validate(self.to_output_dict())
 
 
+class ResolvedRow(BaseModel):
+    """Intermediary text values before numeric/date normalization or approval."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    source_row_id: StrictStr
+    row_number: int
+    values: dict[InventoryFieldName, StrictStr | None]
+    inherited_fields: dict[InventoryFieldName, SourceReference] = Field(default_factory=dict)
+    inheritance_reasons: dict[InventoryFieldName, StrictStr] = Field(default_factory=dict)
+    unresolved_fields: dict[InventoryFieldName, StrictStr] = Field(default_factory=dict)
+
+
+class ResolvedPage(BaseModel):
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    document_id: StrictStr
+    page_number: int
+    resolver_version: StrictStr
+    rows: list[ResolvedRow]
+
+
+class RiskLevel(str, Enum):
+    LOW = "low"
+    MEDIUM = "medium"
+    HIGH = "high"
+
+
+class ValidatedRow(ResolvedRow):
+    """Unreviewed resolved values with deterministic risk, not acceptance."""
+
+    risk: RiskLevel
+    risk_reason: StrictStr
+
+
+class ValidatedPage(ResolvedPage):
+    validator_version: StrictStr
+    rows: list[ValidatedRow]
+
+
 class RunConfig(BaseModel):
     """Effective non-secret configuration for one extraction request/attempt.
 
@@ -211,6 +252,27 @@ class RunArtifact(BaseModel):
     original_name: StrictStr | None = None
 
 
+class ResolutionArtifacts(BaseModel):
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    resolved_at: AwareDatetime
+    source_page_sha256: StrictStr
+    rules: RunArtifact
+    rows: RunArtifact
+    csv: RunArtifact
+
+
+class ValidationArtifacts(BaseModel):
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    validated_at: AwareDatetime
+    source_page_sha256: StrictStr
+    resolution_rows_sha256: StrictStr
+    rules: RunArtifact
+    rows: RunArtifact
+    csv: RunArtifact
+
+
 class ExtractionRun(BaseModel):
     """Application-owned audit record; never requested from the LLM."""
 
@@ -230,6 +292,8 @@ class ExtractionRun(BaseModel):
     raw_response: RunArtifact | None = None
     extracted_page: RunArtifact | None = None
     preview_csv: RunArtifact | None = None
+    resolution: ResolutionArtifacts | None = None
+    validation: ValidationArtifacts | None = None
     returned_model: StrictStr | None = None
     provider_request_id: StrictStr | None = None
     usage: dict[str, JsonValue] = Field(default_factory=dict)

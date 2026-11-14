@@ -319,3 +319,37 @@ For any code you add, make it as simple as possible while making sure that the e
 ```text
 okay, at this point is it worth it to implement sqlite to record things? or do we have an auditable enough trail in the runs folder? 
 ```
+
+## P0017
+
+- Observed at: 2026-11-14T07:51:12Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+okay the next step is to implement the resolver. The idea here, is to use either the preview_unreviewed.csv file and use deterministic rules to be able to infer what fields have been inherited and to fill them out. 
+
+So basically we inherit downwards until we have a new non empty entry for that column. we also inherit downwards until we find a new string that is not something like a downward arrow or ditto marks etc (in case they slip through). For the date cell, if a value does not conform to a relevant type of date, we inherit from above until we get a real date like value. 
+
+We also need to keep track of what in that row was inherited. So we need to create an intermediary csv called resolved_inherited.csv. Here we need to add a a new column for every current column that keeps track if that column has been inherited.
+```
+
+## P0018
+
+- Observed at: 2026-11-14T08:06:16Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+okay the next thing that we need to do is to implement the validator. Given a set of parameters, we will output a new field for each row called risk. Below are the rules:
+
+missing job number, missing price, quantity completely missing, two or more of quantity, price or description inherited, then its medium risk. Any row with more than three inherited fields get marked with medium risk
+
+medium risk is: anything with quantity, price or description inherited is medium risk. 
+
+If a row was marked , drawn across or highlighted then it is automatically high risk. 
+
+add a column for the reason for risk assignment as well next to the risk itself. we will use this as a reason for the risk marking for the user.
+
+Preserve these assumptions at the bottom of design.md.
+```

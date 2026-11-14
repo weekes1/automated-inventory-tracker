@@ -1,0 +1,475 @@
+{
+  "id": "resp_0113bb621057854f016af8101a3cec87d2a3bce70e442375f7",
+  "access_programs": null,
+  "created_at": 1794641946.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "gpt-5.4-mini-2026-03-17",
+  "object": "response",
+  "output": [
+    {
+      "id": "msg_0113bb621057854f016af8101c13cc87d2a9abb4075f5a31b8",
+      "content": [
+        {
+          "annotations": [],
+          "text": "{\"header_fields\":{\"quantity\":null,\"price\":null,\"description\":null,\"person_name\":null,\"job_site\":null,\"job_name\":null,\"job_number\":null,\"date\":null},\"rows\":[{\"row_number\":1,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"16.54\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"3\\\" flappr wheel Disc\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Mason\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Zone 4 fab\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Fan Housing Mod\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"357892\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"5-2-25\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Pink highlight across the full row.\"]},{\"row_number\":2,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"2.98\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"1/4 Grinding wheels\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"date\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in date column.\"]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Pink highlight across the row.\"]},{\"row_number\":3,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"3.72\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"10\\\" Cup wire Brush\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_name\":{\"raw_text\":\"\",\"kind\":\"blank\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job number column.\"]},\"date\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in date column.\"]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Pink highlight across the row.\"]},{\"row_number\":4,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\".22\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Solid Cor flux-cored wire\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person column.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job site column.\"]},\"job_name\":{\"raw_text\":\"\",\"kind\":\"blank\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job number column.\"]},\"date\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in date column.\"]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Pink highlight across the row.\"]},{\"row_number\":5,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\".65\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Spatter Shield spray\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person column.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job site column.\"]},\"job_name\":{\"raw_text\":\"\",\"kind\":\"blank\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job number column.\"]},\"date\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in date column.\"]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Pink highlight across the row.\"]},{\"row_number\":6,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"16.54\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Tiger Paw Flapper Disc\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Riley\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Maintenance Shop\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Conveyor Rebuild\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"462173\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"5-2-25\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Pink highlight across the row.\"]},{\"row_number\":7,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"10.14\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"3/32 4/16 wire Tig\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job name column.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job number column.\"]},\"date\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in date column.\"]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Pink highlight across the row.\"]},{\"row_number\":8,\"fields\":{\"quantity\":{\"raw_text\":\"2\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"7.28\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"3/32 Tungsten\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job name column.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job number column.\"]},\"date\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in date column.\"]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Pink highlight across the row.\"]},{\"row_number\":9,\"fields\":{\"quantity\":{\"raw_text\":\"3\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"4.85\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"White Electrical Tape\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Eli\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Plant C-Line 2\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Light fixture repair\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"573281\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"5-3-25\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Blue highlight across the row.\"]},{\"row_number\":10,\"fields\":{\"quantity\":{\"raw_text\":\"8\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"1.74\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"1/2\\\" Conduit Straps\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job name column.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job number column.\"]},\"date\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in date column.\"]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Blue highlight across the row.\"]},{\"row_number\":11,\"fields\":{\"quantity\":{\"raw_text\":\"4\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"17.36\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"1/8 Safety Glasses\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job name column.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job number column.\"]},\"date\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in date column.\"]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Blue highlight across the row.\"]},{\"row_number\":12,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"4.00\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Blue Safety Glasses\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Jay\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Paint Booth\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Spray Prep\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"618902\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"5-3-25\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Yellow highlight across the row.\"]},{\"row_number\":13,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"14.93\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Lint-free wipes\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job name column.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job number column.\"]},\"date\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in date column.\"]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Yellow highlight across the row.\"]},{\"row_number\":14,\"fields\":{\"quantity\":{\"raw_text\":\"50\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"0.12\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"1/4\\\" x 1\\\" Hex Bolts\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Devin\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Warehouse Yard\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Racking Repair\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"689120\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"5-5-25\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Green highlight across the row.\"]},{\"row_number\":15,\"fields\":{\"quantity\":{\"raw_text\":\"scribbled out\",\"kind\":\"text\",\"uncertain\":true,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Quantity cell overwritten/scribbled out; value not readable.\"]},\"price\":{\"raw_text\":\"0.12\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"scribbled out\",\"kind\":\"text\",\"uncertain\":true,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Description cell heavily scribbled out; unreadable.\"]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job site column.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job name column.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job number column.\"]},\"date\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in date column.\"]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":true,\"uncertain\":true,\"notes\":[\"Blue scribble heavily crosses the quantity and description area; row remains visible and appears aligned with the row above.\"]},{\"row_number\":16,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"16.54\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Tiger Paw Flapper Disc\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"Leo\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Shop Bay 7\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Grinder Upgrade\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"741256\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"5-5-25\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Pink highlight across the row.\"]},{\"row_number\":17,\"fields\":{\"quantity\":{\"raw_text\":\"2\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"6.12\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Cut-off Wheels 4-1/2\\\"\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job name column.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job number column.\"]},\"date\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in date column.\"]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Pink highlight across the row.\"]},{\"row_number\":18,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"3.72\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Grinding Stone\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_name\":{\"raw_text\":\"\",\"kind\":\"blank\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job number column.\"]},\"date\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in date column.\"]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Pink highlight across the row.\"]},{\"row_number\":19,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"4.85\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Spatter Shield\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_name\":{\"raw_text\":\"\",\"kind\":\"blank\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job number column.\"]},\"date\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in date column.\"]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Pink highlight across the row.\"]},{\"row_number\":20,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"14.93\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Small Leather Gloves\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_name\":{\"raw_text\":\"\",\"kind\":\"blank\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job number column.\"]},\"date\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in date column.\"]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Pink highlight across the row.\"]},{\"row_number\":21,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"18.17\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"3\\\" Flap wheels\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in person/site/job columns.\"]},\"job_name\":{\"raw_text\":\"\",\"kind\":\"blank\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in job number column.\"]},\"date\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible ditto marks in date column.\"]}},\"cancellation\":\"active\",\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Pink highlight across the row.\"]}],\"layout_notes\":[\"Single table with columns QTY, PRICE, Description, Person Name, Job Site, Job Name, Job #, Date.\",\"Several rows use visible ditto marks in the repeated contextual columns.\",\"Highlighted bands appear in pink, blue, yellow, and green; highlight color varies by row and does not itself determine cancellation.\"],\"notes\":[\"Top printed instructions and page number are visible but not transcribed as row data.\",\"One mid-page row has a blue scribble obscuring the quantity and description; row retained as an uncertain candidate.\",\"No clear continuation beyond the last visible row.\"]}",
+          "type": "output_text",
+          "logprobs": []
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message",
+      "phase": "final_answer"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 0.98,
+  "background": false,
+  "completed_at": 1794641971.0,
+  "conversation": null,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "input_transformations": [],
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "moderation": null,
+  "previous_response_id": null,
+  "prompt": null,
+  "prompt_cache_diagnostics": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "current_turn",
+    "effort": "none",
+    "generate_summary": null,
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "name": "page_extraction",
+      "schema_": {
+        "$defs": {
+          "FieldInference": {
+            "description": "Interpretations of visible evidence that require later review.",
+            "enum": [
+              "blank_as_ditto"
+            ],
+            "title": "FieldInference",
+            "type": "string"
+          },
+          "SourceField": {
+            "additionalProperties": false,
+            "description": "Literal LLM observation, with uncertainty and optional inheritance hint.\n\nraw_text preserves visible marks; use None for unreadable text. An\ninherited_from reference is a model suggestion until verified by rules.\nnotes hold short evidence-based explanations, not internal reasoning.\nA blank_as_ditto inference preserves the blank observation and requires\nuncertainty plus an evidence note; it never supplies a copied value.",
+            "properties": {
+              "raw_text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Raw Text"
+              },
+              "kind": {
+                "enum": [
+                  "text",
+                  "blank",
+                  "ditto",
+                  "illegible"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "uncertain": {
+                "title": "Uncertain",
+                "type": "boolean"
+              },
+              "inference": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/FieldInference"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "inherited_from": {
+                "type": "null"
+              },
+              "notes": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Notes",
+                "type": "array"
+              }
+            },
+            "required": [
+              "raw_text",
+              "kind",
+              "uncertain",
+              "inference",
+              "inherited_from",
+              "notes"
+            ],
+            "title": "SourceField",
+            "type": "object"
+          },
+          "SourceRow": {
+            "additionalProperties": false,
+            "description": "One candidate row on a source page, including cancelled/uncertain rows.\n\nrow_id is assigned by the application. row_number is one-based visual\norder across the page, including rows retained for cancellation review.\nMissing dictionary keys mean fields not observed, never inherited values.\nhighlighted/crossed_out describe visible marks, not approval/cancellation.\nNone means unclear or not assessed, including older extraction records.",
+            "properties": {
+              "row_number": {
+                "exclusiveMinimum": 0,
+                "title": "Row Number",
+                "type": "integer"
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "quantity": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "price": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "description": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "person_name": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "job_site": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "job_name": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "job_number": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "date": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "additionalProperties": false,
+                "required": [
+                  "quantity",
+                  "price",
+                  "description",
+                  "person_name",
+                  "job_site",
+                  "job_name",
+                  "job_number",
+                  "date"
+                ]
+              },
+              "cancellation": {
+                "enum": [
+                  "active",
+                  "cancelled",
+                  "uncertain"
+                ],
+                "title": "Cancellation",
+                "type": "string"
+              },
+              "highlighted": {
+                "anyOf": [
+                  {
+                    "type": "boolean"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Highlighted"
+              },
+              "crossed_out": {
+                "anyOf": [
+                  {
+                    "type": "boolean"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Crossed Out"
+              },
+              "uncertain": {
+                "title": "Uncertain",
+                "type": "boolean"
+              },
+              "notes": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Notes",
+                "type": "array"
+              }
+            },
+            "required": [
+              "row_number",
+              "fields",
+              "cancellation",
+              "highlighted",
+              "crossed_out",
+              "uncertain",
+              "notes"
+            ],
+            "title": "SourceRow",
+            "type": "object"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Page evidence and extracted candidates; does not certify completeness.\n\nrows keep visual order. Header values can supply context for multiple\nrows without pretending those values were written in each row.",
+        "properties": {
+          "header_fields": {
+            "type": "object",
+            "properties": {
+              "quantity": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "price": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "description": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "person_name": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "job_site": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "job_name": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "job_number": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "date": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "quantity",
+              "price",
+              "description",
+              "person_name",
+              "job_site",
+              "job_name",
+              "job_number",
+              "date"
+            ]
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/$defs/SourceRow"
+            },
+            "title": "Rows",
+            "type": "array"
+          },
+          "layout_notes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Layout Notes",
+            "type": "array"
+          },
+          "notes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Notes",
+            "type": "array"
+          }
+        },
+        "required": [
+          "header_fields",
+          "rows",
+          "layout_notes",
+          "notes"
+        ],
+        "title": "SourcePage",
+        "type": "object"
+      },
+      "type": "json_schema",
+      "description": null,
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "cached_tokens": null,
+      "cached_tokens_details": null,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      }
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 4615,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 7184,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11799
+  },
+  "user": null,
+  "billing": {
+    "payer": "developer"
+  },
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "store": false
+}

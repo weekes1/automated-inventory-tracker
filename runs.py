@@ -8,8 +8,10 @@ from uuid import uuid4
 
 from pydantic import JsonValue, TypeAdapter
 
-from exporter import raw_preview_csv
-from schemas import ExtractionRun, RunArtifact, RunConfig, SourcePage
+from exporter import raw_preview_csv, resolved_inherited_csv, validated_risk_csv
+from resolver import DEFAULT_RULES, ResolverRules, resolve_page
+from schemas import ExtractionRun, ResolutionArtifacts, ResolvedPage, RunArtifact, RunConfig, SourcePage, ValidationArtifacts
+from validator import DEFAULT_RULES as DEFAULT_VALIDATOR_RULES, ValidatorRules, validate_page
 
 
 def _save_artifact(directory: Path, name: str, content: bytes,
@@ -175,3 +177,100 @@ def add_preview(directory: Path) -> Path:
     })
     _save_manifest(directory, updated)
     return path
+
+
+def _save_derived_artifacts(directory: Path, files: dict[str, bytes]) -> dict[str, RunArtifact]:
+    """Preflight all paths, then save missing derived files without overwriting."""
+    for name, content in files.items():
+        path = directory / name
+        if path.exists() and path.read_bytes() != content:
+            raise ValueError(f"Refusing to overwrite a different derived artifact: {name}")
+    artifacts = {}
+    for name, content in files.items():
+        path = directory / name
+        if not path.exists():
+            path.write_bytes(content)
+        artifacts[name] = RunArtifact(path=name, sha256=sha256(content).hexdigest())
+    return artifacts
+
+
+def add_resolution(directory: Path, rules_path: Path = DEFAULT_RULES) -> Path:
+    """Resolve a successful run once, retaining source data and rules provenance."""
+    run = load_run(directory)
+    if run.status != "succeeded" or run.extracted_page is None:
+        raise ValueError("Only a successful extracted page can be resolved")
+    page_bytes = (directory / run.extracted_page.path).read_bytes()
+    page_hash = sha256(page_bytes).hexdigest()
+    if page_hash != run.extracted_page.sha256:
+        raise ValueError("Saved page differs from its recorded hash")
+    rules_bytes = Path(rules_path).read_bytes()
+    rules_hash = sha256(rules_bytes).hexdigest()
+    if run.resolution is not None:
+        if (run.resolution.source_page_sha256 != page_hash
+                or run.resolution.rules.sha256 != rules_hash):
+            raise ValueError("Resolution already exists with different source/rules; preserve it as a revision before replacing")
+        for artifact in (run.resolution.rules, run.resolution.rows, run.resolution.csv):
+            if sha256((directory / artifact.path).read_bytes()).hexdigest() != artifact.sha256:
+                raise ValueError(f"Resolution artifact differs from its recorded hash: {artifact.path}")
+        return directory / run.resolution.csv.path
+    rules = ResolverRules.model_validate_json(rules_bytes)
+    page = SourcePage.model_validate_json(page_bytes)
+    if page.document_id != run.document_id or page.page_number != run.page_number:
+        raise ValueError("Saved page does not belong to this run")
+    resolved = resolve_page(page, rules)
+    files = {
+        "resolver_rules.json": rules_bytes,
+        "resolved_inherited.json": resolved.model_dump_json(indent=2).encode("utf-8"),
+        "resolved_inherited.csv": resolved_inherited_csv(resolved),
+    }
+    artifacts = _save_derived_artifacts(directory, files)
+    resolution = ResolutionArtifacts(
+        resolved_at=datetime.now(timezone.utc), source_page_sha256=page_hash,
+        rules=artifacts["resolver_rules.json"], rows=artifacts["resolved_inherited.json"],
+        csv=artifacts["resolved_inherited.csv"])
+    _save_manifest(directory, ExtractionRun.model_validate({**run.model_dump(), "resolution": resolution}))
+    return directory / resolution.csv.path
+
+
+def add_validation(directory: Path, rules_path: Path = DEFAULT_VALIDATOR_RULES) -> Path:
+    """Persist deterministic risk with source, resolution, and rule hashes."""
+    run = load_run(directory)
+    if run.status != "succeeded" or run.extracted_page is None:
+        raise ValueError("Only a successful extracted page can be validated")
+    if run.resolution is None:
+        add_resolution(directory)
+        run = load_run(directory)
+    page_bytes = (directory / run.extracted_page.path).read_bytes()
+    page_hash = sha256(page_bytes).hexdigest()
+    if page_hash != run.extracted_page.sha256 or page_hash != run.resolution.source_page_sha256:
+        raise ValueError("Validation source differs from the recorded extraction/resolution")
+    for artifact in (run.resolution.rules, run.resolution.rows, run.resolution.csv):
+        if sha256((directory / artifact.path).read_bytes()).hexdigest() != artifact.sha256:
+            raise ValueError(f"Resolution artifact differs from its recorded hash: {artifact.path}")
+    rules_bytes = Path(rules_path).read_bytes()
+    rules_hash = sha256(rules_bytes).hexdigest()
+    if run.validation is not None:
+        if (run.validation.source_page_sha256 != page_hash
+                or run.validation.resolution_rows_sha256 != run.resolution.rows.sha256
+                or run.validation.rules.sha256 != rules_hash):
+            raise ValueError("Validation already exists with different source/rules; preserve it as a revision before replacing")
+        for artifact in (run.validation.rules, run.validation.rows, run.validation.csv):
+            if sha256((directory / artifact.path).read_bytes()).hexdigest() != artifact.sha256:
+                raise ValueError(f"Validation artifact differs from its recorded hash: {artifact.path}")
+        return directory / run.validation.csv.path
+    validated = validate_page(
+        SourcePage.model_validate_json(page_bytes),
+        ResolvedPage.model_validate_json((directory / run.resolution.rows.path).read_bytes()),
+        ValidatorRules.model_validate_json(rules_bytes))
+    artifacts = _save_derived_artifacts(directory, {
+        "validation_rules.json": rules_bytes,
+        "validated_risk.json": validated.model_dump_json(indent=2).encode("utf-8"),
+        "validated_risk.csv": validated_risk_csv(validated),
+    })
+    validation = ValidationArtifacts(
+        validated_at=datetime.now(timezone.utc), source_page_sha256=page_hash,
+        resolution_rows_sha256=run.resolution.rows.sha256,
+        rules=artifacts["validation_rules.json"], rows=artifacts["validated_risk.json"],
+        csv=artifacts["validated_risk.csv"])
+    _save_manifest(directory, ExtractionRun.model_validate({**run.model_dump(), "validation": validation}))
+    return directory / validation.csv.path

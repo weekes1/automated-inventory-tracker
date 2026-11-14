@@ -1,0 +1,967 @@
+{
+  "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+  "page_number": 1,
+  "resolver_version": "resolver-v001",
+  "rows": [
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:1",
+      "row_number": 1,
+      "values": {
+        "quantity": "10",
+        "price": "11.42",
+        "description": "med. leather gloves",
+        "person_name": "R.D.",
+        "job_site": "Shop Bay 2",
+        "job_name": "Pump Upgrade",
+        "job_number": "2513001",
+        "date": "11-3-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:2",
+      "row_number": 2,
+      "values": {
+        "quantity": "1",
+        "price": "5.10",
+        "description": "SS Hand Brsh",
+        "person_name": "S.T.",
+        "job_site": "Shop Bay 2",
+        "job_name": "Pump Upgrade",
+        "job_number": "2513001",
+        "date": "11-3-25"
+      },
+      "inherited_fields": {
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "invalid_date"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:3",
+      "row_number": 3,
+      "values": {
+        "quantity": "1",
+        "price": "2.68",
+        "description": "CS Hand Brsh",
+        "person_name": "S.T.",
+        "job_site": "Shop Bay 2",
+        "job_name": "Pump Upgrade",
+        "job_number": "2513001",
+        "date": "11-3-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 2,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "invalid_date"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:4",
+      "row_number": 4,
+      "values": {
+        "quantity": "2",
+        "price": "3.75",
+        "description": "Blue safety glasses",
+        "person_name": "M.L.",
+        "job_site": "Shop Bay 2",
+        "job_name": "Pump Upgrade",
+        "job_number": "2513001",
+        "date": "11-3-25"
+      },
+      "inherited_fields": {
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "invalid_date"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:5",
+      "row_number": 5,
+      "values": {
+        "quantity": "10",
+        "price": ".60",
+        "description": "2x4 weld. lens",
+        "person_name": "M.L.",
+        "job_site": "Shop Bay 2",
+        "job_name": "Pump Upgrade",
+        "job_number": "2513001",
+        "date": "11-3-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 4,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "invalid_date"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:6",
+      "row_number": 6,
+      "values": {
+        "quantity": "1",
+        "price": "11.42",
+        "description": "Small gloves",
+        "person_name": "J.K.",
+        "job_site": "Warehouse A",
+        "job_name": "Hydro Test",
+        "job_number": "2513002",
+        "date": "11/4/25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:7",
+      "row_number": 7,
+      "values": {
+        "quantity": "6",
+        "price": "3.45",
+        "description": "1/2\" Zip Disc",
+        "person_name": "J.K.",
+        "job_site": "Warehouse A",
+        "job_name": "Hydro Test",
+        "job_number": "2513002",
+        "date": "11/4/25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "invalid_date"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:8",
+      "row_number": 8,
+      "values": {
+        "quantity": "5",
+        "price": "275.00",
+        "description": "308L weld wire",
+        "person_name": "B.P.",
+        "job_site": "Warehouse A",
+        "job_name": "Hydro Test",
+        "job_number": "2513002",
+        "date": "11/4/25"
+      },
+      "inherited_fields": {
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "invalid_date"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:9",
+      "row_number": 9,
+      "values": {
+        "quantity": "1 box",
+        "price": "2.48",
+        "description": "4\" cutting wheels",
+        "person_name": "B.P.",
+        "job_site": "Shop Bay 1",
+        "job_name": "Valve Rebuild",
+        "job_number": "2513003",
+        "date": "11-4-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:10",
+      "row_number": 10,
+      "values": {
+        "quantity": "1 box",
+        "price": "46.00",
+        "description": ".45 Tip",
+        "person_name": "B.P.",
+        "job_site": "Shop Bay 1",
+        "job_name": "Valve Rebuild",
+        "job_number": "2513003",
+        "date": "11-4-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "invalid_date"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:11",
+      "row_number": 11,
+      "values": {
+        "quantity": "1 box",
+        "price": "17.95",
+        "description": "3/32\" stick Rod 1/8\"",
+        "person_name": "T.J.",
+        "job_site": "Shop Bay 1",
+        "job_name": "Valve Rebuild",
+        "job_number": "2513003",
+        "date": "11-4-25"
+      },
+      "inherited_fields": {
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 9,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "invalid_date"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:12",
+      "row_number": 12,
+      "values": {
+        "quantity": "1",
+        "price": "11.95",
+        "description": "2xL Tyvek Suit",
+        "person_name": "T.J.",
+        "job_site": "Plant Sec. D",
+        "job_name": "Insul. Work",
+        "job_number": "2513004",
+        "date": "11-5-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:13",
+      "row_number": 13,
+      "values": {
+        "quantity": "1 box",
+        "price": "12.75",
+        "description": "309 weld rod 1/8\"",
+        "person_name": "A.H.",
+        "job_site": "Plant Sec. D",
+        "job_name": "Insulation Work",
+        "job_number": "2513004",
+        "date": "11-5-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:14",
+      "row_number": 14,
+      "values": {
+        "quantity": "6",
+        "price": "2.48",
+        "description": "4 1/2\" cutoff wheel disc",
+        "person_name": "A.H.",
+        "job_site": "Plant Sec. D",
+        "job_name": "Insulation Work",
+        "job_number": "2513004",
+        "date": "11-5-25"
+      },
+      "inherited_fields": {
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 13,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 13,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 13,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 13,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "invalid_date"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:15",
+      "row_number": 15,
+      "values": {
+        "quantity": "3",
+        "price": "4.65",
+        "description": "4 1/2\" Flap Disc",
+        "person_name": "A.H.",
+        "job_site": "Plant Sec. D",
+        "job_name": "Insulation Work",
+        "job_number": "2513004",
+        "date": "11-5-25"
+      },
+      "inherited_fields": {
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 13,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 13,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 13,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 13,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "invalid_date"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:16",
+      "row_number": 16,
+      "values": {
+        "quantity": "2",
+        "price": "16.80",
+        "description": "4 1/2\" wire whls crimp",
+        "person_name": "A.H.",
+        "job_site": "Plant Sec. D",
+        "job_name": "Insulation Work",
+        "job_number": "2513004",
+        "date": "11-5-25"
+      },
+      "inherited_fields": {
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 13,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 13,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 13,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 13,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "invalid_date"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:17",
+      "row_number": 17,
+      "values": {
+        "quantity": "5",
+        "price": "11.42",
+        "description": "Large gloves",
+        "person_name": "P.D.",
+        "job_site": "Warehouse B",
+        "job_name": "Pipe Rack Mod",
+        "job_number": "2513005",
+        "date": "11-6-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:18",
+      "row_number": 18,
+      "values": {
+        "quantity": "2",
+        "price": "17.50",
+        "description": "L-Bracket 2 hole",
+        "person_name": "P.D.",
+        "job_site": "Warehouse B",
+        "job_name": "Pipe Rack Mod",
+        "job_number": "2513005",
+        "date": "11-6-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 17,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 17,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 17,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 17,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 17,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "invalid_date"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:19",
+      "row_number": 19,
+      "values": {
+        "quantity": "8",
+        "price": "5.35",
+        "description": "Yellow paint makers",
+        "person_name": "K.R.",
+        "job_site": "Maintenance",
+        "job_name": "Line ID",
+        "job_number": "2513006",
+        "date": "11-6-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:20",
+      "row_number": 20,
+      "values": {
+        "quantity": "10",
+        "price": "4.10",
+        "description": "White paint markers",
+        "person_name": "K.R.",
+        "job_site": "Maintenance",
+        "job_name": "Line ID",
+        "job_number": "2513006",
+        "date": "11-6-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 19,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 19,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 19,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 19,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 19,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "invalid_date"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:21",
+      "row_number": 21,
+      "values": {
+        "quantity": "10",
+        "price": "6.88",
+        "description": "Blue masking Tape",
+        "person_name": "D.G.",
+        "job_site": "Maintenance",
+        "job_name": "Line ID",
+        "job_number": "2513006",
+        "date": "11-6-25"
+      },
+      "inherited_fields": {
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 19,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "date": "invalid_date"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:22",
+      "row_number": 22,
+      "values": {
+        "quantity": "12",
+        "price": "1.95",
+        "description": "Sharpies - Black",
+        "person_name": "D.G.",
+        "job_site": "Maintenance",
+        "job_name": "Line ID",
+        "job_number": "2513006",
+        "date": "11-6-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 21,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 21,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 21,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 21,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 19,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:23",
+      "row_number": 23,
+      "values": {
+        "quantity": "2",
+        "price": ".95",
+        "description": "8 1/2 x11 paper",
+        "person_name": "D.G.",
+        "job_site": "Maintenance",
+        "job_name": "Line ID",
+        "job_number": "2513006",
+        "date": "11-6-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 21,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 21,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 21,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 21,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 19,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "5dc82262-584f-4971-b6a7-3d9b31ccac22:24",
+      "row_number": 24,
+      "values": {
+        "quantity": "30",
+        "price": ".48",
+        "description": "Hanging File Folders",
+        "person_name": "D.G.",
+        "job_site": "Maintenance",
+        "job_name": "Line ID",
+        "job_number": "2513006",
+        "date": "11-6-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 21,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 21,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 21,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 21,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+          "page_number": 1,
+          "row_number": 19,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    }
+  ]
+}

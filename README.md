@@ -4,7 +4,7 @@ Planned tool for converting PDF and image inventory removal/sign-out sheets into
 
 ## Project status
 
-Shared Pydantic entities, run tracking, input validation, PDF/image-to-PNG preparation, and OpenAI extraction are implemented. Review UI, resolution, and approved file export remain scaffolds. There is no deployed application.
+Shared Pydantic entities, run tracking, input validation, PDF/image-to-PNG preparation, OpenAI extraction, and downward inheritance resolution are implemented. Review UI, typed-value normalization, acceptance rules, and approved file export remain scaffolds. There is no deployed application.
 
 Input layouts may vary. Output is fixed to **Quantity · Price · Description · Person name · Job site · Job name · Job # · Date**. `InventoryRow` defines these fields once; `ProcessingRow` adds internal acceptance (`high`, `med`, `low`) and source/inheritance references. Assignment rules remain pending. Output projections exclude all internal metadata.
 
@@ -86,6 +86,26 @@ Each call makes one explicit attempt and saves results once under `data/runs/<UT
 The CSV preview has exactly the eight business headers and shows raw row text, including cancelled/uncertain candidates and ditto marks. It does not resolve inheritance, propagate page headers, or grant approval. Missing/illegible values appear empty; cancellation/uncertainty details remain in `page.json`. Formula-like text is prefixed with an apostrophe for spreadsheet safety, while original text remains in JSON. UTF-8 with a BOM helps spreadsheet applications read the file; import Job # as text to preserve leading zeros in spreadsheet displays.
 
 Older successful runs can receive a preview via `runs.add_preview(run_directory)` without another model call. It records the CSV hash in the manifest and preserves existing raw/page artifacts. Repeated calls reuse the existing preview; they do not overwrite it.
+
+## Resolve inherited values
+
+Each successful extraction now also creates `resolved_inherited.csv` in its run directory. It has 16 columns: each business value followed by a `true`/`false` flag, for example `Quantity, Quantity_inherited, Price, Price_inherited, ...`. This is an unreviewed intermediary, not the final eight-column approved output.
+
+The resolver reads `page.json`, preserving richer source evidence than the preview CSV. Per column, a new non-empty value replaces the current source. Blanks/missing values, explicit ditto fields, and whole-cell repetition markers (quotes, downward arrows, `ditto`, `do.`, `d/o`) inherit from above. Markers are recognized even when the model labels them as text; text containing a quote, such as `2" pipe`, remains a real value. All eight columns participate, including Quantity, Price, and Description, per the current requested policy.
+
+Date values must parse as real calendar dates under the formats in `config/resolver_v001.json`; invalid date strings inherit the previous valid date. Formats include ISO, day/month and month/day with two- or four-digit years, and selected written-month forms. Values retain their original spelling; ambiguous dates are not converted to a presumed locale. If no usable preceding value exists, the cell stays empty, its inherited flag is false, and JSON records it as unresolved.
+
+Page-wide header values can seed a column. State resets at every page: there is no cross-page/document inheritance or inferred section reset. Columns remain independent; a new person/job value does not reset the others. All candidate rows, including cancelled/uncertain rows, remain in the intermediary and can supply subsequent values. Cancellation exclusion and risk rules are not yet implemented; consult source metadata during review.
+
+`resolved_inherited.json` records each source row ID, resolved text values, inherited source-cell references, reasons (`blank`, `repetition_marker`, `invalid_date`), and unresolved fields. References point to the original supplying row (or page header), not just the preceding copied row. `resolver_rules.json` snapshots the applied rules. The manifest records artifact hashes, resolution time, and the source page hash. Original raw/page/preview files are untouched. Quantity/Price remain text (for example `1 box`); no typed normalization or approval is implied.
+
+To resolve existing successful runs without any model call:
+
+```sh
+.venv/bin/python resolver.py data/runs
+```
+
+You can also pass one run directory. Failed runs are skipped. Repeating resolution reuses the recorded artifacts after hash checks; differing rules or edited artifacts are rejected rather than overwriting history. Resolution revision management for future rule changes is not implemented yet. Spreadsheet text escaping applies to both raw and resolved CSVs.
 
 The default prompt is `prompts/extraction_v003.txt`, with highlighting, strike-throughs, and blank-continuation inferences requested explicitly. The wire schema is `source-page-wire-v002`. Pass `prompt_path` and optionally `prompt_version` to compare alternatives. A short appended contract reconciles field names and absent values with the strict API schema; the full effective prompt and exact schema are saved in the run. This follows the official [Structured Outputs](https://developers.openai.com/api/docs/guides/structured-outputs) interface. Existing run snapshots are unchanged; make a new extraction to obtain the new observations.
 

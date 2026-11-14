@@ -1,6 +1,6 @@
 # Inventory sheet extraction design
 
-Status: initial architecture, 2026-11-13. Canonical entities, run tracking, bounded ingestion, PDF rendering, and extraction implemented. Review, resolution, and approved export remain scaffolds; transcription quality still needs evaluation.
+Status: initial architecture, 2026-11-13. Canonical entities, run tracking, bounded ingestion, PDF rendering, and extraction implemented. Review, typed normalization, and approved export remain scaffolds; transcription quality still needs evaluation.
 
 ## Goal and assumptions
 
@@ -27,7 +27,7 @@ Acceptance uses `high`, `med`, `low`, reflecting the current user-edited enum. A
 - `SourcePage`: document ID, one-based page number, header fields, ordered rows, layout notes, and general notes. Row IDs and row numbers must be unique within a page. An empty row list does not certify a blank or fully extracted page.
 - `SourceReference`: document/page/row/field pointer. A null row number refers to a page header. Field keys and reference names must use existing Python field names from `InventoryRow`, such as `job_number`; validation reuses that model instead of repeating the eight field definitions.
 
-Source field inheritance is an LLM suggestion, not a verified copy instruction. The future resolver must validate target existence, document/section boundaries, earlier-row order, and cycles before copying values. It records verified inheritance in `ProcessingRow.inherited_fields` and links the normalized row with `source_row_id`. Schema validation alone does not establish reference correctness. No resolution or automatic cancellation exclusion is implemented yet.
+Source field inheritance is an LLM suggestion, not a verified copy instruction. The future resolver must validate target existence, document/section boundaries, earlier-row order, and cycles before copying values. It records verified inheritance in `ProcessingRow.inherited_fields` and links the normalized row with `source_row_id`. Schema validation alone does not establish reference correctness. The implemented text inheritance stage is described below; typed normalization and cancellation exclusion remain unimplemented.
 
 Keep stated evidence/uncertainty notes, raw responses, and the original page for audit. Notes describe model claims; they are not a record of private internal reasoning or proof that a transcription is correct. Extraction-run metadata is implemented below; persisted human review events remain planned. Preserve source observations when later human edits occur.
 
@@ -77,7 +77,7 @@ Persist intermediate stages so reloads, timeouts, and retries do not erase work.
 
 ## Project layout
 
-The structure below includes implemented schemas, ingestion, run tracking, extraction orchestration, and raw previews. Review, resolution, validation policy, and approved exports remain scaffolds.
+The structure below includes implemented schemas, ingestion, run tracking, extraction orchestration, and raw previews. Review, risk/acceptance policy, typed normalization, and approved exports remain scaffolds.
 
 ```text
 app.py                  # review UI; no extraction or approval business rules
@@ -86,7 +86,7 @@ runs.py                 # implemented local run manifests and artifact snapshots
 ingestion.py            # validation, hashing, PDF rendering, orientation
 extractor.py            # provider adapter, structured response parsing
 schemas.py              # typed observations, revisions, flags
-resolver.py             # ditto dependencies and conservative normalization
+resolver.py             # downward text inheritance and source-cell dependencies
 validator.py            # versioned checks and risk reasons
 review.py               # edits, flags, approvals, exclusions
 storage.py              # transactions, revisions, audit events, artifacts
@@ -148,7 +148,7 @@ Structured output constrains shape, not transcription correctness. See the offic
 
 Resolution creates a derived revision; validation returns explicit reason codes and severities. Low risk is not proof of correctness. Do not treat model self-reported confidence as a calibrated probability.
 
-Ditto resolution needs an explicit policy per column. Copy only from a valid preceding cell within the same table section and record the dependency. A blank is not a ditto. Permission to repeat descriptions does not imply permission to repeat quantities. Block inference across headers, section boundaries, uncertain predecessors, and page boundaries unless an evaluated layout policy explicitly allows it.
+The current user-selected policy (2026-11-14) fills all eight columns independently from preceding usable values for blank/missing cells and repetition markers, and fills invalid date strings from the last valid date. Header fields can seed a column. Raw blanks remain distinct from literal ditto marks in SourcePage even though both trigger resolution. State resets per page; inferred section/job boundaries and cancellation exclusions are not applied in this initial policy. Every copied value has a recorded source reference and reason. This replaces the earlier proposed conservative per-column policy.
 
 When a predecessor changes, recompute dependent cells and invalidate affected approvals. A human override explicitly breaks or replaces its dependency; recomputation must preserve that override and flag a new conflict.
 
@@ -239,3 +239,14 @@ Images are re-encoded after EXIF orientation onto white RGB PNGs, dropping origi
 Preserve original bytes once under data/documents/<source_sha256>/original.<type>. Versioned renderer/profile folders contain numbered PNGs and an ingestion.json with page count, file hashes, dimensions, and renderer settings/version. Existing identical artifacts are reused; differing contents at an immutable path fail rather than overwrite. Whole originals are not copied into every page run. Each run snapshots its own PNG and references the original/prepared paths relative to data/, with original hash, page count, DPI/rotation/transform information, and validation limits. All data/ remains Git-tracked under the user's policy.
 
 All PDF pages share the original source hash as document ID by default. Source page numbers retain PDF order. Extraction is sequential and stops on the first API failure, raising DocumentExtractionError with the failed page/total count and prior completed results. Saved earlier runs remain valid page results but never imply document-level completeness. There is no database, automatic retry, or approved document export added here.
+
+
+## Downward inheritance resolver (implemented, 2026-11-14)
+
+resolve_page reads SourcePage rather than the lossy preview CSV. It carries each canonical column independently until a new non-empty, non-marker value appears. Date is special: only real calendar dates matching the configured formats update its source; invalid date text triggers inheritance. A usable page header seeds that field with a null source row number. All eight columns participate, including quantities/prices/descriptions. All candidates remain in order and can supply values, including cancelled/uncertain rows; human review and cancellation exclusion are still separate future policies. There is no cross-page inheritance or automatic inferred section reset.
+
+ResolvedRow holds text values, source row identity, inherited_fields referencing original observed cells, inheritance_reasons, and unresolved_fields. ResolvedPage records page identity and resolver version. It does not use the typed InventoryRow prematurely: quantities such as "1 box" and source date spellings must survive this intermediary step. Empty/invalid cells without a preceding usable source remain unresolved, blank in CSV, and flagged inherited=false. Ambiguous numeric dates may match either day/month or month/day; they remain literal text without locale normalization.
+
+config/resolver_v001.json specifies whole-cell repetition symbols/words and accepted date formats. New successful extractions invoke runs.add_resolution after saving extraction output. Saved successful runs can be processed separately with resolver.py. Each run gets resolved_inherited.csv (16 interleaved value/flag columns), resolved_inherited.json (source references/reasons/unresolved fields), and resolver_rules.json (exact rule snapshot). ResolutionArtifacts in the run manifest records timestamp, source page hash, and hashes of the derived files. Extraction data and the eight-column raw preview are unchanged. Intermediate flags are not added to the eventual approved eight-column business export.
+
+Repeated resolution verifies and reuses existing artifacts. Changed rules or edited artifacts fail rather than overwrite an audit record. A future revision-management feature is needed to store multiple resolutions of one source under changing policies. This stage assigns no acceptance levels, does not approve records, and does not implement human overrides or approval invalidation yet.

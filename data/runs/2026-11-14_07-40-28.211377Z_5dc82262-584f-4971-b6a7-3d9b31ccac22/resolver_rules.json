@@ -1,0 +1,12 @@
+{
+  "version": "resolver-v001",
+  "repetition_symbols": "\"'“”‘’〃↓↧⬇⇩⇓",
+  "repetition_words": ["ditto", "do.", "d/o"],
+  "date_formats": [
+    "%Y-%m-%d", "%Y/%m/%d",
+    "%d/%m/%Y", "%m/%d/%Y", "%d-%m-%Y", "%m-%d-%Y",
+    "%d/%m/%y", "%m/%d/%y", "%d-%m-%y", "%m-%d-%y",
+    "%d.%m.%Y", "%d.%m.%y",
+    "%d %b %Y", "%d %B %Y", "%b %d, %Y", "%B %d, %Y"
+  ]
+}

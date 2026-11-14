@@ -16,7 +16,7 @@ Approximate time working: 4-4.5 hours
 
 follow the below commands to get the system running:
 
-cd '/Users/luisweekes/Code/Inventory-tracker/automated-inventory-tracker'
+cd '/automated-inventory-tracker'
 
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt

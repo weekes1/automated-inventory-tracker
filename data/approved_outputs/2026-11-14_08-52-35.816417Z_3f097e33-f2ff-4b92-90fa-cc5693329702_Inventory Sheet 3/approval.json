@@ -1,0 +1,508 @@
+{
+  "approved_at": "2026-11-14T08:52:35.816417+00:00",
+  "reviewer": "Luis",
+  "identity": "self-asserted local reviewer name",
+  "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+  "confirmed_all_pages_rows_and_risks": true,
+  "signature": "1a9380b9467ce9ef3013c3c428de181f8a03ae374d9f5d91648c8a162b5ad14c",
+  "sources": [
+    {
+      "run_directory": "2026-11-14_08-50-33.630889Z_9e2fa404-7343-474c-92ac-5bdc52d6d12b_Inventory Sheet 3",
+      "manifest": {
+        "run_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b",
+        "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+        "page_number": 1,
+        "started_at": "2026-11-14T08:50:33.630889Z",
+        "finished_at": "2026-11-14T08:50:51.198109Z",
+        "status": "succeeded",
+        "config": {
+          "provider": "openai",
+          "model": "gpt-5.4-mini",
+          "prompt_version": "extraction_v004",
+          "rules_version": "v001",
+          "schema_version": "source-page-wire-v003",
+          "model_settings": {
+            "image_detail": "high",
+            "store": false,
+            "timeout_seconds": 120,
+            "max_retries": 0
+          },
+          "preprocessing": {
+            "mime_type": "image/png",
+            "width": 1448,
+            "height": 1086,
+            "transforms": [],
+            "validation_limits": {
+              "max_bytes": 20971520,
+              "max_pages": 20,
+              "max_dimension": 10000,
+              "max_page_pixels": 20000000,
+              "max_total_pixels": 100000000,
+              "max_total_png_bytes": 104857600,
+              "max_pdf_objects": 20000
+            },
+            "source": {
+              "original_name": "Inventory Sheet 3.png",
+              "original_path": "documents/df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89/original.png",
+              "original_sha256": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+              "prepared_path": "documents/df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89/image_v001_pillow-13.0.0/page_001.png",
+              "page_number": 1,
+              "page_count": 1,
+              "renderer": "pillow",
+              "renderer_version": "13.0.0",
+              "transforms": [
+                "exif_transpose",
+                "white_background",
+                "rgb_png"
+              ],
+              "width": 1448,
+              "height": 1086
+            }
+          },
+          "code_version": null
+        },
+        "inputs": [
+          {
+            "path": "input_001.png",
+            "sha256": "02a913b4901e51b75b125c2cffd8123183aaceba7500cfbbb2e156ba29f52378",
+            "original_name": "page.png"
+          }
+        ],
+        "prompt": {
+          "path": "prompt.txt",
+          "sha256": "532d711eaa63b3396673f7f865279f3297406d3f37e7f75f9dd1ef54e5d1800f",
+          "original_name": "effective_prompt.txt"
+        },
+        "rules": {
+          "path": "rules.json",
+          "sha256": "c537b73d4e1a5c34b0b5422b1a0c41e90170ea75d74499e0286a743f5e62ffb6",
+          "original_name": "rules_v001.json"
+        },
+        "response_schema": {
+          "path": "response_schema.json",
+          "sha256": "dde57b02300b5e44942654b2dfc0ff9ba6ecf7b261991152d05bc92dc901efb1",
+          "original_name": null
+        },
+        "raw_response": {
+          "path": "raw_response.json",
+          "sha256": "697da6a30b8dc5fb99f730b5108ccdbce2cd4cbffcdecb0089d3f30e6a1f232b",
+          "original_name": null
+        },
+        "extracted_page": {
+          "path": "page.json",
+          "sha256": "a9395e0f3e42a3b502fd1ea4244f205f38ad6c4ec91379e3dbfad4656afd6582",
+          "original_name": null
+        },
+        "preview_csv": {
+          "path": "preview_unreviewed.csv",
+          "sha256": "ab9a97e08541d52b1840c0c584f794f98e573f9b022972f4a9e5ea0294fe8407",
+          "original_name": null
+        },
+        "resolution": {
+          "resolved_at": "2026-11-14T08:50:51.202353Z",
+          "source_page_sha256": "a9395e0f3e42a3b502fd1ea4244f205f38ad6c4ec91379e3dbfad4656afd6582",
+          "rules": {
+            "path": "resolver_rules.json",
+            "sha256": "3f11b8ec11939d5ebedab4eaff1b5efcbb80981cb62422489f101e5c83da4721",
+            "original_name": null
+          },
+          "rows": {
+            "path": "resolved_inherited.json",
+            "sha256": "ed52d0f322802e2f663cb366811d4eccd3e1db9a2a1f9b209bebe31a82b2e689",
+            "original_name": null
+          },
+          "csv": {
+            "path": "resolved_inherited.csv",
+            "sha256": "a8613c70e06058aa3462e9bca2ffc3c5ee886a744630697040ed0610bd9f5afc",
+            "original_name": null
+          }
+        },
+        "validation": {
+          "validated_at": "2026-11-14T08:50:51.204509Z",
+          "source_page_sha256": "a9395e0f3e42a3b502fd1ea4244f205f38ad6c4ec91379e3dbfad4656afd6582",
+          "resolution_rows_sha256": "ed52d0f322802e2f663cb366811d4eccd3e1db9a2a1f9b209bebe31a82b2e689",
+          "rules": {
+            "path": "validation_rules.json",
+            "sha256": "5ff97150cf8d545d826dffe6bd6ec0c1744547344a2547e35c1f3b96b57fa27f",
+            "original_name": null
+          },
+          "rows": {
+            "path": "validated_risk.json",
+            "sha256": "fef99862fa93619647f8696107f57e850821b794e8596997401d2aef2f097f8a",
+            "original_name": null
+          },
+          "csv": {
+            "path": "validated_risk.csv",
+            "sha256": "7a3c6723cb86f61478ecf6e2f6db6f1301c1f0c3eb0d150cb88b164f8c4398d0",
+            "original_name": null
+          }
+        },
+        "returned_model": "gpt-5.4-mini-2026-03-17",
+        "provider_request_id": "req_1ab303d599874d0e9b79d8ce6ad411be",
+        "usage": {
+          "input_tokens": 4717,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 2688,
+            "cache_write_tokens_details": {
+              "ttl_12h_tokens": 0,
+              "ttl_30m_tokens": 0
+            }
+          },
+          "output_tokens": 3914,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 8631
+        },
+        "error": null
+      }
+    }
+  ],
+  "rows": [
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:1",
+      "Page": 1,
+      "Row": 1,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "10",
+      "Price": "24.80",
+      "Description": "3/4\" EMT conduit 10'",
+      "Person name": "Evan",
+      "Job site": "Plant Alpha",
+      "Job name": "Power Upgrade",
+      "Job #": "260412A",
+      "Date": "4-14-25",
+      "risk": "low",
+      "risk_reason": "No configured risk rule matched"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:2",
+      "Page": 1,
+      "Row": 2,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "6",
+      "Price": "18.36",
+      "Description": "2\" PVC 10' sch 40",
+      "Person name": "Evan",
+      "Job site": "Plant Alpha",
+      "Job name": "Power Upgrade",
+      "Job #": "260412A",
+      "Date": "4-14-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:3",
+      "Page": 1,
+      "Row": 3,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1 roll",
+      "Price": "11.45",
+      "Description": "Green TW Cable 12/2",
+      "Person name": "Evan",
+      "Job site": "Plant Alpha",
+      "Job name": "Power Upgrade",
+      "Job #": "260412A",
+      "Date": "4-14-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:4",
+      "Page": 1,
+      "Row": 4,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1 bx",
+      "Price": "6.25",
+      "Description": "Wire Nuts Assort.",
+      "Person name": "Evan",
+      "Job site": "Plant Alpha",
+      "Job name": "Power Upgrade",
+      "Job #": "260412A",
+      "Date": "4-14-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:5",
+      "Page": 1,
+      "Row": 5,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "5",
+      "Price": "3.20",
+      "Description": "elect T.L tape - blk",
+      "Person name": "Evan",
+      "Job site": "Plant Alpha",
+      "Job name": "Power Upgrade",
+      "Job #": "260412A",
+      "Date": "4-14-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:6",
+      "Page": 1,
+      "Row": 6,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "8",
+      "Price": "32.64",
+      "Description": "1/2\" Rigid Conduit - 10'",
+      "Person name": "Maya",
+      "Job site": "Bidy Bravo",
+      "Job name": "Lighting Retrofit",
+      "Job #": "260512B",
+      "Date": "4-14-25",
+      "risk": "low",
+      "risk_reason": "No configured risk rule matched"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:7",
+      "Page": 1,
+      "Row": 7,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "4",
+      "Price": "14.76",
+      "Description": "Strut Channel 10'",
+      "Person name": "Maya",
+      "Job site": "Bidy Bravo",
+      "Job name": "Lighting Retrofit",
+      "Job #": "260512B",
+      "Date": "4-14-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:8",
+      "Page": 1,
+      "Row": 8,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "12",
+      "Price": "7.80",
+      "Description": "Beam Clamp 1/2\"",
+      "Person name": "Maya",
+      "Job site": "Bidy Bravo",
+      "Job name": "Lighting Retrofit",
+      "Job #": "260512B",
+      "Date": "4-14-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:9",
+      "Page": 1,
+      "Row": 9,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "20",
+      "Price": "4.10",
+      "Description": "Locknut 1/2\"",
+      "Person name": "Maya",
+      "Job site": "Bidy Bravo",
+      "Job name": "Lighting Retrofit",
+      "Job #": "260512B",
+      "Date": "4-14-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:10",
+      "Page": 1,
+      "Row": 10,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "20",
+      "Price": "2.60",
+      "Description": "Flat Washers 1/2\"",
+      "Person name": "Maya",
+      "Job site": "Bidy Bravo",
+      "Job name": "Lighting Retrofit",
+      "Job #": "260512B",
+      "Date": "4-14-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:11",
+      "Page": 1,
+      "Row": 11,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "12",
+      "Price": "15.72",
+      "Description": "3/8\" All-thread Rod 6'",
+      "Person name": "Liam",
+      "Job site": "Site Charlie",
+      "Job name": "Mech Support",
+      "Job #": "260613C",
+      "Date": "4-15-25",
+      "risk": "low",
+      "risk_reason": "No configured risk rule matched"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:12",
+      "Page": 1,
+      "Row": 12,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "12",
+      "Price": "6.24",
+      "Description": "Coupling Nut 3/8\"",
+      "Person name": "Liam",
+      "Job site": "Site Charlie",
+      "Job name": "Mech Support",
+      "Job #": "260613C",
+      "Date": "4-15-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:13",
+      "Page": 1,
+      "Row": 13,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "8",
+      "Price": "9.10",
+      "Description": "threaded Rod hanger",
+      "Person name": "Liam",
+      "Job site": "Site Charlie",
+      "Job name": "Mech Support",
+      "Job #": "260613C",
+      "Date": "4-15-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:14",
+      "Page": 1,
+      "Row": 14,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "24",
+      "Price": "3.12",
+      "Description": "hex Nut 3/8\"",
+      "Person name": "Liam",
+      "Job site": "Site Charlie",
+      "Job name": "Mech Support",
+      "Job #": "260613C",
+      "Date": "4-15-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:15",
+      "Page": 1,
+      "Row": 15,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "24",
+      "Price": "1.80",
+      "Description": "Lock Washer 3/8\"",
+      "Person name": "Liam",
+      "Job site": "Site Charlie",
+      "Job name": "Mech Support",
+      "Job #": "260613C",
+      "Date": "4-15-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:16",
+      "Page": 1,
+      "Row": 16,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "6",
+      "Price": "20.94",
+      "Description": "Galv Pipe 1\" x 10'",
+      "Person name": "Noah",
+      "Job site": "Facility Delta",
+      "Job name": "Water Line Ext.",
+      "Job #": "260714D",
+      "Date": "4-16-25",
+      "risk": "low",
+      "risk_reason": "No configured risk rule matched"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:17",
+      "Page": 1,
+      "Row": 17,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "4",
+      "Price": "5.96",
+      "Description": "90° Elbow 1\" galv",
+      "Person name": "Noah",
+      "Job site": "Facility Delta",
+      "Job name": "Water Line Ext.",
+      "Job #": "260714D",
+      "Date": "4-16-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:18",
+      "Page": 1,
+      "Row": 18,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "2",
+      "Price": "3.12",
+      "Description": "Tee 1\" galv",
+      "Person name": "Noah",
+      "Job site": "Facility Delta",
+      "Job name": "Water Line Ext.",
+      "Job #": "260714D",
+      "Date": "4-16-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:19",
+      "Page": 1,
+      "Row": 19,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "8",
+      "Price": "6.40",
+      "Description": "Pipe hanger 1\"",
+      "Person name": "Noah",
+      "Job site": "Facility Delta",
+      "Job name": "Water Line Ext.",
+      "Job #": "260714D",
+      "Date": "4-16-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9e2fa404-7343-474c-92ac-5bdc52d6d12b:20",
+      "Page": 1,
+      "Row": 20,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1 roll",
+      "Price": "1.75",
+      "Description": "Teflon tape",
+      "Person name": "Noah",
+      "Job site": "Facility Delta",
+      "Job name": "Water Line Ext.",
+      "Job #": "260714D",
+      "Date": "4-16-25",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    }
+  ],
+  "csv_filename": "Inventory Sheet 3_approved.csv",
+  "csv_sha256": "71c3c3b87c725f18bba1edb613a70e9eceeab8cf9b812a1eca36ea4bf8c5c0d0",
+  "included_rows": 20,
+  "excluded_rows": 0
+}

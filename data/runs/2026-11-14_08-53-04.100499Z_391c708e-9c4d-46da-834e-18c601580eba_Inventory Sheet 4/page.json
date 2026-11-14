@@ -1,0 +1,2033 @@
+{
+  "document_id": "00897dcc3383cf62308768d3e7fd65e9210f58bedd494a7c90b9fd6313067690",
+  "page_number": 1,
+  "header_fields": {},
+  "rows": [
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:1",
+      "row_number": 1,
+      "fields": {
+        "quantity": {
+          "raw_text": "10",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "11.42",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "med. leather gloves",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "R.D.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Shop Bay 2",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Pump Upgrade",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "2513001",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "11-3-25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": true,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": [
+        "Yellow highlighted row."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:2",
+      "row_number": 2,
+      "fields": {
+        "quantity": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "5.10",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "SS hnd Brsh",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "S.T.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job site cell."
+          ]
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row under the same highlighted group; several cells use visible repeat marks."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:3",
+      "row_number": 3,
+      "fields": {
+        "quantity": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "2.68",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "CS Hand Brsh",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in person name cell."
+          ]
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job site cell."
+          ]
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row under same group; repeat marks used for context cells."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:4",
+      "row_number": 4,
+      "fields": {
+        "quantity": {
+          "raw_text": "2",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "3.75",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Blue safety glasses",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "M.L.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job site cell."
+          ]
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row under same group; repeat marks used for context cells."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:5",
+      "row_number": 5,
+      "fields": {
+        "quantity": {
+          "raw_text": "10",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": ".60",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "2x4 weld. lens",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in person name cell."
+          ]
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job site cell."
+          ]
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row under same group; repeat marks used for context cells."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:6",
+      "row_number": 6,
+      "fields": {
+        "quantity": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "11.42",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Small gloves",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "J.K.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Warehouse A",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Hydro Test",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "2513002",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "11/4/25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": true,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": [
+        "Yellow highlighted row."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:7",
+      "row_number": 7,
+      "fields": {
+        "quantity": {
+          "raw_text": "6",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "3.45",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "1/2\" Zip Disc",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in person name cell."
+          ]
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job site cell."
+          ]
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row under same group; repeat marks used for context cells."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:8",
+      "row_number": 8,
+      "fields": {
+        "quantity": {
+          "raw_text": "5",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "275.00",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "308L weld wire",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "B.P.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job site cell."
+          ]
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row under same group; repeat marks used for context cells."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:9",
+      "row_number": 9,
+      "fields": {
+        "quantity": {
+          "raw_text": "1 box",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "2.48",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "4\" cutting wheels",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "B.P.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Shop Bay 1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Valve Rebuild",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "2513003",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "11-4-25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": true,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": [
+        "Yellow highlighted row."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:10",
+      "row_number": 10,
+      "fields": {
+        "quantity": {
+          "raw_text": "1 box",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "46.00",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": ".45 Tip",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in person name cell."
+          ]
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job site cell."
+          ]
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row under same group; repeat marks used for context cells."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:11",
+      "row_number": 11,
+      "fields": {
+        "quantity": {
+          "raw_text": "1 box",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "17.95",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "3/32\" stick rod 1/8\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "T.J.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job site cell."
+          ]
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row under same group; repeat marks used for context cells."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:12",
+      "row_number": 12,
+      "fields": {
+        "quantity": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "11.95",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "2xL Tyvek suit",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "T.J.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Plant Sec. D",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Insul. Work",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "2513004",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "11-5-25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": true,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": [
+        "Yellow highlighted row."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:13",
+      "row_number": 13,
+      "fields": {
+        "quantity": {
+          "raw_text": "1 box",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "12.75",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "309 weld rod 1/8\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "A.H.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Plant Sec. D",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Insulation Work",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "2513004",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "11-5-25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": true,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": [
+        "Yellow highlighted row."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:14",
+      "row_number": 14,
+      "fields": {
+        "quantity": {
+          "raw_text": "6",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "2.48",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "4 1/2\" cutoff wheel disc",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "A.H.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job site cell."
+          ]
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row under same group; repeat marks used for context cells."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:15",
+      "row_number": 15,
+      "fields": {
+        "quantity": {
+          "raw_text": "3",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "4.65",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "4 1/2\" flap disc",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "A.H.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job site cell."
+          ]
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row under same group; repeat marks used for context cells."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:16",
+      "row_number": 16,
+      "fields": {
+        "quantity": {
+          "raw_text": "2",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "16.80",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "4 1/2\" wire whls crimp",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "A.H.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job site cell."
+          ]
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row under same group; repeat marks used for context cells."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:17",
+      "row_number": 17,
+      "fields": {
+        "quantity": {
+          "raw_text": "5",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "11.42",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Large gloves",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "P.D.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Warehouse B",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Pipe Rack Mod",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "2513005",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "11-6-25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": true,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": [
+        "Yellow highlighted row."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:18",
+      "row_number": 18,
+      "fields": {
+        "quantity": {
+          "raw_text": "2",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "17.50",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "L-Bracket 2 hole",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in person name cell."
+          ]
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job site cell."
+          ]
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row under same group; repeat marks used for context cells."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:19",
+      "row_number": 19,
+      "fields": {
+        "quantity": {
+          "raw_text": "8",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "5.35",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "yellow paint maker's",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "K.R.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Maintenance",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Line ID",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "2513006",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "11-6-25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": true,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": [
+        "Yellow highlighted row."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:20",
+      "row_number": 20,
+      "fields": {
+        "quantity": {
+          "raw_text": "10",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "4.10",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "White paint markers",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in person name cell."
+          ]
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job site cell."
+          ]
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "1",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row under same group; repeat marks used for context cells."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:21",
+      "row_number": 21,
+      "fields": {
+        "quantity": {
+          "raw_text": "10",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "6.88",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Blue masking Tape",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "D.G.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Maintenance",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Line ID",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "2513006",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "",
+          "kind": "blank",
+          "uncertain": true,
+          "inference": "blank_as_ditto",
+          "inherited_from": null,
+          "notes": [
+            "Blank date cell beneath a populated date in the same visible group; appears to continue the group."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row under same group; blank date cell likely continues prior date but left blank on page."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:22",
+      "row_number": 22,
+      "fields": {
+        "quantity": {
+          "raw_text": "12",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "1.95",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Sharpies - Black",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in person name cell."
+          ]
+        },
+        "job_site": {
+          "raw_text": "|",
+          "kind": "text",
+          "uncertain": true,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Single vertical mark visible in job site cell; unclear if intended as repeat mark or boundary mark."
+          ]
+        },
+        "job_name": {
+          "raw_text": "↓",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Downward arrow mark visible in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "↓",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Downward arrow mark visible in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "↓",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Downward arrow mark visible in date cell."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": true,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Some cells contain arrows/vertical marks instead of clear repeat marks."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:23",
+      "row_number": 23,
+      "fields": {
+        "quantity": {
+          "raw_text": "2",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": ".95",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "8 1/2 x11 paper",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in person name cell."
+          ]
+        },
+        "job_site": {
+          "raw_text": "↓",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Downward arrow mark visible in job site cell."
+          ]
+        },
+        "job_name": {
+          "raw_text": "↓",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Downward arrow mark visible in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "↓",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Downward arrow mark visible in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "↓",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Downward arrow mark visible in date cell."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": true,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row with arrows in context cells."
+      ]
+    },
+    {
+      "row_id": "391c708e-9c4d-46da-834e-18c601580eba:24",
+      "row_number": 24,
+      "fields": {
+        "quantity": {
+          "raw_text": "30",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": ".48",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Hanging File Folders",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Visible repeat mark in person name cell."
+          ]
+        },
+        "job_site": {
+          "raw_text": "↓",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Downward arrow mark visible in job site cell."
+          ]
+        },
+        "job_name": {
+          "raw_text": "↓",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Downward arrow mark visible in job name cell."
+          ]
+        },
+        "job_number": {
+          "raw_text": "↓",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Downward arrow mark visible in job number cell."
+          ]
+        },
+        "date": {
+          "raw_text": "↓",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Downward arrow mark visible in date cell."
+          ]
+        }
+      },
+      "cancellation": "active",
+      "marked": true,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Continuation row with arrows in context cells."
+      ]
+    }
+  ],
+  "layout_notes": [
+    "Single table with columns QTY, PRICE, Description, Person Name, Job Site, Job Name, Job #, Date.",
+    "Several rows are highlighted in yellow across the full row.",
+    "Lower rows use visible repeat marks and downward arrows in context columns; row 22 has mixed repeat/arrow marks."
+  ],
+  "notes": []
+}

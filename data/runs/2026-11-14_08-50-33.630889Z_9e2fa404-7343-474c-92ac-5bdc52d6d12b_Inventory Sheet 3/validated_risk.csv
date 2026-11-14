@@ -1,0 +1,21 @@
+﻿Quantity,Quantity_inherited,Price,Price_inherited,Description,Description_inherited,Person name,Person name_inherited,Job site,Job site_inherited,Job name,Job name_inherited,Job #,Job #_inherited,Date,Date_inherited,risk,risk_reason
+10,false,24.80,false,"3/4"" EMT conduit 10'",false,Evan,false,Plant Alpha,false,Power Upgrade,false,260412A,false,4-14-25,false,low,No configured risk rule matched
+6,false,18.36,false,"2"" PVC 10' sch 40",false,Evan,true,Plant Alpha,true,Power Upgrade,true,260412A,true,4-14-25,true,medium,5 fields inherited (more than 3)
+1 roll,false,11.45,false,Green TW Cable 12/2,false,Evan,true,Plant Alpha,true,Power Upgrade,true,260412A,true,4-14-25,true,medium,5 fields inherited (more than 3)
+1 bx,false,6.25,false,Wire Nuts Assort.,false,Evan,true,Plant Alpha,true,Power Upgrade,true,260412A,true,4-14-25,true,medium,5 fields inherited (more than 3)
+5,false,3.20,false,elect T.L tape - blk,false,Evan,true,Plant Alpha,true,Power Upgrade,true,260412A,true,4-14-25,true,medium,5 fields inherited (more than 3)
+8,false,32.64,false,"1/2"" Rigid Conduit - 10'",false,Maya,false,Bidy Bravo,false,Lighting Retrofit,false,260512B,false,4-14-25,false,low,No configured risk rule matched
+4,false,14.76,false,Strut Channel 10',false,Maya,true,Bidy Bravo,true,Lighting Retrofit,true,260512B,true,4-14-25,true,medium,5 fields inherited (more than 3)
+12,false,7.80,false,"Beam Clamp 1/2""",false,Maya,true,Bidy Bravo,true,Lighting Retrofit,true,260512B,true,4-14-25,true,medium,5 fields inherited (more than 3)
+20,false,4.10,false,"Locknut 1/2""",false,Maya,true,Bidy Bravo,true,Lighting Retrofit,true,260512B,true,4-14-25,true,medium,5 fields inherited (more than 3)
+20,false,2.60,false,"Flat Washers 1/2""",false,Maya,true,Bidy Bravo,true,Lighting Retrofit,true,260512B,true,4-14-25,true,medium,5 fields inherited (more than 3)
+12,false,15.72,false,"3/8"" All-thread Rod 6'",false,Liam,false,Site Charlie,false,Mech Support,false,260613C,false,4-15-25,false,low,No configured risk rule matched
+12,false,6.24,false,"Coupling Nut 3/8""",false,Liam,true,Site Charlie,true,Mech Support,true,260613C,true,4-15-25,true,medium,5 fields inherited (more than 3)
+8,false,9.10,false,threaded Rod hanger,false,Liam,true,Site Charlie,true,Mech Support,true,260613C,true,4-15-25,true,medium,5 fields inherited (more than 3)
+24,false,3.12,false,"hex Nut 3/8""",false,Liam,true,Site Charlie,true,Mech Support,true,260613C,true,4-15-25,true,medium,5 fields inherited (more than 3)
+24,false,1.80,false,"Lock Washer 3/8""",false,Liam,true,Site Charlie,true,Mech Support,true,260613C,true,4-15-25,true,medium,5 fields inherited (more than 3)
+6,false,20.94,false,"Galv Pipe 1"" x 10'",false,Noah,false,Facility Delta,false,Water Line Ext.,false,260714D,false,4-16-25,false,low,No configured risk rule matched
+4,false,5.96,false,"90° Elbow 1"" galv",false,Noah,true,Facility Delta,true,Water Line Ext.,true,260714D,true,4-16-25,true,medium,5 fields inherited (more than 3)
+2,false,3.12,false,"Tee 1"" galv",false,Noah,true,Facility Delta,true,Water Line Ext.,true,260714D,true,4-16-25,true,medium,5 fields inherited (more than 3)
+8,false,6.40,false,"Pipe hanger 1""",false,Noah,true,Facility Delta,true,Water Line Ext.,true,260714D,true,4-16-25,true,medium,5 fields inherited (more than 3)
+1 roll,false,1.75,false,Teflon tape,false,Noah,true,Facility Delta,true,Water Line Ext.,true,260714D,true,4-16-25,true,medium,5 fields inherited (more than 3)

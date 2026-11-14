@@ -1,0 +1,895 @@
+{
+  "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+  "page_number": 1,
+  "header_fields": {},
+  "rows": [
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:1",
+      "row_number": 1,
+      "fields": {
+        "quantity": {
+          "raw_text": "10",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "24.80",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "3/4\" EMT conduit 10'",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "Evan",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Plant Alpha",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Power Upgrade",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "260412A",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "4-14-25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:2",
+      "row_number": 2,
+      "fields": {
+        "quantity": {
+          "raw_text": "6",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "18.36",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "2\" PVC 10' sch 40",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:3",
+      "row_number": 3,
+      "fields": {
+        "quantity": {
+          "raw_text": "1 roll",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "11.45",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Green TW Cable 12/2",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:4",
+      "row_number": 4,
+      "fields": {
+        "quantity": {
+          "raw_text": "1 bx",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "6.25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Wire Nuts Assort.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:5",
+      "row_number": 5,
+      "fields": {
+        "quantity": {
+          "raw_text": "5",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "3.20",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "elect T.L tape - blk",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:6",
+      "row_number": 6,
+      "fields": {
+        "quantity": {
+          "raw_text": "8",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "32.64",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "1/2\" Rigid Conduit - 10'",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "Maya",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Bidy Bravo",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Lighting Retrofit",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "260512B",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "4-14-25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": [
+        "Job site appears written as 'Bidy Bravo'."
+      ]
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:7",
+      "row_number": 7,
+      "fields": {
+        "quantity": {
+          "raw_text": "4",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "14.76",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Strut Channel 10'",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:8",
+      "row_number": 8,
+      "fields": {
+        "quantity": {
+          "raw_text": "12",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "7.80",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Beam Clamp 1/2\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9",
+      "row_number": 9,
+      "fields": {
+        "quantity": {
+          "raw_text": "20",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "4.10",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Locknut 1/2\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:10",
+      "row_number": 10,
+      "fields": {
+        "quantity": {
+          "raw_text": "20",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "2.60",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Flat Washers 1/2\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:11",
+      "row_number": 11,
+      "fields": {
+        "quantity": {
+          "raw_text": "12",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "15.72",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "3/8\" All-thread Rod 6'",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "Liam",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Site Charlie",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Mech Support",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "260613C",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "4-15-25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:12",
+      "row_number": 12,
+      "fields": {
+        "quantity": {
+          "raw_text": "12",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "6.24",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Coupling Nut 3/8\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:13",
+      "row_number": 13,
+      "fields": {
+        "quantity": {
+          "raw_text": "8",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "9.10",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "threaded Rod hanger",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:14",
+      "row_number": 14,
+      "fields": {
+        "quantity": {
+          "raw_text": "24",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "3.12",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "hex Nut 3/8\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:15",
+      "row_number": 15,
+      "fields": {
+        "quantity": {
+          "raw_text": "24",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "1.80",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Lock Washer 3/8\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:16",
+      "row_number": 16,
+      "fields": {
+        "quantity": {
+          "raw_text": "6",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "20.94",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Galv Pipe 1\" x 10'",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "Noah",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Facility Delta",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Water Line Ext.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "260714D",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "4-16-25",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:17",
+      "row_number": 17,
+      "fields": {
+        "quantity": {
+          "raw_text": "4",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "5.96",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "90° Elbow 1\" galv",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:18",
+      "row_number": 18,
+      "fields": {
+        "quantity": {
+          "raw_text": "2",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "3.12",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Tee 1\" galv",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:19",
+      "row_number": 19,
+      "fields": {
+        "quantity": {
+          "raw_text": "8",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "6.40",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Pipe hanger 1\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:20",
+      "row_number": 20,
+      "fields": {
+        "quantity": {
+          "raw_text": "1 roll",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "1.75",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Teflon tape",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    }
+  ],
+  "layout_notes": [
+    "Single table with columns DATE, PERSON NAME, DESCRIPTION, QTY, JOB #, JOB NAME, JOB SITE, PRICE.",
+    "Blue handwritten note at top reads 'To Inventory Team'; not treated as a row.",
+    "Reading order follows top-to-bottom within each grouped date/person entry."
+  ],
+  "notes": []
+}

@@ -1,0 +1,939 @@
+{
+  "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+  "page_number": 1,
+  "resolver_version": "resolver-v001",
+  "rows": [
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:1",
+      "row_number": 1,
+      "values": {
+        "quantity": "10",
+        "price": "24.80",
+        "description": "3/4\" EMT conduit 10'",
+        "person_name": "Evan",
+        "job_site": "Plant Alpha",
+        "job_name": "Power Upgrade",
+        "job_number": "260412A",
+        "date": "4-14-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:2",
+      "row_number": 2,
+      "values": {
+        "quantity": "6",
+        "price": "18.36",
+        "description": "2\" PVC 10' sch 40",
+        "person_name": "Evan",
+        "job_site": "Plant Alpha",
+        "job_name": "Power Upgrade",
+        "job_number": "260412A",
+        "date": "4-14-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:3",
+      "row_number": 3,
+      "values": {
+        "quantity": "1 roll",
+        "price": "11.45",
+        "description": "Green TW Cable 12/2",
+        "person_name": "Evan",
+        "job_site": "Plant Alpha",
+        "job_name": "Power Upgrade",
+        "job_number": "260412A",
+        "date": "4-14-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:4",
+      "row_number": 4,
+      "values": {
+        "quantity": "1 bx",
+        "price": "6.25",
+        "description": "Wire Nuts Assort.",
+        "person_name": "Evan",
+        "job_site": "Plant Alpha",
+        "job_name": "Power Upgrade",
+        "job_number": "260412A",
+        "date": "4-14-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:5",
+      "row_number": 5,
+      "values": {
+        "quantity": "5",
+        "price": "3.20",
+        "description": "elect T.L tape - blk",
+        "person_name": "Evan",
+        "job_site": "Plant Alpha",
+        "job_name": "Power Upgrade",
+        "job_number": "260412A",
+        "date": "4-14-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:6",
+      "row_number": 6,
+      "values": {
+        "quantity": "8",
+        "price": "32.64",
+        "description": "1/2\" Rigid Conduit - 10'",
+        "person_name": "Maya",
+        "job_site": "Bidy Bravo",
+        "job_name": "Lighting Retrofit",
+        "job_number": "260512B",
+        "date": "4-14-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:7",
+      "row_number": 7,
+      "values": {
+        "quantity": "4",
+        "price": "14.76",
+        "description": "Strut Channel 10'",
+        "person_name": "Maya",
+        "job_site": "Bidy Bravo",
+        "job_name": "Lighting Retrofit",
+        "job_number": "260512B",
+        "date": "4-14-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:8",
+      "row_number": 8,
+      "values": {
+        "quantity": "12",
+        "price": "7.80",
+        "description": "Beam Clamp 1/2\"",
+        "person_name": "Maya",
+        "job_site": "Bidy Bravo",
+        "job_name": "Lighting Retrofit",
+        "job_number": "260512B",
+        "date": "4-14-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:9",
+      "row_number": 9,
+      "values": {
+        "quantity": "20",
+        "price": "4.10",
+        "description": "Locknut 1/2\"",
+        "person_name": "Maya",
+        "job_site": "Bidy Bravo",
+        "job_name": "Lighting Retrofit",
+        "job_number": "260512B",
+        "date": "4-14-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:10",
+      "row_number": 10,
+      "values": {
+        "quantity": "20",
+        "price": "2.60",
+        "description": "Flat Washers 1/2\"",
+        "person_name": "Maya",
+        "job_site": "Bidy Bravo",
+        "job_name": "Lighting Retrofit",
+        "job_number": "260512B",
+        "date": "4-14-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 6,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:11",
+      "row_number": 11,
+      "values": {
+        "quantity": "12",
+        "price": "15.72",
+        "description": "3/8\" All-thread Rod 6'",
+        "person_name": "Liam",
+        "job_site": "Site Charlie",
+        "job_name": "Mech Support",
+        "job_number": "260613C",
+        "date": "4-15-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:12",
+      "row_number": 12,
+      "values": {
+        "quantity": "12",
+        "price": "6.24",
+        "description": "Coupling Nut 3/8\"",
+        "person_name": "Liam",
+        "job_site": "Site Charlie",
+        "job_name": "Mech Support",
+        "job_number": "260613C",
+        "date": "4-15-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:13",
+      "row_number": 13,
+      "values": {
+        "quantity": "8",
+        "price": "9.10",
+        "description": "threaded Rod hanger",
+        "person_name": "Liam",
+        "job_site": "Site Charlie",
+        "job_name": "Mech Support",
+        "job_number": "260613C",
+        "date": "4-15-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:14",
+      "row_number": 14,
+      "values": {
+        "quantity": "24",
+        "price": "3.12",
+        "description": "hex Nut 3/8\"",
+        "person_name": "Liam",
+        "job_site": "Site Charlie",
+        "job_name": "Mech Support",
+        "job_number": "260613C",
+        "date": "4-15-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:15",
+      "row_number": 15,
+      "values": {
+        "quantity": "24",
+        "price": "1.80",
+        "description": "Lock Washer 3/8\"",
+        "person_name": "Liam",
+        "job_site": "Site Charlie",
+        "job_name": "Mech Support",
+        "job_number": "260613C",
+        "date": "4-15-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 11,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:16",
+      "row_number": 16,
+      "values": {
+        "quantity": "6",
+        "price": "20.94",
+        "description": "Galv Pipe 1\" x 10'",
+        "person_name": "Noah",
+        "job_site": "Facility Delta",
+        "job_name": "Water Line Ext.",
+        "job_number": "260714D",
+        "date": "4-16-25"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:17",
+      "row_number": 17,
+      "values": {
+        "quantity": "4",
+        "price": "5.96",
+        "description": "90° Elbow 1\" galv",
+        "person_name": "Noah",
+        "job_site": "Facility Delta",
+        "job_name": "Water Line Ext.",
+        "job_number": "260714D",
+        "date": "4-16-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:18",
+      "row_number": 18,
+      "values": {
+        "quantity": "2",
+        "price": "3.12",
+        "description": "Tee 1\" galv",
+        "person_name": "Noah",
+        "job_site": "Facility Delta",
+        "job_name": "Water Line Ext.",
+        "job_number": "260714D",
+        "date": "4-16-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:19",
+      "row_number": 19,
+      "values": {
+        "quantity": "8",
+        "price": "6.40",
+        "description": "Pipe hanger 1\"",
+        "person_name": "Noah",
+        "job_site": "Facility Delta",
+        "job_name": "Water Line Ext.",
+        "job_number": "260714D",
+        "date": "4-16-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "9e2fa404-7343-474c-92ac-5bdc52d6d12b:20",
+      "row_number": 20,
+      "values": {
+        "quantity": "1 roll",
+        "price": "1.75",
+        "description": "Teflon tape",
+        "person_name": "Noah",
+        "job_site": "Facility Delta",
+        "job_name": "Water Line Ext.",
+        "job_number": "260714D",
+        "date": "4-16-25"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "df863e8782b815e33325694d154f3c92b01c6ce392ed693a0929fbbb91a16a89",
+          "page_number": 1,
+          "row_number": 16,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "blank",
+        "job_site": "blank",
+        "job_name": "blank",
+        "job_number": "blank",
+        "date": "blank"
+      },
+      "unresolved_fields": {}
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "version": "validator-v001",
+  "missing_fields_medium": ["job_number", "price", "quantity"],
+  "inherited_fields_medium": ["quantity", "price", "description"],
+  "max_inherited_fields": 3,
+  "high_risk_flags": ["marked", "crossed_out", "highlighted", "cancelled"]
+}

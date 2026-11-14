@@ -1,0 +1,487 @@
+{
+  "id": "resp_03a5837ef5ce2d09016af82171736087d2b2996f204d01233a",
+  "access_programs": null,
+  "created_at": 1794646385.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "gpt-5.4-mini-2026-03-17",
+  "object": "response",
+  "output": [
+    {
+      "id": "msg_03a5837ef5ce2d09016af8217255f087d2969d5a016a96753e",
+      "content": [
+        {
+          "annotations": [],
+          "text": "{\"header_fields\":{\"quantity\":null,\"price\":null,\"description\":null,\"person_name\":null,\"job_site\":null,\"job_name\":null,\"job_number\":null,\"date\":null},\"rows\":[{\"row_number\":1,\"fields\":{\"quantity\":{\"raw_text\":\"10\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"11.42\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"med. leather gloves\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"R.D.\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Shop Bay 2\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Pump Upgrade\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"2513001\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"11-3-25\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Yellow highlighted row.\"]},{\"row_number\":2,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"5.10\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"SS hnd Brsh\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"S.T.\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job site cell.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job name cell.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job number cell.\"]},\"date\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written.\"]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row under the same highlighted group; several cells use visible repeat marks.\"]},{\"row_number\":3,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"2.68\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"CS Hand Brsh\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in person name cell.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job site cell.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job name cell.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job number cell.\"]},\"date\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written.\"]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row under same group; repeat marks used for context cells.\"]},{\"row_number\":4,\"fields\":{\"quantity\":{\"raw_text\":\"2\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"3.75\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Blue safety glasses\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"M.L.\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job site cell.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job name cell.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job number cell.\"]},\"date\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written.\"]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row under same group; repeat marks used for context cells.\"]},{\"row_number\":5,\"fields\":{\"quantity\":{\"raw_text\":\"10\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\".60\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"2x4 weld. lens\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in person name cell.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job site cell.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job name cell.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job number cell.\"]},\"date\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written.\"]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row under same group; repeat marks used for context cells.\"]},{\"row_number\":6,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"11.42\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Small gloves\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"J.K.\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Warehouse A\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Hydro Test\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"2513002\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"11/4/25\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Yellow highlighted row.\"]},{\"row_number\":7,\"fields\":{\"quantity\":{\"raw_text\":\"6\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"3.45\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"1/2\\\" Zip Disc\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in person name cell.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job site cell.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job name cell.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job number cell.\"]},\"date\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written.\"]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row under same group; repeat marks used for context cells.\"]},{\"row_number\":8,\"fields\":{\"quantity\":{\"raw_text\":\"5\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"275.00\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"308L weld wire\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"B.P.\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job site cell.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job name cell.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job number cell.\"]},\"date\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written.\"]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row under same group; repeat marks used for context cells.\"]},{\"row_number\":9,\"fields\":{\"quantity\":{\"raw_text\":\"1 box\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"2.48\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"4\\\" cutting wheels\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"B.P.\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Shop Bay 1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Valve Rebuild\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"2513003\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"11-4-25\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Yellow highlighted row.\"]},{\"row_number\":10,\"fields\":{\"quantity\":{\"raw_text\":\"1 box\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"46.00\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\".45 Tip\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in person name cell.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job site cell.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job name cell.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job number cell.\"]},\"date\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written.\"]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row under same group; repeat marks used for context cells.\"]},{\"row_number\":11,\"fields\":{\"quantity\":{\"raw_text\":\"1 box\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"17.95\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"3/32\\\" stick rod 1/8\\\"\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"T.J.\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job site cell.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job name cell.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job number cell.\"]},\"date\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written.\"]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row under same group; repeat marks used for context cells.\"]},{\"row_number\":12,\"fields\":{\"quantity\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"11.95\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"2xL Tyvek suit\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"T.J.\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Plant Sec. D\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Insul. Work\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"2513004\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"11-5-25\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Yellow highlighted row.\"]},{\"row_number\":13,\"fields\":{\"quantity\":{\"raw_text\":\"1 box\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"12.75\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"309 weld rod 1/8\\\"\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"A.H.\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Plant Sec. D\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Insulation Work\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"2513004\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"11-5-25\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Yellow highlighted row.\"]},{\"row_number\":14,\"fields\":{\"quantity\":{\"raw_text\":\"6\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"2.48\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"4 1/2\\\" cutoff wheel disc\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"A.H.\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job site cell.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job name cell.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job number cell.\"]},\"date\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written.\"]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row under same group; repeat marks used for context cells.\"]},{\"row_number\":15,\"fields\":{\"quantity\":{\"raw_text\":\"3\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"4.65\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"4 1/2\\\" flap disc\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"A.H.\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job site cell.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job name cell.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job number cell.\"]},\"date\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written.\"]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row under same group; repeat marks used for context cells.\"]},{\"row_number\":16,\"fields\":{\"quantity\":{\"raw_text\":\"2\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"16.80\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"4 1/2\\\" wire whls crimp\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"A.H.\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job site cell.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job name cell.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job number cell.\"]},\"date\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written.\"]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row under same group; repeat marks used for context cells.\"]},{\"row_number\":17,\"fields\":{\"quantity\":{\"raw_text\":\"5\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"11.42\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Large gloves\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"P.D.\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Warehouse B\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Pipe Rack Mod\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"2513005\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"11-6-25\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Yellow highlighted row.\"]},{\"row_number\":18,\"fields\":{\"quantity\":{\"raw_text\":\"2\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"17.50\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"L-Bracket 2 hole\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in person name cell.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job site cell.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job name cell.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job number cell.\"]},\"date\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written.\"]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row under same group; repeat marks used for context cells.\"]},{\"row_number\":19,\"fields\":{\"quantity\":{\"raw_text\":\"8\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"5.35\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"yellow paint maker's\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"K.R.\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Maintenance\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Line ID\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"2513006\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"11-6-25\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":true,\"crossed_out\":false,\"uncertain\":false,\"notes\":[\"Yellow highlighted row.\"]},{\"row_number\":20,\"fields\":{\"quantity\":{\"raw_text\":\"10\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"4.10\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"White paint markers\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in person name cell.\"]},\"job_site\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job site cell.\"]},\"job_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job name cell.\"]},\"job_number\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in job number cell.\"]},\"date\":{\"raw_text\":\"1\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark resembles a slash/ditto in date cell, but only '1' is clearly written.\"]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row under same group; repeat marks used for context cells.\"]},{\"row_number\":21,\"fields\":{\"quantity\":{\"raw_text\":\"10\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"6.88\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Blue masking Tape\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"D.G.\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_site\":{\"raw_text\":\"Maintenance\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_name\":{\"raw_text\":\"Line ID\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"job_number\":{\"raw_text\":\"2513006\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"date\":{\"raw_text\":\"\",\"kind\":\"blank\",\"uncertain\":true,\"inference\":\"blank_as_ditto\",\"inherited_from\":null,\"notes\":[\"Blank date cell beneath a populated date in the same visible group; appears to continue the group.\"]}},\"cancellation\":\"active\",\"marked\":false,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row under same group; blank date cell likely continues prior date but left blank on page.\"]},{\"row_number\":22,\"fields\":{\"quantity\":{\"raw_text\":\"12\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\"1.95\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Sharpies - Black\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in person name cell.\"]},\"job_site\":{\"raw_text\":\"|\",\"kind\":\"text\",\"uncertain\":true,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Single vertical mark visible in job site cell; unclear if intended as repeat mark or boundary mark.\"]},\"job_name\":{\"raw_text\":\"↓\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Downward arrow mark visible in job name cell.\"]},\"job_number\":{\"raw_text\":\"↓\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Downward arrow mark visible in job number cell.\"]},\"date\":{\"raw_text\":\"↓\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Downward arrow mark visible in date cell.\"]}},\"cancellation\":\"active\",\"marked\":true,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Some cells contain arrows/vertical marks instead of clear repeat marks.\"]},{\"row_number\":23,\"fields\":{\"quantity\":{\"raw_text\":\"2\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\".95\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"8 1/2 x11 paper\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in person name cell.\"]},\"job_site\":{\"raw_text\":\"↓\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Downward arrow mark visible in job site cell.\"]},\"job_name\":{\"raw_text\":\"↓\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Downward arrow mark visible in job name cell.\"]},\"job_number\":{\"raw_text\":\"↓\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Downward arrow mark visible in job number cell.\"]},\"date\":{\"raw_text\":\"↓\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Downward arrow mark visible in date cell.\"]}},\"cancellation\":\"active\",\"marked\":true,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row with arrows in context cells.\"]},{\"row_number\":24,\"fields\":{\"quantity\":{\"raw_text\":\"30\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"price\":{\"raw_text\":\".48\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"description\":{\"raw_text\":\"Hanging File Folders\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[]},\"person_name\":{\"raw_text\":\"\\\"\",\"kind\":\"ditto\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Visible repeat mark in person name cell.\"]},\"job_site\":{\"raw_text\":\"↓\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Downward arrow mark visible in job site cell.\"]},\"job_name\":{\"raw_text\":\"↓\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Downward arrow mark visible in job name cell.\"]},\"job_number\":{\"raw_text\":\"↓\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Downward arrow mark visible in job number cell.\"]},\"date\":{\"raw_text\":\"↓\",\"kind\":\"text\",\"uncertain\":false,\"inference\":null,\"inherited_from\":null,\"notes\":[\"Downward arrow mark visible in date cell.\"]}},\"cancellation\":\"active\",\"marked\":true,\"highlighted\":false,\"crossed_out\":false,\"uncertain\":true,\"notes\":[\"Continuation row with arrows in context cells.\"]}],\"layout_notes\":[\"Single table with columns QTY, PRICE, Description, Person Name, Job Site, Job Name, Job #, Date.\",\"Several rows are highlighted in yellow across the full row.\",\"Lower rows use visible repeat marks and downward arrows in context columns; row 22 has mixed repeat/arrow marks.\"],\"notes\":[]}",
+          "type": "output_text",
+          "logprobs": []
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message",
+      "phase": "final_answer"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 0.98,
+  "background": false,
+  "completed_at": 1794646414.0,
+  "conversation": null,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "input_transformations": [],
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "moderation": null,
+  "previous_response_id": null,
+  "prompt": null,
+  "prompt_cache_diagnostics": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "current_turn",
+    "effort": "none",
+    "generate_summary": null,
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "name": "page_extraction",
+      "schema_": {
+        "$defs": {
+          "FieldInference": {
+            "description": "Interpretations of visible evidence that require later review.",
+            "enum": [
+              "blank_as_ditto"
+            ],
+            "title": "FieldInference",
+            "type": "string"
+          },
+          "SourceField": {
+            "additionalProperties": false,
+            "description": "Literal LLM observation, with uncertainty and optional inheritance hint.\n\nraw_text preserves visible marks; use None for unreadable text. An\ninherited_from reference is a model suggestion until verified by rules.\nnotes hold short evidence-based explanations, not internal reasoning.\nA blank_as_ditto inference preserves the blank observation and requires\nuncertainty plus an evidence note; it never supplies a copied value.",
+            "properties": {
+              "raw_text": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Raw Text"
+              },
+              "kind": {
+                "enum": [
+                  "text",
+                  "blank",
+                  "ditto",
+                  "illegible"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "uncertain": {
+                "title": "Uncertain",
+                "type": "boolean"
+              },
+              "inference": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/FieldInference"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "inherited_from": {
+                "type": "null"
+              },
+              "notes": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Notes",
+                "type": "array"
+              }
+            },
+            "required": [
+              "raw_text",
+              "kind",
+              "uncertain",
+              "inference",
+              "inherited_from",
+              "notes"
+            ],
+            "title": "SourceField",
+            "type": "object"
+          },
+          "SourceRow": {
+            "additionalProperties": false,
+            "description": "One candidate row on a source page, including cancelled/uncertain rows.\n\nrow_id is assigned by the application. row_number is one-based visual\norder across the page, including rows retained for cancellation review.\nMissing dictionary keys mean fields not observed, never inherited values.\nhighlighted/crossed_out describe visible marks, not approval/cancellation.\nNone means unclear or not assessed, including older extraction records.",
+            "properties": {
+              "row_number": {
+                "exclusiveMinimum": 0,
+                "title": "Row Number",
+                "type": "integer"
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "quantity": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "price": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "description": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "person_name": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "job_site": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "job_name": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "job_number": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "date": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/SourceField"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "additionalProperties": false,
+                "required": [
+                  "quantity",
+                  "price",
+                  "description",
+                  "person_name",
+                  "job_site",
+                  "job_name",
+                  "job_number",
+                  "date"
+                ]
+              },
+              "cancellation": {
+                "enum": [
+                  "active",
+                  "cancelled",
+                  "uncertain"
+                ],
+                "title": "Cancellation",
+                "type": "string"
+              },
+              "marked": {
+                "anyOf": [
+                  {
+                    "type": "boolean"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Marked"
+              },
+              "highlighted": {
+                "anyOf": [
+                  {
+                    "type": "boolean"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Highlighted"
+              },
+              "crossed_out": {
+                "anyOf": [
+                  {
+                    "type": "boolean"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Crossed Out"
+              },
+              "uncertain": {
+                "title": "Uncertain",
+                "type": "boolean"
+              },
+              "notes": {
+                "items": {
+                  "type": "string"
+                },
+                "title": "Notes",
+                "type": "array"
+              }
+            },
+            "required": [
+              "row_number",
+              "fields",
+              "cancellation",
+              "marked",
+              "highlighted",
+              "crossed_out",
+              "uncertain",
+              "notes"
+            ],
+            "title": "SourceRow",
+            "type": "object"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Page evidence and extracted candidates; does not certify completeness.\n\nrows keep visual order. Header values can supply context for multiple\nrows without pretending those values were written in each row.",
+        "properties": {
+          "header_fields": {
+            "type": "object",
+            "properties": {
+              "quantity": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "price": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "description": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "person_name": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "job_site": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "job_name": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "job_number": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "date": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/SourceField"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "quantity",
+              "price",
+              "description",
+              "person_name",
+              "job_site",
+              "job_name",
+              "job_number",
+              "date"
+            ]
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/$defs/SourceRow"
+            },
+            "title": "Rows",
+            "type": "array"
+          },
+          "layout_notes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Layout Notes",
+            "type": "array"
+          },
+          "notes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Notes",
+            "type": "array"
+          }
+        },
+        "required": [
+          "header_fields",
+          "rows",
+          "layout_notes",
+          "notes"
+        ],
+        "title": "SourcePage",
+        "type": "object"
+      },
+      "type": "json_schema",
+      "description": null,
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "cached_tokens": null,
+      "cached_tokens_details": null,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      }
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 4717,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 2688,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 8400,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13117
+  },
+  "user": null,
+  "billing": {
+    "payer": "developer"
+  },
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "store": false
+}

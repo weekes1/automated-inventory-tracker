@@ -1,0 +1,388 @@
+{
+  "approved_at": "2026-11-14T08:42:44.521213+00:00",
+  "reviewer": "Luis",
+  "identity": "self-asserted local reviewer name",
+  "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+  "confirmed_all_pages_rows_and_risks": true,
+  "signature": "2330d1b99fb2d19cc9d6db74dd289b2bcf4e10ac8a97b3ff6f9c23bb47f16188",
+  "sources": [
+    {
+      "run_directory": "2026-11-14_08-38-23.766415Z_cd0aa041-caf2-4507-a7fc-3271d6176959_Inventory Sheet 1",
+      "manifest": {
+        "run_id": "cd0aa041-caf2-4507-a7fc-3271d6176959",
+        "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+        "page_number": 1,
+        "started_at": "2026-11-14T08:38:23.766415Z",
+        "finished_at": "2026-11-14T08:38:39.972063Z",
+        "status": "succeeded",
+        "config": {
+          "provider": "openai",
+          "model": "gpt-5.4-mini",
+          "prompt_version": "extraction_v004",
+          "rules_version": "v001",
+          "schema_version": "source-page-wire-v003",
+          "model_settings": {
+            "image_detail": "high",
+            "store": false,
+            "timeout_seconds": 120,
+            "max_retries": 0
+          },
+          "preprocessing": {
+            "mime_type": "image/png",
+            "width": 1448,
+            "height": 1086,
+            "transforms": [],
+            "validation_limits": {
+              "max_bytes": 20971520,
+              "max_pages": 20,
+              "max_dimension": 10000,
+              "max_page_pixels": 20000000,
+              "max_total_pixels": 100000000,
+              "max_total_png_bytes": 104857600,
+              "max_pdf_objects": 20000
+            },
+            "source": {
+              "original_path": "documents/dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b/original.png",
+              "original_sha256": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+              "prepared_path": "documents/dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b/image_v001_pillow-13.0.0/page_001.png",
+              "page_number": 1,
+              "page_count": 1,
+              "renderer": "pillow",
+              "renderer_version": "13.0.0",
+              "transforms": [
+                "exif_transpose",
+                "white_background",
+                "rgb_png"
+              ],
+              "width": 1448,
+              "height": 1086
+            }
+          },
+          "code_version": null
+        },
+        "inputs": [
+          {
+            "path": "input_001.png",
+            "sha256": "c126b264ef5bd4219b7a7ee16c100db73d4588ceb446c04a69892c500a78bf90",
+            "original_name": "page.png"
+          }
+        ],
+        "prompt": {
+          "path": "prompt.txt",
+          "sha256": "532d711eaa63b3396673f7f865279f3297406d3f37e7f75f9dd1ef54e5d1800f",
+          "original_name": "effective_prompt.txt"
+        },
+        "rules": {
+          "path": "rules.json",
+          "sha256": "c537b73d4e1a5c34b0b5422b1a0c41e90170ea75d74499e0286a743f5e62ffb6",
+          "original_name": "rules_v001.json"
+        },
+        "response_schema": {
+          "path": "response_schema.json",
+          "sha256": "dde57b02300b5e44942654b2dfc0ff9ba6ecf7b261991152d05bc92dc901efb1",
+          "original_name": null
+        },
+        "raw_response": {
+          "path": "raw_response.json",
+          "sha256": "8698a6294079c7a3523a87b6ca856207d16f235fc49135e8dd6bf1fe2f84eae4",
+          "original_name": null
+        },
+        "extracted_page": {
+          "path": "page.json",
+          "sha256": "207101666850105036ebeffc541574891bbf975e6f540fb563aafcaae62cfaea",
+          "original_name": null
+        },
+        "preview_csv": {
+          "path": "preview_unreviewed.csv",
+          "sha256": "5c015b593cffefa88f05a05471ac8fb25739487a5766ad80fc3f536f431fee03",
+          "original_name": null
+        },
+        "resolution": {
+          "resolved_at": "2026-11-14T08:38:39.978846Z",
+          "source_page_sha256": "207101666850105036ebeffc541574891bbf975e6f540fb563aafcaae62cfaea",
+          "rules": {
+            "path": "resolver_rules.json",
+            "sha256": "3f11b8ec11939d5ebedab4eaff1b5efcbb80981cb62422489f101e5c83da4721",
+            "original_name": null
+          },
+          "rows": {
+            "path": "resolved_inherited.json",
+            "sha256": "fd0a6917612849ccb5206d4c8269e7ced5678fbeae5c1607ddeaf02f502a03fe",
+            "original_name": null
+          },
+          "csv": {
+            "path": "resolved_inherited.csv",
+            "sha256": "de3e7ddcf2d7d1270140a222da9054d4df265ba53e7d066c11916f0e1866b81e",
+            "original_name": null
+          }
+        },
+        "validation": {
+          "validated_at": "2026-11-14T08:38:39.981540Z",
+          "source_page_sha256": "207101666850105036ebeffc541574891bbf975e6f540fb563aafcaae62cfaea",
+          "resolution_rows_sha256": "fd0a6917612849ccb5206d4c8269e7ced5678fbeae5c1607ddeaf02f502a03fe",
+          "rules": {
+            "path": "validation_rules.json",
+            "sha256": "5ff97150cf8d545d826dffe6bd6ec0c1744547344a2547e35c1f3b96b57fa27f",
+            "original_name": null
+          },
+          "rows": {
+            "path": "validated_risk.json",
+            "sha256": "86f2ed63f2d926bd509479976342ceb1cf671835fd714084944a9d7848d24e62",
+            "original_name": null
+          },
+          "csv": {
+            "path": "validated_risk.csv",
+            "sha256": "09f8d00eb32d72dd332a4d0086e53b66cbd5e0fdb0df981b9d5f1af01fa67e95",
+            "original_name": null
+          }
+        },
+        "returned_model": "gpt-5.4-mini-2026-03-17",
+        "provider_request_id": "req_213c84d23efe4cb39e42c6ef656bba5f",
+        "usage": {
+          "input_tokens": 4717,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "cache_write_tokens_details": {
+              "ttl_12h_tokens": 0,
+              "ttl_30m_tokens": 0
+            }
+          },
+          "output_tokens": 4081,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 8798
+        },
+        "error": null
+      }
+    }
+  ],
+  "rows": [
+    {
+      "_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:cd0aa041-caf2-4507-a7fc-3271d6176959:1",
+      "Page": 1,
+      "Row": 1,
+      "Exclude": true,
+      "Exclusion reason": "test",
+      "Quantity": "50",
+      "Price": "13.72",
+      "Description": "Tier Paw Flapper Disc",
+      "Person name": "A.J.",
+      "Job site": "North Bay Shop",
+      "Job name": "TSC Upgrade",
+      "Job #": "26-1148",
+      "Date": "5-7-26",
+      "risk": "low",
+      "risk_reason": "No configured risk rule matched"
+    },
+    {
+      "_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:cd0aa041-caf2-4507-a7fc-3271d6176959:2",
+      "Page": 1,
+      "Row": 2,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "40",
+      "Price": "19.26",
+      "Description": "3\" Flapper Wheel",
+      "Person name": "A.J.",
+      "Job site": "Hydro Plant B",
+      "Job name": "TSC Upgrade",
+      "Job #": "26-1148",
+      "Date": "5-7-26",
+      "risk": "medium",
+      "risk_reason": "4 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:cd0aa041-caf2-4507-a7fc-3271d6176959:3",
+      "Page": 1,
+      "Row": 3,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "40",
+      "Price": "15.11",
+      "Description": "2\" Flapper Wheel",
+      "Person name": "A.J.",
+      "Job site": "Hydro Plant B",
+      "Job name": "TSC Upgrade",
+      "Job #": "26-1148",
+      "Date": "5-7-26",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:cd0aa041-caf2-4507-a7fc-3271d6176959:4",
+      "Page": 1,
+      "Row": 4,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "20",
+      "Price": "5.83",
+      "Description": "1/8 Grinding wheels",
+      "Person name": "A.J.",
+      "Job site": "Hydro Plant B",
+      "Job name": "TSC Upgrade",
+      "Job #": "26-1148",
+      "Date": "5-7-26",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:cd0aa041-caf2-4507-a7fc-3271d6176959:5",
+      "Page": 1,
+      "Row": 5,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "20LB",
+      "Price": "19.47",
+      "Description": ".030 ER70S-6 M16 Wire",
+      "Person name": "A.J.",
+      "Job site": "Hydro Plant B",
+      "Job name": "TSC Upgrade",
+      "Job #": "26-1148",
+      "Date": "5-7-26",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:cd0aa041-caf2-4507-a7fc-3271d6176959:6",
+      "Page": 1,
+      "Row": 6,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "20LB",
+      "Price": "11.47",
+      "Description": ".035 ER70S-6 M16 Wire",
+      "Person name": "A.J.",
+      "Job site": "Hydro Plant B",
+      "Job name": "TSC Upgrade",
+      "Job #": "26-1148",
+      "Date": "5-7-26",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:cd0aa041-caf2-4507-a7fc-3271d6176959:7",
+      "Page": 1,
+      "Row": 7,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "20LB",
+      "Price": "11.47",
+      "Description": ".045 ER70S-6 M16 Wire",
+      "Person name": "A.J.",
+      "Job site": "Hydro Plant B",
+      "Job name": "TSC Upgrade",
+      "Job #": "26-1148",
+      "Date": "5-7-26",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:cd0aa041-caf2-4507-a7fc-3271d6176959:8",
+      "Page": 1,
+      "Row": 8,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "12",
+      "Price": "15.09",
+      "Description": "Small Leather Gloves",
+      "Person name": "A.J.",
+      "Job site": "Hydro Plant B",
+      "Job name": "TSC Upgrade",
+      "Job #": "26-1148",
+      "Date": "5-7-26",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:cd0aa041-caf2-4507-a7fc-3271d6176959:9",
+      "Page": 1,
+      "Row": 9,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "12",
+      "Price": "15.09",
+      "Description": "Medium Lthr Gloves",
+      "Person name": "A.J.",
+      "Job site": "Hydro Plant B",
+      "Job name": "TSC Upgrade",
+      "Job #": "26-1148",
+      "Date": "5-7-26",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:cd0aa041-caf2-4507-a7fc-3271d6176959:10",
+      "Page": 1,
+      "Row": 10,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "12",
+      "Price": "4.23",
+      "Description": "Clear Safety Glasses",
+      "Person name": "A.J.",
+      "Job site": "Hydro Plant B",
+      "Job name": "TSC Upgrade",
+      "Job #": "26-1148",
+      "Date": "5-7-26",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:cd0aa041-caf2-4507-a7fc-3271d6176959:11",
+      "Page": 1,
+      "Row": 11,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "4",
+      "Price": "16.72",
+      "Description": "Core Drill Bit 2\"",
+      "Person name": "A.J.",
+      "Job site": "Hydro Plant B",
+      "Job name": "TSC Upgrade",
+      "Job #": "26-1148",
+      "Date": "5-7-26",
+      "risk": "medium",
+      "risk_reason": "5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:cd0aa041-caf2-4507-a7fc-3271d6176959:12",
+      "Page": 1,
+      "Row": 12,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "2",
+      "Price": "11.61",
+      "Description": "Hand Wash Soap",
+      "Person name": "A.J.",
+      "Job site": "Hydro Plant B",
+      "Job name": "TSC Upgrade",
+      "Job #": "26-1148",
+      "Date": "5-7-26",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; 5 fields inherited (more than 3)"
+    },
+    {
+      "_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:cd0aa041-caf2-4507-a7fc-3271d6176959:13",
+      "Page": 1,
+      "Row": 13,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "14",
+      "Price": "1.68",
+      "Description": "Sawzall Blades",
+      "Person name": "M.P.",
+      "Job site": "West Snic Pad",
+      "Job name": "Duct Repair",
+      "Job #": "26-2221",
+      "Date": "5-7-26",
+      "risk": "high",
+      "risk_reason": "Row is highlighted"
+    }
+  ],
+  "csv_sha256": "6df7d4eae51b6fd9a1e6b809e7640478667cad4970f112f96241bf2118f20cdc",
+  "included_rows": 12,
+  "excluded_rows": 1,
+  "csv_filename": "Inventory Sheet 1_approved.csv"
+}

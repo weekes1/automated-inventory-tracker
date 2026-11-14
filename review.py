@@ -10,8 +10,9 @@ from pathlib import Path
 from uuid import uuid4
 
 from exporter import spreadsheet_text
+from filenames import run_stem
 from runs import add_validation, load_run
-from schemas import ExtractionRun, InventoryRow, OUTPUT_COLUMNS, SourcePage, ValidatedPage
+from schemas import ExtractionRun, InventoryRow, OUTPUT_COLUMNS, RunArtifact, SourcePage, ValidatedPage
 
 
 @dataclass
@@ -118,7 +119,7 @@ def review_signature(pages: list[ReviewPage], records: list[dict], reviewer: str
 
 
 def approve_document(pages: list[ReviewPage], records: list[dict], *, reviewer: str,
-                     confirmed: bool, reviews_dir: Path) -> Path:
+                     confirmed: bool, approved_dir: Path) -> Path:
     """The export boundary requires explicit completeness and risk acknowledgement."""
     if not confirmed or not reviewer.strip():
         raise ValueError("Enter your name and confirm all pages, rows, and risk warnings were reviewed")
@@ -136,7 +137,10 @@ def approve_document(pages: list[ReviewPage], records: list[dict], *, reviewer: 
             writer.writerow([spreadsheet_text(row[header]) for header in OUTPUT_COLUMNS])
     csv_bytes = output.getvalue().encode("utf-8-sig")
     now = datetime.now(timezone.utc)
-    directory = reviews_dir / (now.strftime("%Y-%m-%d_%H-%M-%S.%fZ_") + str(uuid4()))
+    first = pages[0]
+    stem = run_stem(first.run, first.directory)
+    filename = f"{stem}_approved.csv"
+    directory = approved_dir / f"{now:%Y-%m-%d_%H-%M-%S.%fZ}_{uuid4()}_{stem}"
     directory.mkdir(parents=True, exist_ok=False)
     snapshot = {
         "approved_at": now.isoformat(), "reviewer": reviewer.strip(),
@@ -145,19 +149,22 @@ def approve_document(pages: list[ReviewPage], records: list[dict], *, reviewer: 
         "signature": review_signature(pages, records, reviewer),
         "sources": [{"run_directory": page.directory.name, "manifest": page.run.model_dump(mode="json")}
                     for page in pages],
-        "rows": records, "csv_sha256": sha256(csv_bytes).hexdigest(),
+        "rows": records, "csv_filename": filename, "csv_sha256": sha256(csv_bytes).hexdigest(),
         "included_rows": sum(not row["Exclude"] for row in records),
         "excluded_rows": sum(row["Exclude"] for row in records),
     }
-    (directory / "approved.csv").write_bytes(csv_bytes)
+    (directory / filename).write_bytes(csv_bytes)
     # Write the approval last; an interrupted CSV write alone never grants approval.
     (directory / "approval.json").write_text(json.dumps(snapshot, ensure_ascii=False, indent=2))
     return directory
 
 
-def approved_download(directory: Path, signature: str) -> bytes:
+def approved_download(directory: Path, signature: str) -> tuple[str, bytes]:
     approval = json.loads((directory / "approval.json").read_text())
-    content = (directory / "approved.csv").read_bytes()
-    if approval["signature"] != signature or sha256(content).hexdigest() != approval["csv_sha256"]:
+    filename = approval.get("csv_filename", "approved.csv")
+    if not filename.endswith(".csv") or "/" in filename or "\\" in filename:
+        raise ValueError("Invalid saved CSV filename")
+    content = artifact_bytes(directory, RunArtifact(path=filename, sha256=approval["csv_sha256"]))
+    if approval["signature"] != signature:
         raise ValueError("Approval does not match this review or the saved CSV")
-    return content
+    return filename, content

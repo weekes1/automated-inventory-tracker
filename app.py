@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 import pandas as pd
 import streamlit as st
 
+from filenames import run_label, run_stem
 from ingestion import InputValidationError
 from pipeline import DocumentExtractionError, extract_file, extract_upload
 from review import (approved_download, approve_document, editor_records, expected_pages,
@@ -69,8 +70,9 @@ def choose_runs() -> list[Path]:
     if not documents:
         st.info("No successful saved runs yet. Choose New extraction to upload a sheet.")
         return []
+    labels = {key: run_label(load_run(paths[0]), paths[0]) for key, paths in documents.items()}
     document_id = st.sidebar.selectbox("Saved document", list(documents),
-                                      format_func=lambda value: f"Sheet {value[:12]}", on_change=changed_review)
+                                      format_func=lambda value: labels[value], on_change=changed_review)
     attempts = {}
     for directory in documents[document_id]:
         run = load_run(directory)
@@ -118,7 +120,7 @@ def show_review(directories: list[Path]):
         if original_path.is_relative_to(DATA_DIR) and original_path.is_file():
             content = original_path.read_bytes()
             if sha256(content).hexdigest() == source.get("original_sha256"):
-                st.download_button("Download original file", content, file_name=f"original{original_path.suffix}", key="original_download")
+                st.download_button("Download original file", content, file_name=f"{run_stem(page.run, page.directory)}{original_path.suffix}", key="original_download", on_click="ignore")
         with st.expander("Source notes & inherited fields"):
             st.caption(f"Run: {page.run.run_id} · Model: {page.run.returned_model or page.run.config.model}")
             for note in page.source.layout_notes + page.source.notes:
@@ -160,16 +162,16 @@ def show_review(directories: list[Path]):
         if approve:
             try:
                 directory = approve_document(pages, current, reviewer=reviewer, confirmed=confirmed,
-                                             reviews_dir=DATA_DIR / "reviews")
+                                             approved_dir=DATA_DIR / "approved_outputs")
                 st.session_state.approval = {"directory": str(directory), "signature": signature}
             except (ValueError, OSError) as exc:
                 st.error(str(exc))
         approval = st.session_state.get("approval")
         if approval and approval["signature"] == signature:
             try:
-                content = approved_download(Path(approval["directory"]), signature)
+                filename, content = approved_download(Path(approval["directory"]), signature)
                 st.success("File approved. Your CSV contains only the eight business columns and included rows.")
-                st.download_button("Download approved CSV ↓", content, file_name=f"inventory_{pages[0].run.document_id[:12]}_approved.csv", mime="text/csv", type="primary")
+                st.download_button("Download approved CSV ↓", content, file_name=filename, mime="text/csv", type="primary", on_click="ignore")
             except (ValueError, OSError) as exc:
                 st.error(str(exc))
 

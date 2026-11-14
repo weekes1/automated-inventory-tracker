@@ -40,7 +40,7 @@ def extract_file(
     load_dotenv(ROOT / ".env", override=False)
     data_dir = Path(data_dir) if data_dir is not None else Path(os.getenv("DATA_DIR") or ROOT / "data")
     document = ingest_file(path, data_dir=data_dir, dpi=dpi)
-    return _extract_document(document, data_dir=data_dir, model=model, document_id=document_id,
+    return _extract_document(document, Path(path).name, data_dir=data_dir, model=model, document_id=document_id,
                              page_number=page_number, client=client)
 
 
@@ -50,10 +50,10 @@ def extract_upload(content: bytes, filename: str, *, model: str | None = None,
     load_dotenv(ROOT / ".env", override=False)
     data_dir = Path(data_dir) if data_dir is not None else Path(os.getenv("DATA_DIR") or ROOT / "data")
     document = ingest_bytes(content, filename, data_dir=data_dir)
-    return _extract_document(document, data_dir=data_dir, model=model, client=client)
+    return _extract_document(document, filename, data_dir=data_dir, model=model, client=client)
 
 
-def _extract_document(document: IngestedDocument, *, data_dir: Path, model: str | None = None,
+def _extract_document(document: IngestedDocument, original_name: str, *, data_dir: Path, model: str | None = None,
                       document_id: str | None = None, page_number: int = 1,
                       client: OpenAI | None = None) -> list[ExtractionResult]:
     completed = []
@@ -64,6 +64,7 @@ def _extract_document(document: IngestedDocument, *, data_dir: Path, model: str 
                 page_number=page.page_number + page_number - 1, model=model,
                 runs_dir=data_dir / "runs", client=client,
                 source_metadata={
+                    "original_name": original_name,
                     "original_path": document.original_path.relative_to(data_dir).as_posix(),
                     "original_sha256": document.document_id,
                     "prepared_path": page.path.relative_to(data_dir).as_posix(),

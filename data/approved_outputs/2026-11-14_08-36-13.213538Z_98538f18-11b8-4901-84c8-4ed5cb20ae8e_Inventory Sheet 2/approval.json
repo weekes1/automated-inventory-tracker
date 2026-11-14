@@ -1,5 +1,5 @@
 {
-  "approved_at": "2026-11-14T08:36:07.760599+00:00",
+  "approved_at": "2026-11-14T08:36:13.213538+00:00",
   "reviewer": "Luis",
   "identity": "self-asserted local reviewer name",
   "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
@@ -7,7 +7,7 @@
   "signature": "7512969d395fc9cb3c1ec0cd2322d6e30a973b7381dd574a6e92a726ee5a72f9",
   "sources": [
     {
-      "run_directory": "2026-11-14_07-39-03.192930Z_3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3",
+      "run_directory": "2026-11-14_07-39-03.192930Z_3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3_Inventory Sheet 2",
       "manifest": {
         "run_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3",
         "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
@@ -519,5 +519,6 @@
   ],
   "csv_sha256": "89dcbd058127c57dcbbe8ebcd5127fd3eb1b5da8bd2e921c716151b4076b39d2",
   "included_rows": 21,
-  "excluded_rows": 0
+  "excluded_rows": 0,
+  "csv_filename": "Inventory Sheet 2_approved.csv"
 }

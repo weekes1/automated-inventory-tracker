@@ -42,7 +42,7 @@ class ReviewTests(unittest.TestCase):
     def make_run(self, number=1, count=1):
         directory = start_run(
             RunConfig(provider='test', model='test', prompt_version='test', rules_version='test',
-                      schema_version='test', preprocessing={'source': {'page_count': count}}),
+                      schema_version='test', preprocessing={'source': {'page_count': count, 'original_name': 'Test Sheet.v2.png'}}),
             document_id='test-doc', page_number=number, input_paths=[self.input],
             prompt_path=self.prompt, rules_path=self.rules, response_schema={}, runs_dir=self.root / 'runs')
         rows = [SourceRow(row_id=f'row-{i}', row_number=i, highlighted=i == 1,
@@ -59,9 +59,13 @@ class ReviewTests(unittest.TestCase):
         rows[0]['Quantity'] = '1 box'
         rows[1]['Exclude'] = True
         rows[1]['Exclusion reason'] = 'Cancelled on source'
-        directory = approve_document(pages, rows, reviewer='Alex', confirmed=True, reviews_dir=self.root / 'reviews')
+        directory = approve_document(pages, rows, reviewer='Alex', confirmed=True, approved_dir=self.root / 'approved_outputs')
         signature = review_signature(pages, rows, 'Alex')
-        data = list(csv.reader(StringIO(approved_download(directory, signature).decode('utf-8-sig'))))
+        filename, content = approved_download(directory, signature)
+        self.assertEqual(filename, 'Test Sheet.v2_approved.csv')
+        self.assertTrue(directory.name.endswith('_Test Sheet.v2'))
+        self.assertEqual(content, (directory / filename).read_bytes())
+        data = list(csv.reader(StringIO(content.decode('utf-8-sig'))))
         self.assertEqual(data[0], list(OUTPUT_COLUMNS))
         self.assertEqual(len(data), 2)
         self.assertEqual(data[1][0], '1 box')
@@ -75,7 +79,7 @@ class ReviewTests(unittest.TestCase):
         rows[0]['Quantity'] = '2'
         with self.assertRaises(ValueError):
             approved_download(directory, review_signature(pages, rows, 'Alex'))
-        (directory / 'approved.csv').write_text('changed')
+        (directory / filename).write_text('changed')
         with self.assertRaises(ValueError):
             approved_download(directory, signature)
 
@@ -84,21 +88,21 @@ class ReviewTests(unittest.TestCase):
         rows = editor_records(pages)
         for reviewer, confirmed in (('', True), ('Alex', False)):
             with self.assertRaises(ValueError):
-                approve_document(pages, rows, reviewer=reviewer, confirmed=confirmed, reviews_dir=self.root / 'reviews')
+                approve_document(pages, rows, reviewer=reviewer, confirmed=confirmed, approved_dir=self.root / 'approved_outputs')
         for bad in (rows[:1], [rows[0], rows[0]], [{**rows[0], 'Exclude': True}, rows[1]]):
             with self.assertRaises(ValueError):
-                approve_document(pages, bad, reviewer='Alex', confirmed=True, reviews_dir=self.root / 'reviews')
-        self.assertFalse((self.root / 'reviews').exists())
+                approve_document(pages, bad, reviewer='Alex', confirmed=True, approved_dir=self.root / 'approved_outputs')
+        self.assertFalse((self.root / 'approved_outputs').exists())
 
     def test_incomplete_pdf_blocked_complete_pdf_exports_in_page_order(self):
         first = self.make_run(1, 2)
         second = self.make_run(2, 2)
         pages = load_pages([first])
         with self.assertRaises(ValueError):
-            approve_document(pages, editor_records(pages), reviewer='Alex', confirmed=True, reviews_dir=self.root / 'reviews')
+            approve_document(pages, editor_records(pages), reviewer='Alex', confirmed=True, approved_dir=self.root / 'approved_outputs')
         pages = load_pages([second, first])
         self.assertEqual([page.run.page_number for page in pages], [1, 2])
-        directory = approve_document(pages, editor_records(pages), reviewer='Alex', confirmed=True, reviews_dir=self.root / 'reviews')
+        directory = approve_document(pages, editor_records(pages), reviewer='Alex', confirmed=True, approved_dir=self.root / 'approved_outputs')
         self.assertEqual(json.loads((directory / 'approval.json').read_text())['included_rows'], 4)
         with self.assertRaises(ValueError):
             load_pages([first, first])
@@ -107,7 +111,7 @@ class ReviewTests(unittest.TestCase):
         pages = load_pages([self.directory])
         (self.directory / 'page.json').write_text('{}')
         with self.assertRaises(ValueError):
-            approve_document(pages, editor_records(pages), reviewer='Alex', confirmed=True, reviews_dir=self.root / 'reviews')
+            approve_document(pages, editor_records(pages), reviewer='Alex', confirmed=True, approved_dir=self.root / 'approved_outputs')
 
     def test_upload_uses_shared_ingestion_before_calling_model(self):
         with patch('pipeline.extract_image') as extract:
@@ -117,6 +121,7 @@ class ReviewTests(unittest.TestCase):
             extract_upload(self.image, 'sheet.png', data_dir=self.root)
             self.assertEqual(extract.call_count, 1)
             self.assertEqual(extract.call_args.kwargs['source_metadata']['page_count'], 1)
+            self.assertEqual(extract.call_args.kwargs['source_metadata']['original_name'], 'sheet.png')
             self.assertTrue((self.root / extract.call_args.kwargs['source_metadata']['original_path']).is_file())
 
     def test_streamlit_saved_mode_approval_edit_invalidates_download_and_new_mode(self):

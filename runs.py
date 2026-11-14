@@ -8,6 +8,7 @@ from uuid import uuid4
 
 from pydantic import JsonValue, TypeAdapter
 
+from filenames import source_stem
 from exporter import raw_preview_csv, resolved_inherited_csv, validated_risk_csv
 from resolver import DEFAULT_RULES, ResolverRules, resolve_page
 from schemas import ExtractionRun, ResolutionArtifacts, ResolvedPage, RunArtifact, RunConfig, SourcePage, ValidationArtifacts
@@ -39,10 +40,11 @@ def load_run(directory: Path) -> ExtractionRun:
     )
 
 
-def run_directory_name(run_id: str, started_at: datetime) -> str:
+def run_directory_name(run_id: str, started_at: datetime, original_name: str = "") -> str:
     """UTC timestamp first for chronological name sorting; retain UUID identity."""
     timestamp = started_at.astimezone(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S.%fZ")
-    return f"{timestamp}_{run_id}"
+    stem = source_stem(original_name)
+    return f"{timestamp}_{run_id}" + (f"_{stem}" if stem else "")
 
 
 def start_run(
@@ -72,7 +74,8 @@ def start_run(
     inputs = [(path, path.read_bytes()) for path in input_paths]
     run_id = str(uuid4())
     started_at = datetime.now(timezone.utc)
-    directory = runs_dir / run_directory_name(run_id, started_at)
+    source = config.preprocessing.get("source", {})
+    directory = runs_dir / run_directory_name(run_id, started_at, source.get("original_name", ""))
     directory.mkdir(parents=True)
     run = ExtractionRun(
         run_id=run_id, document_id=document_id, page_number=page_number,

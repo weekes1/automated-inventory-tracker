@@ -392,3 +392,19 @@ In terms of front end style and design language, follow : [https://towardsai.com
 
 give me detailed instructions on how to run this (for me and the reviewer). 
 ```
+
+## P0020
+
+- Observed at: 2026-11-14T08:41:51Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+some minor notes: 
+
+if using the front end, make sure that when we download, it also downloads in the browser not just in the repo if that makes sense. 
+
+rename the reviews folder to approved outputs.
+
+Wherever possible, make sure that the original image file name is in the name of a file or folder such as in runs, intermediary files and especially the final approved outputs csvs etc.
+```

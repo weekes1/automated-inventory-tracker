@@ -1,0 +1,1013 @@
+{
+  "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+  "page_number": 1,
+  "header_fields": {},
+  "rows": [
+    {
+      "row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:1",
+      "row_number": 1,
+      "fields": {
+        "quantity": {
+          "raw_text": "50",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "13.72",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Tier Paw Flapper Disc",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "A.J.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "North Bay Shop",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "TSC Upgrade",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "26-1148",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "5-7-26",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:2",
+      "row_number": 2,
+      "fields": {
+        "quantity": {
+          "raw_text": "40",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "19.26",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "3\" Flapper Wheel",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "Hydro Plant B",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:3",
+      "row_number": 3,
+      "fields": {
+        "quantity": {
+          "raw_text": "40",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "15.11",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "2\" Flapper Wheel",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:4",
+      "row_number": 4,
+      "fields": {
+        "quantity": {
+          "raw_text": "20",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "5.83",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "1/8 Grinding wheels",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:5",
+      "row_number": 5,
+      "fields": {
+        "quantity": {
+          "raw_text": "20LB",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "19.47",
+          "kind": "text",
+          "uncertain": true,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Left digits partly scribbled; value most visibly reads as 19.47."
+          ]
+        },
+        "description": {
+          "raw_text": ".030 ER70S-6 M16 Wire",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Price has visible overwrite/scribble."
+      ]
+    },
+    {
+      "row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:6",
+      "row_number": 6,
+      "fields": {
+        "quantity": {
+          "raw_text": "20LB",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "11.47",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": ".035 ER70S-6 M16 Wire",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:7",
+      "row_number": 7,
+      "fields": {
+        "quantity": {
+          "raw_text": "20LB",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "11.47",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": ".045 ER70S-6 M16 Wire",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:8",
+      "row_number": 8,
+      "fields": {
+        "quantity": {
+          "raw_text": "12",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "15.09",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Small Leather Gloves",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:9",
+      "row_number": 9,
+      "fields": {
+        "quantity": {
+          "raw_text": "12",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "15.09",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Medium Lthr Gloves",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:10",
+      "row_number": 10,
+      "fields": {
+        "quantity": {
+          "raw_text": "12",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "4.23",
+          "kind": "text",
+          "uncertain": true,
+          "inference": null,
+          "inherited_from": null,
+          "notes": [
+            "Last digit partly overwritten; most visible reading is 4.23."
+          ]
+        },
+        "description": {
+          "raw_text": "Clear Safety Glasses",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": true,
+      "notes": [
+        "Price has visible overwrite/scribble."
+      ]
+    },
+    {
+      "row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:11",
+      "row_number": 11,
+      "fields": {
+        "quantity": {
+          "raw_text": "4",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "16.72",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Core Drill Bit 2\"",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": false,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": []
+    },
+    {
+      "row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:12",
+      "row_number": 12,
+      "fields": {
+        "quantity": {
+          "raw_text": "2",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "11.61",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Hand Wash Soap",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "\"",
+          "kind": "ditto",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": true,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": [
+        "Row highlighted in pink across the line."
+      ]
+    },
+    {
+      "row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:13",
+      "row_number": 13,
+      "fields": {
+        "quantity": {
+          "raw_text": "14",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "price": {
+          "raw_text": "1.68",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "description": {
+          "raw_text": "Sawzall Blades",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "person_name": {
+          "raw_text": "M.P.",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_site": {
+          "raw_text": "West Snic Pad",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_name": {
+          "raw_text": "Duct Repair",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "job_number": {
+          "raw_text": "26-2221",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        },
+        "date": {
+          "raw_text": "5-7-26",
+          "kind": "text",
+          "uncertain": false,
+          "inference": null,
+          "inherited_from": null,
+          "notes": []
+        }
+      },
+      "cancellation": "active",
+      "marked": false,
+      "highlighted": true,
+      "crossed_out": false,
+      "uncertain": false,
+      "notes": [
+        "Row highlighted in pink across the line."
+      ]
+    }
+  ],
+  "layout_notes": [
+    "Single table with columns QTY, PRICE, Description, Person Name, Job Site, Job Name, Job #, Date.",
+    "Visible repetition marks (quotation marks) appear in many cells to indicate repeated values.",
+    "Page number '4' appears at top right."
+  ],
+  "notes": []
+}

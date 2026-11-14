@@ -81,6 +81,26 @@
       "original_name": null
     }
   },
+  "validation": {
+    "validated_at": "2026-11-14T08:12:17.439522Z",
+    "source_page_sha256": "d7270a3198c1bff319eaa5b0a436b93cf5440efca7919137ff03b0ca9d67ea23",
+    "resolution_rows_sha256": "ac8e5035677034cabf60e707fa732b0dfface78816081a94de2411992d74e22f",
+    "rules": {
+      "path": "validation_rules.json",
+      "sha256": "5ff97150cf8d545d826dffe6bd6ec0c1744547344a2547e35c1f3b96b57fa27f",
+      "original_name": null
+    },
+    "rows": {
+      "path": "validated_risk.json",
+      "sha256": "13fbc64d909d33291f3319442e717bdb7c82359b93f85367c031794dc94c775f",
+      "original_name": null
+    },
+    "csv": {
+      "path": "validated_risk.csv",
+      "sha256": "86ed9dd8b23fa79504be7f62b776e787085f0c8b353ae094c537f7bd40b2e669",
+      "original_name": null
+    }
+  },
   "returned_model": "gpt-5.4-mini-2026-03-17",
   "provider_request_id": "req_739b6e4956ac44a89daca9ee15250816",
   "usage": {

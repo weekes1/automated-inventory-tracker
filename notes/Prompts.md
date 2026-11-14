@@ -353,3 +353,42 @@ add a column for the reason for risk assignment as well next to the risk itself.
 
 Preserve these assumptions at the bottom of design.md.
 ```
+
+## P0019
+
+- Observed at: 2026-11-14T08:22:43Z.
+- Timestamp provenance: tool clock during repository inspection; original submission timestamp unavailable.
+- Author: user.
+
+```text
+okay now it is time to wire up a simple front end using stream lit.
+
+
+
+We need the following things:&#x20;
+
+
+
+Two default modes: One were we should the pre-saved results given our saved runs and one were you can choose the file/ upload a file and actually trigger a request to the llm pipeline we built.&#x20;
+
+
+
+1. The reviewer can view the original sheet
+2. The reviewer can upload a sheet if they want
+3. Every extracted row is editable
+4. The front end outputs at the end of every row the risk and reason
+5. The user can choose to exclude a row.
+6. once the file is approved, it outputs/downloads a final csv.
+
+
+
+The final output CSV should only have the original columns that we care about (none of the intermediary output columns such as the inheritance etc.) However, we use the intermediaries to populate the front end with essential information.&#x20;
+
+
+
+In terms of front end style and design language, follow : [https://towardsai.com/](https://towardsai.com/)
+
+
+
+give me detailed instructions on how to run this (for me and the reviewer). 
+```

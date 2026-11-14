@@ -1,4 +1,4 @@
-"""Raw inspection previews. Approved CSV/XLSX export is not implemented yet."""
+"""Inspection CSV previews. Reviewed CSV export lives at the review approval boundary."""
 
 import csv
 from io import StringIO

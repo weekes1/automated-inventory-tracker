@@ -1,6 +1,6 @@
 # Raw extraction prompt review
 
-Reviewed `prompts/extraction.txt` against `schemas.py` on 2026-11-13. Original preserved. Alternative: `prompts/extraction_v002.txt`, used for the initial adapter. Current default `prompts/extraction_v003.txt` extends it with explicit visual markings and blank-as-ditto inference; the appended API contract was updated alongside the schema. The new revision has only been verified with mocked requests, not a fresh live transcription.
+Reviewed `prompts/extraction.txt` against `schemas.py` on 2026-11-13. Original preserved. Alternative: `prompts/extraction_v002.txt`, used for the initial adapter. The v003 revision added highlighting, strike-throughs, and blank-as-ditto inference. Current default `prompts/extraction_v004.txt` also records generic review/correction markings separately from ordinary handwriting and leaves risk assignment to deterministic validation; the appended API contract was updated alongside the schema. The new revision has only been verified with mocked requests, not a fresh live transcription.
 
 The original covers varying column order, multiline descriptions, independent contextual fields, and the limits of highlight colour well.
 

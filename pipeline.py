@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 from extractor import ExtractionError, ExtractionResult, ROOT, extract_image
-from ingestion import InputValidationError, ingest_file
+from ingestion import IngestedDocument, InputValidationError, ingest_bytes, ingest_file
 
 
 class DocumentExtractionError(RuntimeError):
@@ -40,6 +40,22 @@ def extract_file(
     load_dotenv(ROOT / ".env", override=False)
     data_dir = Path(data_dir) if data_dir is not None else Path(os.getenv("DATA_DIR") or ROOT / "data")
     document = ingest_file(path, data_dir=data_dir, dpi=dpi)
+    return _extract_document(document, data_dir=data_dir, model=model, document_id=document_id,
+                             page_number=page_number, client=client)
+
+
+def extract_upload(content: bytes, filename: str, *, model: str | None = None,
+                   data_dir: Path | None = None, client: OpenAI | None = None) -> list[ExtractionResult]:
+    """Use the same bounded ingestion and page pipeline for browser uploads."""
+    load_dotenv(ROOT / ".env", override=False)
+    data_dir = Path(data_dir) if data_dir is not None else Path(os.getenv("DATA_DIR") or ROOT / "data")
+    document = ingest_bytes(content, filename, data_dir=data_dir)
+    return _extract_document(document, data_dir=data_dir, model=model, client=client)
+
+
+def _extract_document(document: IngestedDocument, *, data_dir: Path, model: str | None = None,
+                      document_id: str | None = None, page_number: int = 1,
+                      client: OpenAI | None = None) -> list[ExtractionResult]:
     completed = []
     for page in document.pages:
         try:

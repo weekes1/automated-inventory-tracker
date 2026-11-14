@@ -1,0 +1,25 @@
+﻿Quantity,Quantity_inherited,Price,Price_inherited,Description,Description_inherited,Person name,Person name_inherited,Job site,Job site_inherited,Job name,Job name_inherited,Job #,Job #_inherited,Date,Date_inherited,risk,risk_reason
+10,false,11.42,false,med. leather gloves,false,R.D.,false,Shop Bay 2,false,Pump Upgrade,false,2513001,false,11-3-25,false,high,Row is highlighted; visual marking assessment is incomplete
+1,false,5.10,false,SS Hand Brsh,false,S.T.,false,Shop Bay 2,true,Pump Upgrade,true,2513001,true,11-3-25,true,medium,4 fields inherited (more than 3); visual marking assessment is incomplete
+1,false,2.68,false,CS Hand Brsh,false,S.T.,true,Shop Bay 2,true,Pump Upgrade,true,2513001,true,11-3-25,true,medium,5 fields inherited (more than 3); visual marking assessment is incomplete
+2,false,3.75,false,Blue safety glasses,false,M.L.,false,Shop Bay 2,true,Pump Upgrade,true,2513001,true,11-3-25,true,medium,4 fields inherited (more than 3); visual marking assessment is incomplete
+10,false,.60,false,2x4 weld. lens,false,M.L.,true,Shop Bay 2,true,Pump Upgrade,true,2513001,true,11-3-25,true,medium,5 fields inherited (more than 3); visual marking assessment is incomplete
+1,false,11.42,false,Small gloves,false,J.K.,false,Warehouse A,false,Hydro Test,false,2513002,false,11/4/25,false,high,Row is highlighted; visual marking assessment is incomplete
+6,false,3.45,false,"1/2"" Zip Disc",false,J.K.,true,Warehouse A,true,Hydro Test,true,2513002,true,11/4/25,true,medium,5 fields inherited (more than 3); visual marking assessment is incomplete
+5,false,275.00,false,308L weld wire,false,B.P.,false,Warehouse A,true,Hydro Test,true,2513002,true,11/4/25,true,medium,4 fields inherited (more than 3); visual marking assessment is incomplete
+1 box,false,2.48,false,"4"" cutting wheels",false,B.P.,false,Shop Bay 1,false,Valve Rebuild,false,2513003,false,11-4-25,false,high,Row is highlighted; visual marking assessment is incomplete
+1 box,false,46.00,false,.45 Tip,false,B.P.,true,Shop Bay 1,true,Valve Rebuild,true,2513003,true,11-4-25,true,medium,5 fields inherited (more than 3); visual marking assessment is incomplete
+1 box,false,17.95,false,"3/32"" stick Rod 1/8""",false,T.J.,false,Shop Bay 1,true,Valve Rebuild,true,2513003,true,11-4-25,true,medium,4 fields inherited (more than 3); visual marking assessment is incomplete
+1,false,11.95,false,2xL Tyvek Suit,false,T.J.,false,Plant Sec. D,false,Insul. Work,false,2513004,false,11-5-25,false,high,Row is highlighted; visual marking assessment is incomplete
+1 box,false,12.75,false,"309 weld rod 1/8""",false,A.H.,false,Plant Sec. D,false,Insulation Work,false,2513004,false,11-5-25,false,high,Row is highlighted; visual marking assessment is incomplete
+6,false,2.48,false,"4 1/2"" cutoff wheel disc",false,A.H.,false,Plant Sec. D,true,Insulation Work,true,2513004,true,11-5-25,true,medium,4 fields inherited (more than 3); visual marking assessment is incomplete
+3,false,4.65,false,"4 1/2"" Flap Disc",false,A.H.,false,Plant Sec. D,true,Insulation Work,true,2513004,true,11-5-25,true,medium,4 fields inherited (more than 3); visual marking assessment is incomplete
+2,false,16.80,false,"4 1/2"" wire whls crimp",false,A.H.,false,Plant Sec. D,true,Insulation Work,true,2513004,true,11-5-25,true,medium,4 fields inherited (more than 3); visual marking assessment is incomplete
+5,false,11.42,false,Large gloves,false,P.D.,false,Warehouse B,false,Pipe Rack Mod,false,2513005,false,11-6-25,false,high,Row is highlighted; visual marking assessment is incomplete
+2,false,17.50,false,L-Bracket 2 hole,false,P.D.,true,Warehouse B,true,Pipe Rack Mod,true,2513005,true,11-6-25,true,medium,5 fields inherited (more than 3); visual marking assessment is incomplete
+8,false,5.35,false,Yellow paint makers,false,K.R.,false,Maintenance,false,Line ID,false,2513006,false,11-6-25,false,high,Row is highlighted; visual marking assessment is incomplete
+10,false,4.10,false,White paint markers,false,K.R.,true,Maintenance,true,Line ID,true,2513006,true,11-6-25,true,medium,5 fields inherited (more than 3); visual marking assessment is incomplete
+10,false,6.88,false,Blue masking Tape,false,D.G.,false,Maintenance,false,Line ID,false,2513006,false,11-6-25,true,low,No configured risk rule matched; visual marking assessment is incomplete
+12,false,1.95,false,Sharpies - Black,false,D.G.,true,Maintenance,true,Line ID,true,2513006,true,11-6-25,true,medium,5 fields inherited (more than 3); visual marking assessment is incomplete
+2,false,.95,false,8 1/2 x11 paper,false,D.G.,true,Maintenance,true,Line ID,true,2513006,true,11-6-25,true,medium,5 fields inherited (more than 3); visual marking assessment is incomplete
+30,false,.48,false,Hanging File Folders,false,D.G.,true,Maintenance,true,Line ID,true,2513006,true,11-6-25,true,medium,5 fields inherited (more than 3); visual marking assessment is incomplete

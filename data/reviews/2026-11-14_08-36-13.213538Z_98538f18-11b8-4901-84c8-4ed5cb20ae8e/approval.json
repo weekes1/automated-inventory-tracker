@@ -1,0 +1,523 @@
+{
+  "approved_at": "2026-11-14T08:36:13.213538+00:00",
+  "reviewer": "Luis",
+  "identity": "self-asserted local reviewer name",
+  "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+  "confirmed_all_pages_rows_and_risks": true,
+  "signature": "7512969d395fc9cb3c1ec0cd2322d6e30a973b7381dd574a6e92a726ee5a72f9",
+  "sources": [
+    {
+      "run_directory": "2026-11-14_07-39-03.192930Z_3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3",
+      "manifest": {
+        "run_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3",
+        "document_id": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+        "page_number": 1,
+        "started_at": "2026-11-14T07:39:03.192930Z",
+        "finished_at": "2026-11-14T07:39:31.203884Z",
+        "status": "succeeded",
+        "config": {
+          "provider": "openai",
+          "model": "gpt-5.4-mini",
+          "prompt_version": "extraction_v003",
+          "rules_version": "v001",
+          "schema_version": "source-page-wire-v002",
+          "model_settings": {
+            "image_detail": "high",
+            "store": false,
+            "timeout_seconds": 120,
+            "max_retries": 0
+          },
+          "preprocessing": {
+            "mime_type": "image/png",
+            "width": 1448,
+            "height": 1086,
+            "transforms": [],
+            "validation_limits": {
+              "max_bytes": 20971520,
+              "max_pages": 20,
+              "max_dimension": 10000,
+              "max_page_pixels": 20000000,
+              "max_total_pixels": 100000000,
+              "max_total_png_bytes": 104857600,
+              "max_pdf_objects": 20000
+            },
+            "source": {
+              "original_path": "documents/2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a/original.png",
+              "original_sha256": "2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a",
+              "prepared_path": "documents/2cf5d6a5c508d76b424ff272723188a8bcdd403d3adad83529102629450cbb1a/image_v001_pillow-13.0.0/page_001.png",
+              "page_number": 1,
+              "page_count": 1,
+              "renderer": "pillow",
+              "renderer_version": "13.0.0",
+              "transforms": [
+                "exif_transpose",
+                "white_background",
+                "rgb_png"
+              ],
+              "width": 1448,
+              "height": 1086
+            }
+          },
+          "code_version": null
+        },
+        "inputs": [
+          {
+            "path": "input_001.png",
+            "sha256": "6bbd7d0ca8b783e72c79b14242861a1a2f1f2cf8843594601fd09a6862cbf9a1",
+            "original_name": "page.png"
+          }
+        ],
+        "prompt": {
+          "path": "prompt.txt",
+          "sha256": "d0772e479898e336166f31eb91b16e9647b7573e2663195c78c496bb8d3c1e70",
+          "original_name": "effective_prompt.txt"
+        },
+        "rules": {
+          "path": "rules.json",
+          "sha256": "c537b73d4e1a5c34b0b5422b1a0c41e90170ea75d74499e0286a743f5e62ffb6",
+          "original_name": "rules_v001.json"
+        },
+        "response_schema": {
+          "path": "response_schema.json",
+          "sha256": "723e2ec000057ec2bde0d98b770a0936d0282de68e427e9b29d9ff25336db51e",
+          "original_name": null
+        },
+        "raw_response": {
+          "path": "raw_response.json",
+          "sha256": "38ae574fac17defa31759f40d47c8578c69b642d4d620052ee2279802bc456d5",
+          "original_name": null
+        },
+        "extracted_page": {
+          "path": "page.json",
+          "sha256": "8a50aeecd6cb94afd1817fb102bf03ddb7638a0e52d17174948e87c360685a43",
+          "original_name": null
+        },
+        "preview_csv": {
+          "path": "preview_unreviewed.csv",
+          "sha256": "5b014204815a23b655cae486a33cdaef8cd4fb147f87452c9a2f4b2ca520dd1e",
+          "original_name": null
+        },
+        "resolution": {
+          "resolved_at": "2026-11-14T07:57:25.778351Z",
+          "source_page_sha256": "8a50aeecd6cb94afd1817fb102bf03ddb7638a0e52d17174948e87c360685a43",
+          "rules": {
+            "path": "resolver_rules.json",
+            "sha256": "3f11b8ec11939d5ebedab4eaff1b5efcbb80981cb62422489f101e5c83da4721",
+            "original_name": null
+          },
+          "rows": {
+            "path": "resolved_inherited.json",
+            "sha256": "e78eccde233be8dbdc5f5d80e780206c9f2b5ff420adb57bf2151239451d96ec",
+            "original_name": null
+          },
+          "csv": {
+            "path": "resolved_inherited.csv",
+            "sha256": "fb4db54c5c3900cd90da05a4e93b828d864ceb0d152b3abb45869bc323bbb572",
+            "original_name": null
+          }
+        },
+        "validation": {
+          "validated_at": "2026-11-14T08:12:17.442285Z",
+          "source_page_sha256": "8a50aeecd6cb94afd1817fb102bf03ddb7638a0e52d17174948e87c360685a43",
+          "resolution_rows_sha256": "e78eccde233be8dbdc5f5d80e780206c9f2b5ff420adb57bf2151239451d96ec",
+          "rules": {
+            "path": "validation_rules.json",
+            "sha256": "5ff97150cf8d545d826dffe6bd6ec0c1744547344a2547e35c1f3b96b57fa27f",
+            "original_name": null
+          },
+          "rows": {
+            "path": "validated_risk.json",
+            "sha256": "a3252401a3c2731478320e5c5a5799472f39c4730a0929698761bebb043e09dd",
+            "original_name": null
+          },
+          "csv": {
+            "path": "validated_risk.csv",
+            "sha256": "03ae288e2482b8b2bde147fb38f9f1010da3e3fb3930fdbc67bd6d5b5bc991b0",
+            "original_name": null
+          }
+        },
+        "returned_model": "gpt-5.4-mini-2026-03-17",
+        "provider_request_id": "req_3b65d44fab80428a848104a39e7ea685",
+        "usage": {
+          "input_tokens": 4615,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "cache_write_tokens_details": {
+              "ttl_12h_tokens": 0,
+              "ttl_30m_tokens": 0
+            }
+          },
+          "output_tokens": 7184,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 11799
+        },
+        "error": null
+      }
+    }
+  ],
+  "rows": [
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:1",
+      "Page": 1,
+      "Row": 1,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1",
+      "Price": "16.54",
+      "Description": "3\" flappr wheel Disc",
+      "Person name": "Mason",
+      "Job site": "Zone 4 fab",
+      "Job name": "Fan Housing Mod",
+      "Job #": "357892",
+      "Date": "5-2-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:2",
+      "Page": 1,
+      "Row": 2,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1",
+      "Price": "2.98",
+      "Description": "1/4 Grinding wheels",
+      "Person name": "Mason",
+      "Job site": "Zone 4 fab",
+      "Job name": "Fan Housing Mod",
+      "Job #": "357892",
+      "Date": "5-2-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; 5 fields inherited (more than 3); visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3",
+      "Page": 1,
+      "Row": 3,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1",
+      "Price": "3.72",
+      "Description": "10\" Cup wire Brush",
+      "Person name": "Mason",
+      "Job site": "Zone 4 fab",
+      "Job name": "Fan Housing Mod",
+      "Job #": "357892",
+      "Date": "5-2-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; 5 fields inherited (more than 3); visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:4",
+      "Page": 1,
+      "Row": 4,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1",
+      "Price": ".22",
+      "Description": "Solid Cor flux-cored wire",
+      "Person name": "Mason",
+      "Job site": "Zone 4 fab",
+      "Job name": "Fan Housing Mod",
+      "Job #": "357892",
+      "Date": "5-2-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; 5 fields inherited (more than 3); visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:5",
+      "Page": 1,
+      "Row": 5,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1",
+      "Price": ".65",
+      "Description": "Spatter Shield spray",
+      "Person name": "Mason",
+      "Job site": "Zone 4 fab",
+      "Job name": "Fan Housing Mod",
+      "Job #": "357892",
+      "Date": "5-2-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; 5 fields inherited (more than 3); visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:6",
+      "Page": 1,
+      "Row": 6,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1",
+      "Price": "16.54",
+      "Description": "Tiger Paw Flapper Disc",
+      "Person name": "Riley",
+      "Job site": "Maintenance Shop",
+      "Job name": "Conveyor Rebuild",
+      "Job #": "462173",
+      "Date": "5-2-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:7",
+      "Page": 1,
+      "Row": 7,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1",
+      "Price": "10.14",
+      "Description": "3/32 4/16 wire Tig",
+      "Person name": "Riley",
+      "Job site": "Maintenance Shop",
+      "Job name": "Conveyor Rebuild",
+      "Job #": "462173",
+      "Date": "5-2-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; 5 fields inherited (more than 3); visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:8",
+      "Page": 1,
+      "Row": 8,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "2",
+      "Price": "7.28",
+      "Description": "3/32 Tungsten",
+      "Person name": "Riley",
+      "Job site": "Maintenance Shop",
+      "Job name": "Conveyor Rebuild",
+      "Job #": "462173",
+      "Date": "5-2-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; 5 fields inherited (more than 3); visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:9",
+      "Page": 1,
+      "Row": 9,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "3",
+      "Price": "4.85",
+      "Description": "White Electrical Tape",
+      "Person name": "Eli",
+      "Job site": "Plant C-Line 2",
+      "Job name": "Light fixture repair",
+      "Job #": "573281",
+      "Date": "5-3-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:10",
+      "Page": 1,
+      "Row": 10,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "8",
+      "Price": "1.74",
+      "Description": "1/2\" Conduit Straps",
+      "Person name": "Eli",
+      "Job site": "Plant C-Line 2",
+      "Job name": "Light fixture repair",
+      "Job #": "573281",
+      "Date": "5-3-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; 5 fields inherited (more than 3); visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:11",
+      "Page": 1,
+      "Row": 11,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "4",
+      "Price": "17.36",
+      "Description": "1/8 Safety Glasses",
+      "Person name": "Eli",
+      "Job site": "Plant C-Line 2",
+      "Job name": "Light fixture repair",
+      "Job #": "573281",
+      "Date": "5-3-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; 5 fields inherited (more than 3); visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:12",
+      "Page": 1,
+      "Row": 12,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1",
+      "Price": "4.00",
+      "Description": "Blue Safety Glasses",
+      "Person name": "Jay",
+      "Job site": "Paint Booth",
+      "Job name": "Spray Prep",
+      "Job #": "618902",
+      "Date": "5-3-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:13",
+      "Page": 1,
+      "Row": 13,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1",
+      "Price": "14.93",
+      "Description": "Lint-free wipes",
+      "Person name": "Jay",
+      "Job site": "Paint Booth",
+      "Job name": "Spray Prep",
+      "Job #": "618902",
+      "Date": "5-3-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; 5 fields inherited (more than 3); visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:14",
+      "Page": 1,
+      "Row": 14,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "50",
+      "Price": "0.12",
+      "Description": "1/4\" x 1\" Hex Bolts",
+      "Person name": "Devin",
+      "Job site": "Warehouse Yard",
+      "Job name": "Racking Repair",
+      "Job #": "689120",
+      "Date": "5-5-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:15",
+      "Page": 1,
+      "Row": 15,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "scribbled out",
+      "Price": "0.12",
+      "Description": "scribbled out",
+      "Person name": "Devin",
+      "Job site": "Warehouse Yard",
+      "Job name": "Racking Repair",
+      "Job #": "689120",
+      "Date": "5-5-25",
+      "risk": "high",
+      "risk_reason": "Row is drawn across or crossed out; Row is highlighted; 5 fields inherited (more than 3); visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:16",
+      "Page": 1,
+      "Row": 16,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1",
+      "Price": "16.54",
+      "Description": "Tiger Paw Flapper Disc",
+      "Person name": "Leo",
+      "Job site": "Shop Bay 7",
+      "Job name": "Grinder Upgrade",
+      "Job #": "741256",
+      "Date": "5-5-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:17",
+      "Page": 1,
+      "Row": 17,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "2",
+      "Price": "6.12",
+      "Description": "Cut-off Wheels 4-1/2\"",
+      "Person name": "Leo",
+      "Job site": "Shop Bay 7",
+      "Job name": "Grinder Upgrade",
+      "Job #": "741256",
+      "Date": "5-5-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; 5 fields inherited (more than 3); visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:18",
+      "Page": 1,
+      "Row": 18,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1",
+      "Price": "3.72",
+      "Description": "Grinding Stone",
+      "Person name": "Leo",
+      "Job site": "Shop Bay 7",
+      "Job name": "Grinder Upgrade",
+      "Job #": "741256",
+      "Date": "5-5-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; 5 fields inherited (more than 3); visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:19",
+      "Page": 1,
+      "Row": 19,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1",
+      "Price": "4.85",
+      "Description": "Spatter Shield",
+      "Person name": "Leo",
+      "Job site": "Shop Bay 7",
+      "Job name": "Grinder Upgrade",
+      "Job #": "741256",
+      "Date": "5-5-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; 5 fields inherited (more than 3); visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:20",
+      "Page": 1,
+      "Row": 20,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1",
+      "Price": "14.93",
+      "Description": "Small Leather Gloves",
+      "Person name": "Leo",
+      "Job site": "Shop Bay 7",
+      "Job name": "Grinder Upgrade",
+      "Job #": "741256",
+      "Date": "5-5-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; 5 fields inherited (more than 3); visual marking assessment is incomplete"
+    },
+    {
+      "_row_id": "3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:3081d3ff-c3e8-4584-8d7b-fcd4ae9f90d3:21",
+      "Page": 1,
+      "Row": 21,
+      "Exclude": false,
+      "Exclusion reason": "",
+      "Quantity": "1",
+      "Price": "18.17",
+      "Description": "3\" Flap wheels",
+      "Person name": "Leo",
+      "Job site": "Shop Bay 7",
+      "Job name": "Grinder Upgrade",
+      "Job #": "741256",
+      "Date": "5-5-25",
+      "risk": "high",
+      "risk_reason": "Row is highlighted; 5 fields inherited (more than 3); visual marking assessment is incomplete"
+    }
+  ],
+  "csv_sha256": "89dcbd058127c57dcbbe8ebcd5127fd3eb1b5da8bd2e921c716151b4076b39d2",
+  "included_rows": 21,
+  "excluded_rows": 0
+}

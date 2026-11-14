@@ -1,0 +1,14 @@
+﻿Quantity,Quantity_inherited,Price,Price_inherited,Description,Description_inherited,Person name,Person name_inherited,Job site,Job site_inherited,Job name,Job name_inherited,Job #,Job #_inherited,Date,Date_inherited
+50,false,13.72,false,Tier Paw Flapper Disc,false,A.J.,false,North Bay Shop,false,TSC Upgrade,false,26-1148,false,5-7-26,false
+40,false,19.26,false,"3"" Flapper Wheel",false,A.J.,true,Hydro Plant B,false,TSC Upgrade,true,26-1148,true,5-7-26,true
+40,false,15.11,false,"2"" Flapper Wheel",false,A.J.,true,Hydro Plant B,true,TSC Upgrade,true,26-1148,true,5-7-26,true
+20,false,5.83,false,1/8 Grinding wheels,false,A.J.,true,Hydro Plant B,true,TSC Upgrade,true,26-1148,true,5-7-26,true
+20LB,false,19.47,false,.030 ER70S-6 M16 Wire,false,A.J.,true,Hydro Plant B,true,TSC Upgrade,true,26-1148,true,5-7-26,true
+20LB,false,11.47,false,.035 ER70S-6 M16 Wire,false,A.J.,true,Hydro Plant B,true,TSC Upgrade,true,26-1148,true,5-7-26,true
+20LB,false,11.47,false,.045 ER70S-6 M16 Wire,false,A.J.,true,Hydro Plant B,true,TSC Upgrade,true,26-1148,true,5-7-26,true
+12,false,15.09,false,Small Leather Gloves,false,A.J.,true,Hydro Plant B,true,TSC Upgrade,true,26-1148,true,5-7-26,true
+12,false,15.09,false,Medium Lthr Gloves,false,A.J.,true,Hydro Plant B,true,TSC Upgrade,true,26-1148,true,5-7-26,true
+12,false,4.23,false,Clear Safety Glasses,false,A.J.,true,Hydro Plant B,true,TSC Upgrade,true,26-1148,true,5-7-26,true
+4,false,16.72,false,"Core Drill Bit 2""",false,A.J.,true,Hydro Plant B,true,TSC Upgrade,true,26-1148,true,5-7-26,true
+2,false,11.61,false,Hand Wash Soap,false,A.J.,true,Hydro Plant B,true,TSC Upgrade,true,26-1148,true,5-7-26,true
+14,false,1.68,false,Sawzall Blades,false,M.P.,false,West Snic Pad,false,Duct Repair,false,26-2221,false,5-7-26,false

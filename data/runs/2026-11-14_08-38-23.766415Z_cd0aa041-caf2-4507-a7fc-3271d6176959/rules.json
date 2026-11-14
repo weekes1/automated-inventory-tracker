@@ -1,0 +1,8 @@
+{
+  "version": "v001",
+  "status": "draft",
+  "required_fields": [],
+  "ditto_allowed_columns": [],
+  "allow_cross_page_ditto": false,
+  "require_human_approval": true
+}

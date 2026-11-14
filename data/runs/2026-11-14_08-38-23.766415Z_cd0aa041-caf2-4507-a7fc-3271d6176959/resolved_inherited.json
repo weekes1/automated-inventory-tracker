@@ -1,0 +1,628 @@
+{
+  "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+  "page_number": 1,
+  "resolver_version": "resolver-v001",
+  "rows": [
+    {
+      "source_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:1",
+      "row_number": 1,
+      "values": {
+        "quantity": "50",
+        "price": "13.72",
+        "description": "Tier Paw Flapper Disc",
+        "person_name": "A.J.",
+        "job_site": "North Bay Shop",
+        "job_name": "TSC Upgrade",
+        "job_number": "26-1148",
+        "date": "5-7-26"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:2",
+      "row_number": 2,
+      "values": {
+        "quantity": "40",
+        "price": "19.26",
+        "description": "3\" Flapper Wheel",
+        "person_name": "A.J.",
+        "job_site": "Hydro Plant B",
+        "job_name": "TSC Upgrade",
+        "job_number": "26-1148",
+        "date": "5-7-26"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:3",
+      "row_number": 3,
+      "values": {
+        "quantity": "40",
+        "price": "15.11",
+        "description": "2\" Flapper Wheel",
+        "person_name": "A.J.",
+        "job_site": "Hydro Plant B",
+        "job_name": "TSC Upgrade",
+        "job_number": "26-1148",
+        "date": "5-7-26"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 2,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:4",
+      "row_number": 4,
+      "values": {
+        "quantity": "20",
+        "price": "5.83",
+        "description": "1/8 Grinding wheels",
+        "person_name": "A.J.",
+        "job_site": "Hydro Plant B",
+        "job_name": "TSC Upgrade",
+        "job_number": "26-1148",
+        "date": "5-7-26"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 2,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:5",
+      "row_number": 5,
+      "values": {
+        "quantity": "20LB",
+        "price": "19.47",
+        "description": ".030 ER70S-6 M16 Wire",
+        "person_name": "A.J.",
+        "job_site": "Hydro Plant B",
+        "job_name": "TSC Upgrade",
+        "job_number": "26-1148",
+        "date": "5-7-26"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 2,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:6",
+      "row_number": 6,
+      "values": {
+        "quantity": "20LB",
+        "price": "11.47",
+        "description": ".035 ER70S-6 M16 Wire",
+        "person_name": "A.J.",
+        "job_site": "Hydro Plant B",
+        "job_name": "TSC Upgrade",
+        "job_number": "26-1148",
+        "date": "5-7-26"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 2,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:7",
+      "row_number": 7,
+      "values": {
+        "quantity": "20LB",
+        "price": "11.47",
+        "description": ".045 ER70S-6 M16 Wire",
+        "person_name": "A.J.",
+        "job_site": "Hydro Plant B",
+        "job_name": "TSC Upgrade",
+        "job_number": "26-1148",
+        "date": "5-7-26"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 2,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:8",
+      "row_number": 8,
+      "values": {
+        "quantity": "12",
+        "price": "15.09",
+        "description": "Small Leather Gloves",
+        "person_name": "A.J.",
+        "job_site": "Hydro Plant B",
+        "job_name": "TSC Upgrade",
+        "job_number": "26-1148",
+        "date": "5-7-26"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 2,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:9",
+      "row_number": 9,
+      "values": {
+        "quantity": "12",
+        "price": "15.09",
+        "description": "Medium Lthr Gloves",
+        "person_name": "A.J.",
+        "job_site": "Hydro Plant B",
+        "job_name": "TSC Upgrade",
+        "job_number": "26-1148",
+        "date": "5-7-26"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 2,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:10",
+      "row_number": 10,
+      "values": {
+        "quantity": "12",
+        "price": "4.23",
+        "description": "Clear Safety Glasses",
+        "person_name": "A.J.",
+        "job_site": "Hydro Plant B",
+        "job_name": "TSC Upgrade",
+        "job_number": "26-1148",
+        "date": "5-7-26"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 2,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:11",
+      "row_number": 11,
+      "values": {
+        "quantity": "4",
+        "price": "16.72",
+        "description": "Core Drill Bit 2\"",
+        "person_name": "A.J.",
+        "job_site": "Hydro Plant B",
+        "job_name": "TSC Upgrade",
+        "job_number": "26-1148",
+        "date": "5-7-26"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 2,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:12",
+      "row_number": 12,
+      "values": {
+        "quantity": "2",
+        "price": "11.61",
+        "description": "Hand Wash Soap",
+        "person_name": "A.J.",
+        "job_site": "Hydro Plant B",
+        "job_name": "TSC Upgrade",
+        "job_number": "26-1148",
+        "date": "5-7-26"
+      },
+      "inherited_fields": {
+        "person_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "person_name"
+        },
+        "job_site": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 2,
+          "field_name": "job_site"
+        },
+        "job_name": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_name"
+        },
+        "job_number": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "job_number"
+        },
+        "date": {
+          "document_id": "dcc5390c6f3edf825de596114d2029b838bc321ceb5f0af1dd122602d5ba0e2b",
+          "page_number": 1,
+          "row_number": 1,
+          "field_name": "date"
+        }
+      },
+      "inheritance_reasons": {
+        "person_name": "repetition_marker",
+        "job_site": "repetition_marker",
+        "job_name": "repetition_marker",
+        "job_number": "repetition_marker",
+        "date": "repetition_marker"
+      },
+      "unresolved_fields": {}
+    },
+    {
+      "source_row_id": "cd0aa041-caf2-4507-a7fc-3271d6176959:13",
+      "row_number": 13,
+      "values": {
+        "quantity": "14",
+        "price": "1.68",
+        "description": "Sawzall Blades",
+        "person_name": "M.P.",
+        "job_site": "West Snic Pad",
+        "job_name": "Duct Repair",
+        "job_number": "26-2221",
+        "date": "5-7-26"
+      },
+      "inherited_fields": {},
+      "inheritance_reasons": {},
+      "unresolved_fields": {}
+    }
+  ]
+}
